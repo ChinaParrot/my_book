@@ -1,4 +1,5 @@
 # Python安装
+
 ###一、 centos系列(注意yum安装不了)
 
 <pre>#Python安装
