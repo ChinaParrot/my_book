@@ -22,8 +22,10 @@ def print_func( par ):
 ```import module1[, module2[,... moduleN]```
 
 当解释器遇到import语句，如果模块在当前的搜索路径就会被导入。
+
 搜索路径是一个解释器会先进行搜索的所有目录的列表。如想要导入模块hello.py，需要把命令放在脚本的顶端：
-#!/usr/bin/python
+
+<pre>#!/usr/bin/python
 # -*- coding: UTF-8 -*-
  
 # 导入模块
