@@ -139,7 +139,7 @@ for index in range(len(fruits)):
 print "Good bye!"
 </pre>
 
-循环使用 else 语句
+循环使用 else 语句：
 
 <pre>
 #!/usr/bin/python
