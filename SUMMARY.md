@@ -6,4 +6,5 @@
    * [Python语法规则](pythonyu_fa_gui_ze.md)
    * [Python输入输出以及基础](pythonshu_ru_shu_chu_yi_ji_ji_chu.md)
    * [Python语句汇总](pythonyu_ju_hui_zong.md)
+   * Python词典(dict)
 
