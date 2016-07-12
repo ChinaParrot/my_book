@@ -78,7 +78,7 @@ Python的from语句让你从模块中导入一个指定的部分到当前命名�
 
 在UNIX系统，典型的PYTHONPATH如下：
 
-set PYTHONPATH=/usr/local/lib/python
+```set PYTHONPATH=/usr/local/lib/python```
 
 命名空间和作用域
 变量是拥有匹配对象的名字（标识符）。命名空间是一个包含了变量名称们（键）和它们各自相应的对象们（值）的字典。
