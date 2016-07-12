@@ -25,44 +25,28 @@ dict3 = dict.append() #
 
 <pre>>>> dic = {'tom':11, 'sam':57,'lily':100}
 
-```>>> print dic```
+>>> print dic
+{'lily': 100, 'sam': 57, 'tom': 11}
+>>> print type(dic)
+<type 'dict'>
+>>> 
+>>> dic['tom']
+11
+>>> dic['tom'] = 30
+>>> print dic
+{'lily': 100, 'sam': 57, 'tom': 30}
+>>>
+>>> dic = {'a':1,'b':2,'c':3}
+>>> print dic
+{'a': 1, 'c': 3, 'b': 2}
+>>> for key in dic:
+...     print dic[key]
+...
 
-```{'lily': 100, 'sam': 57, 'tom': 11}```
-
-```>>> print type(dic)```
-
-```<type 'dict'>```
-
-```>>> ```
-
-```>>> dic['tom']```
-
-```11```
-
-```>>> dic['tom'] = 30```
-
-``` >>> print dic```
-
-```{'lily': 100, 'sam': 57, 'tom': 30}```
-
-```>>> ```
-
-```>>> dic = {'a':1,'b':2,'c':3}```
-
-``` >>> print dic```
-
-```{'a': 1, 'c': 3, 'b': 2}```
-
-``` >>> for key in dic:```
-
-```...     print dic[key]```
-
-```... ```
-
-```1
+1
 3
 2
->>> ```
+>>>  
 </pre>
 
 通过print的结果，我们可以再次确认，dic中的元素是没有顺序的。
