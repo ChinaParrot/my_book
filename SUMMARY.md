@@ -12,4 +12,5 @@
    * [Python日期时间](pythonri_qi_shi_jian.md)
    * [Python对文本的操作](pythondui_wen_ben_de_cao_zuo.md)
    * [Python模块](pythonmo_kuai.md)
+   * Python函数
 
