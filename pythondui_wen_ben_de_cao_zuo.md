@@ -156,5 +156,4 @@ f.readline().strip('\n').split()
 
 <pre>
 f=open('file.txt',rw)
-f.read()
-<pre>
+f.read()<pre>
