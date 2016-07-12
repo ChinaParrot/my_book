@@ -93,6 +93,7 @@ Python会智能地猜测一个变量是局部的还是全局的，它假设任�
 global VarName的表达式会告诉Python， VarName是一个全局变量，这样Python就不会在局部命名空间里寻找这个变量了。
 
 例如，我们在全局命名空间里定义一个变量money。我们再在函数内给变量money赋值，然后Python会假定money是一个局部变量。然而，我们并没有在访问前声明一个局部变量money，结果就是会出现一个UnboundLocalError的错误。取消global语句的注释就能解决这个问题。
+  
   <pre>
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
@@ -106,6 +107,7 @@ def AddMoney():
 print Money
 AddMoney()
 print Money
+</pre>
 
 dir()函数
 dir()函数一个排好序的字符串列表，内容是一个模块里定义过的名字。
