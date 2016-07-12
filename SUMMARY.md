@@ -16,5 +16,5 @@
    * [Python-yield 使用](python-yield_shi_yong.md)
    * [python面向对象](pythonmian_xiang_dui_xiang.md)
    * [Python反射机制](pythonfan_she_ji_zhi.md)
-   * Python装饰器学习
+   * [Python装饰器学习](pythonzhuang_shi_qi_xue_xi.md)
 
