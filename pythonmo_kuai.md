@@ -143,35 +143,54 @@ print content;
 ##globals()和locals()函数
 
 根据调用地方的不同，globals()和locals()函数可被用来返回全局和局部命名空间里的名字。
+
 如果在函数内部调用locals()，返回的是所有能在该函数里访问的命名。
+
 如果在函数内部调用globals()，返回的是所有在该函数里能访问的全局名字。
+
 两个函数的返回类型都是字典。所以名字们能用keys()函数摘取。
 
-reload()函数
-当一个模块被导入到一个脚本，模块顶层部分的代码只会被执行一次。
-因此，如果你想重新执行模块里顶层部分的代码，可以用reload()函数。该函数会重新导入之前导入过的模块。语法如下：
-reload(module_name)
-在这里，module_name要直接放模块的名字，而不是一个字符串形式。比如想重载hello模块，如下：
-reload(hello)
+##reload()函数
 
-Python中的包
+当一个模块被导入到一个脚本，模块顶层部分的代码只会被执行一次。
+
+因此，如果你想重新执行模块里顶层部分的代码，可以用reload()函数。该函数会重新导入之前导入过的模块。语法如下：
+
+```reload(module_name)```
+
+在这里，module_name要直接放模块的名字，而不是一个字符串形式。比如想重载hello模块，如下：
+
+```reload(hello)```
+
+##Python中的包
+
 包是一个分层次的文件目录结构，它定义了一个由模块及子包，和子包下的子包等组成的Python的应用环境。
+
 考虑一个在Phone目录下的pots.py文件。这个文件有如下源代码：
+
+<pre>
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
  
 def Pots():
    print "I'm Pots Phone"
-   
+ </pre>
+ 
 同样地，我们有另外两个保存了不同函数的文件：
-Phone/Isdn.py 含有函数Isdn()
-Phone/G3.py 含有函数G3()
+
+* Phone/Isdn.py 含有函数Isdn()
+* Phone/G3.py 含有函数G3()
+
 现在，在Phone目录下创建file __init__.py：
 Phone/__init__.py
+
 当你导入Phone时，为了能够使用所有函数，你需要在__init__.py里使用显式的导入语句，如下：
+<pre>
 from Pots import Pots
 from Isdn import Isdn
 from G3 import G3
+</pre>
+
 当你把这些代码添加到__init__.py之后，导入Phone包的时候这些类就全都是可用的了。
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
