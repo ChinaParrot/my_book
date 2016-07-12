@@ -29,5 +29,5 @@
            * [python os.path详解](python_ospathxiang_jie.md)
            * [Python运行bash](pythonyun_xing_bash.md)
    * [Django教程](djangojiao_cheng.md)
-       * Django基础安装
+       * [Django基础安装](djangoji_chu_an_zhuang.md)
 
