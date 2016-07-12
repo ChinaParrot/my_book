@@ -41,7 +41,9 @@ Hello : Zara
 ##From…import 语句
 
 Python的from语句让你从模块中导入一个指定的部分到当前命名空间中。语法如下：
-from modname import name1[, name2[, ... nameN]]
+
+```from modname import name1[, name2[, ... nameN]]```
+
 例如，要导入模块fib的fibonacci函数，使用如下语句：
 from fib import fibonacci
 这个声明不会把整个fib模块导入到当前的命名空间中，它只会将fib里的fibonacci单个引入到执行这个声明的模块的全局符号表。
