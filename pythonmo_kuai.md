@@ -77,6 +77,7 @@ Python的from语句让你从模块中导入一个指定的部分到当前命名�
 ```set PYTHONPATH=c:\python20\lib;```
 
 在UNIX系统，典型的PYTHONPATH如下：
+
 set PYTHONPATH=/usr/local/lib/python
 
 命名空间和作用域
