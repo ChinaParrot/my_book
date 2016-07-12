@@ -11,7 +11,7 @@
    * [Python集合(set)](pythonji_540828_set.md)
    * [Python日期时间](pythonri_qi_shi_jian.md)
    * [Python对文本的操作](pythondui_wen_ben_de_cao_zuo.md)
+   * [Python函数](pythonhan_shu.md)
    * [Python模块](pythonmo_kuai.md)
    * [Python-yield 使用](python-yield_shi_yong.md)
-   * [Python函数](pythonhan_shu.md)
 
