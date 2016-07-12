@@ -22,3 +22,6 @@ Enter password: ******
 
 ####4.mysql备份
 
+<pre>
+
+</pre>
