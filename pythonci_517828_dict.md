@@ -1,5 +1,6 @@
 #Python词典(dict)
 Python内置了字典：dict的支持，dict全称dictionary，在其他语言中也称为map，使用键-值（key-value）存储，具有极快的查找速度。
+
 与列表相似，词典也可以储存多个元素。这种储存多个元素的对象称为容器(container)。
 
 D.get(key,0) #同dict[key],多了没用则返回缺省值，0。[]没用抛出异常
