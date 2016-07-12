@@ -31,4 +31,5 @@
    * [Django教程](djangojiao_cheng.md)
        * [Django基础安装](djangoji_chu_an_zhuang.md)
        * [Django基本命令使用](djangoji_ben_ming_ling_shi_yong.md)
+       * Django 模型(model)数据库
 
