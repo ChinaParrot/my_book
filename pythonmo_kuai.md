@@ -15,7 +15,8 @@ def print_func( par ):
    return
 </pre>
 
-import 语句
+##import 语句
+
 想使用Python源文件，只需在另一个源文件里执行import语句，语法如下：
 import module1[, module2[,... moduleN]
 当解释器遇到import语句，如果模块在当前的搜索路径就会被导入。
