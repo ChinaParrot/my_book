@@ -68,4 +68,3 @@ python setup.py install
 
 #项目https://www.djangosites.org/
 
- 
