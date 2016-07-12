@@ -69,6 +69,7 @@ bin/deactivate.bat
 
 你现在需要知道的就是 --distribute 选项会自动在新的虚拟环境中安装 pip ，这样就不需要手动安装了。
 
+
 查看已经安装的模块：
 
 help('modules')
