@@ -34,5 +34,5 @@
        * [Django 模型(model)数据库](django_mo_578b28_model_shu_ju_ku.md)
    * [MySQL教程](mysqljiao_cheng.md)
        * [MySQL安装](mysqlan_zhuang.md)
-       * MySQL常用命令
+       * [MySQL常用命令](mysqlchang_yong_ming_ling.md)
 
