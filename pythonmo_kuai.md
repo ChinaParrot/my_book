@@ -71,8 +71,11 @@ Python的from语句让你从模块中导入一个指定的部分到当前命名�
 ##PYTHONPATH变量
 
 作为环境变量，PYTHONPATH由装在一个列表里的许多目录组成。PYTHONPATH的语法和shell变量PATH的一样。
+
 在Windows系统，典型的PYTHONPATH如下：
-set PYTHONPATH=c:\python20\lib;
+
+```set PYTHONPATH=c:\python20\lib;```
+
 在UNIX系统，典型的PYTHONPATH如下：
 set PYTHONPATH=/usr/local/lib/python
 
