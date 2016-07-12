@@ -114,6 +114,8 @@ print Money
 dir()函数一个排好序的字符串列表，内容是一个模块里定义过的名字。
 
 返回的列表容纳了在一个模块里定义的所有模块，变量和函数。如下一个简单的实例：
+
+<pre>
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
  
@@ -129,6 +131,9 @@ print content;
 'fabs', 'floor', 'fmod', 'frexp', 'hypot', 'ldexp', 'log',
 'log10', 'modf', 'pi', 'pow', 'radians', 'sin', 'sinh', 
 'sqrt', 'tan', 'tanh']
+
+</pre>
+
 在这里，特殊字符串变量__name__指向模块的名字，__file__指向该模块的导入文件名。
 
 globals()和locals()函数
