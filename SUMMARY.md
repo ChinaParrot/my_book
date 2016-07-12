@@ -26,4 +26,5 @@
    * [Python 网络编程socket](python_wang_luo_bian_cheng_socket.md)
    * [Python常用第三方、内置模块](python_chang_yong_di_san_fang_mo_kuai.md)
        * [python之ConfigParser读取配置文件](pythonzhi_configparser_du_qu_pei_zhi_wen_jian.md)
+       * python os.path详解
 
