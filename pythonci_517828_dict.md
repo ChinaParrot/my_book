@@ -13,8 +13,8 @@ Python内置了字典：dict的支持，dict全称dictionary，在其他语言�
 * D.clear()          #清空字典，同del dict
 * D.cmp(dict1,dict2) #比较字典（优先级为元素个数，键大小，键值得大小），第一个大返回1，小返回-1，一样返回0
 
-dict1 = dict #别名
-dict2 = dict.copy() #克隆。
+dict1 = dict         #别名
+dict2 = dict.copy()  #克隆。
 dict3 = dict.append() #
 </pre>
 
