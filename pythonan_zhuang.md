@@ -19,7 +19,7 @@ ln -s /opt/python/bin/easy_install*  /usr/bin/
 sed -i 's/python/python2.6/g' /usr/bin/yum
 </pre>
 
-###二、Ubuntu系统（建议使用Ubuntu15.10桌面）
+##二、Ubuntu系统（建议使用Ubuntu15.10桌面）
 
 默认安装，无需安装
 <pre> sudo apt-get install python2.7
@@ -27,7 +27,7 @@ sed -i 's/python/python2.6/g' /usr/bin/yum
 sudo apt-get install  python-pip 
 </pre>
 
-###三、源码安装适应各种平台
+##三、源码安装适应各种平台
 
 1. 获得root权限
 2.  到上述地址下载某种版本的python: wge
