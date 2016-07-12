@@ -183,5 +183,3 @@ type(a)
 tuple(a)
 
 </pre>
-
- 
