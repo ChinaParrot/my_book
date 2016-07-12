@@ -72,7 +72,7 @@ bin/deactivate.bat
 
 查看已经安装的模块：
 
-\<pre>help('modules')
+<pre>help('modules')
 </pre>
 
 
