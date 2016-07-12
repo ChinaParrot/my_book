@@ -68,7 +68,8 @@ Python的from语句让你从模块中导入一个指定的部分到当前命名�
 
 模块搜索路径存储在system模块的sys.path变量中。变量里包含当前目录，PYTHONPATH和由安装过程决定的默认目录。
 
-PYTHONPATH变量
+##PYTHONPATH变量
+
 作为环境变量，PYTHONPATH由装在一个列表里的许多目录组成。PYTHONPATH的语法和shell变量PATH的一样。
 在Windows系统，典型的PYTHONPATH如下：
 set PYTHONPATH=c:\python20\lib;
