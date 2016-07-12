@@ -7,10 +7,10 @@ Python内置了字典：dict的支持，dict全称dictionary，在其他语言�
 * D.values() #以列表的形式返回字典中的值，返回值的列表中可包含重复元素。
 * D.items() #将所有的字典项以列表方式返回，这些列表中的每一项都来与(键，值)，但是项在返回时并没有特殊的顺序。
 
-D.update[dict2] #增加合并字典
-D.popitem() #得到一个pair，并从字典中删除它。已空则抛出异常
-D.clear() #清空字典，同del dict
-D.cmp(dict1,dict2) #比较字典（优先级为元素个数，键大小，键值得大小），第一个大返回1，小返回-1，一样返回0
+* D.update[dict2] #增加合并字典
+* D.popitem() #得到一个pair，并从字典中删除它。已空则抛出异常
+* D.clear() #清空字典，同del dict
+* D.cmp(dict1,dict2) #比较字典（优先级为元素个数，键大小，键值得大小），第一个大返回1，小返回-1，一样返回0
 
 dict1 = dict #别名
 dict2 = dict.copy() #克隆。
