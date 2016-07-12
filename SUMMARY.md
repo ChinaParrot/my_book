@@ -10,4 +10,5 @@
    * [Python列表（list）](pythonlie_biao_ff08_list.md)
    * [Python集合(set)](pythonji_540828_set.md)
    * [Python日期时间](pythonri_qi_shi_jian.md)
+   * Python对文本的操作
 
