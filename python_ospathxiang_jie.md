@@ -1,6 +1,5 @@
 # python os.path详解
 
-# python os.path
 
 <pre>
 import os
