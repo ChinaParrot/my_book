@@ -36,6 +36,7 @@ support.print_func("Zara")
 以上实例输出结果：
 Hello : Zara
 一个模块只会被导入一次，不管你执行了多少次import。这样可以防止导入模块被一遍又一遍地执行。
+</pre>
 
 From…import 语句
 Python的from语句让你从模块中导入一个指定的部分到当前命名空间中。语法如下：
