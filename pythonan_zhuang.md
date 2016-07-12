@@ -63,6 +63,7 @@ bin/activate.bat
 bin/deactivate.bat
 
 ```
+参数详解：
 
 -distribute 选项使virtualenv使用新的基于发行版的包管理系统而不是 setuptools 获得的包。 你现在需要知道的就是 --distribute 选项会自动在新的虚拟环境中安装 pip ，这样就不需要手动安装了。
 
