@@ -28,5 +28,4 @@
        * [python之ConfigParser读取配置文件](pythonzhi_configparser_du_qu_pei_zhi_wen_jian.md)
        * [python os.path详解](python_ospathxiang_jie.md)
        * [Python运行bash](pythonyun_xing_bash.md)
-   * Django教程
 
