@@ -9,9 +9,11 @@
 
 一个叫做aname的模块里的Python代码一般都能在一个叫aname.py的文件中找到。下例是个简单的模块support.py。
 
+<pre>
 def print_func( par ):
    print "Hello : ", par
    return
+</pre>
 
 import 语句
 想使用Python源文件，只需在另一个源文件里执行import语句，语法如下：
