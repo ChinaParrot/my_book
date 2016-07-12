@@ -1,6 +1,6 @@
 # Python安装
 
-###一、 centos系列(注意yum安装不了)
+##一、 centos系列(注意yum安装不了)
 
 <pre>#Python安装
 yum -y install gcc gcc-c++ make autoconf
