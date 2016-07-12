@@ -192,6 +192,7 @@ from G3 import G3
 </pre>
 
 当你把这些代码添加到__init__.py之后，导入Phone包的时候这些类就全都是可用的了。
+<pre>
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
  
@@ -205,4 +206,7 @@ Phone.G3()
 I'm Pots Phone
 I'm 3G Phone
 I'm ISDN Phone
+
+</pre>
+
 如上，为了举例，我们只在每个文件里放置了一个函数，但其实你可以放置许多函数。你也可以在这些文件里定义Python的类，然后为这些类建一个包。
