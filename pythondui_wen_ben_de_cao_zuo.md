@@ -154,7 +154,7 @@ f.readline().strip('\n').split()
 
 例如：
 
-f=open('file.txt',rw)
-f.read()
+```f=open('file.txt',rw)
+f.read()```
 
 
