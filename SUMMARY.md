@@ -22,5 +22,5 @@
    * [Python序列化](pythonxu_lie_hua.md)
    * [Python正则表达式](pythonzheng_ze_biao_da_shi.md)
    * [Python操作mysql数据库](pythoncao_zuo_mysql_shu_ju_ku.md)
-   * Python发送电子邮件
+   * [Python发送电子邮件](pythonfa_song_dian_zi_you_jian.md)
 
