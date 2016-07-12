@@ -140,7 +140,8 @@ print content;
 ---
 
 
-globals()和locals()函数
+##globals()和locals()函数
+
 根据调用地方的不同，globals()和locals()函数可被用来返回全局和局部命名空间里的名字。
 如果在函数内部调用locals()，返回的是所有能在该函数里访问的命名。
 如果在函数内部调用globals()，返回的是所有在该函数里能访问的全局名字。
