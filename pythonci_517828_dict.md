@@ -66,6 +66,7 @@ dic.pop('a) #删除指定的元素
 
 
 词典值得循环：
+
 <pre>
 name_info={
     'name':'zhangsan',
