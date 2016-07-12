@@ -8,5 +8,5 @@
    * [Python语句汇总](pythonyu_ju_hui_zong.md)
    * [Python词典(dict)](pythonci_517828_dict.md)
    * [Python列表（list）](pythonlie_biao_ff08_list.md)
-       * Python集合(set)
+       * [Python集合(set)](pythonji_540828_set.md)
 
