@@ -125,7 +125,7 @@ import math
 content = dir(math)
  
 print content;
-以上实例输出结果：
+#以上实例输出结果：
 ['__doc__', '__file__', '__name__', 'acos', 'asin', 'atan', 
 'atan2', 'ceil', 'cos', 'cosh', 'degrees', 'e', 'exp', 
 'fabs', 'floor', 'fmod', 'frexp', 'hypot', 'ldexp', 'log',
