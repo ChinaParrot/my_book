@@ -23,7 +23,7 @@ dict3 = dict.append() #
 
 例如：
 
-```>>> dic = {'tom':11, 'sam':57,'lily':100}```
+<pre>>>> dic = {'tom':11, 'sam':57,'lily':100}
 
 ```>>> print dic```
 
@@ -63,6 +63,7 @@ dict3 = dict.append() #
 3
 2
 >>> ```
+</pre>
 
 通过print的结果，我们可以再次确认，dic中的元素是没有顺序的。
 
