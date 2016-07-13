@@ -78,12 +78,7 @@ GRANT 权限 ON  数据库权限.表的权限范围  TO '用户名'@'权限ip' i
 |GRANT OPTION|数据库、表或保存的程序|赋予权限选项|
 |REFERENCES|数据库或表|
 |ALTER|表|更改表，比如添加字段、索引等|
-
-DELETE
-
-表
-
-删除数据权限
+|DELETE|表|删除数据权限|
 
 INDEX
 
