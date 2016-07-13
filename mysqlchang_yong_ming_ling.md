@@ -104,3 +104,5 @@ flush privileges;
 |CREATE USER|服务器管理|创建数据库用户的权限|
 |TRIGGER|服务器管理|触发器权限|
 
+* 查看权限
+* 
