@@ -79,54 +79,14 @@ GRANT 权限 ON  数据库权限.表的权限范围  TO '用户名'@'权限ip' i
 |REFERENCES|数据库或表||
 |ALTER|表|更改表，比如添加字段、索引等|
 |DELETE|表|删除数据权限|
-
-INDEX
-
-表
-
-索引权限
-
-INSERT
-
-表
-
-插入权限
-
-SELECT
-
-表
-
-查询权限
-
-UPDATE
-
-表
-
-更新权限
-
-CREATE VIEW
-
-视图
-
-创建视图权限
-
-SHOW VIEW
-
-视图
-
-查看视图权限
-
-ALTER ROUTINE
-
-存储过程
-
-更改存储过程权限
-
-CREATE ROUTINE
-
-存储过程
-
-创建存储过程权限
+|INDEX|表|索引权限|
+|INSERT|表|插入权限|
+|SELECT|表|查询权限|
+|UPDATE|表|更新权限|
+|CREATE VIEW|视图|创建视图权限|
+|SHOW VIEW|视图|查看视图权限|
+|ALTER ROUTINE|存储过程|更改存储过程权限|
+|CREATE ROUTINE|存储过程|创建存储过程权限|
 
 EXECUTE
 
