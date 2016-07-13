@@ -36,4 +36,5 @@
        * [MySQL安装](mysqlan_zhuang.md)
        * [MySQL常用自带工具命令](mysqlchang_yong_ming_ling.md)
        * [MySQL(SQL)命令大全](mysqlsqlming_ling_da_quan.md)
+           * mysql:连接Mysql数据库
 
