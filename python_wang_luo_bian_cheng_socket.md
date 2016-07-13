@@ -137,7 +137,7 @@ hello world！
 Python Internet 模块
 
 ---
-获取本机IP地址：
+获取本机IP地址，有外网ip首先获取否则获取内网ip地址：
 <pre>
 def get_ip_addr():
     try:
