@@ -128,6 +128,11 @@ mysqladmin -uroot -p123456 password 1234abcd
 #或者
 use mysql
 update user set PASSWORD = PASSWORD('1234abcd') where user = 'root';
-
-
+#在丢失root密码的时候(mysql 小于等于5.6之前版本)
+#启动
+mysqld_safe --skip-grant-tables &
+#无密码登录
+mysql -u root
+use mysql
+update user set password = PASSWORD('123456') where user = 'root';
 </pre>
