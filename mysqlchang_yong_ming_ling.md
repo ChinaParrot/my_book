@@ -64,6 +64,12 @@ mysqldump [option] -B数据库名 --table 表名
 </pre>
 
 ####5.mysql 对数据库授权
+* 授权语句如下
 <pre>
-
+GRANT 权限 ON  数据库权限.表的权限范围  TO '用户名'@'权限ip' identified by '设置密码';
 </pre>
+
+* 权限列表
+
+
+
