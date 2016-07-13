@@ -105,4 +105,4 @@ flush privileges;
 |TRIGGER|服务器管理|触发器权限|
 
 * 查看权限
-* 
+
