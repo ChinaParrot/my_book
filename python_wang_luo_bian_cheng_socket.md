@@ -136,6 +136,23 @@ hello world！
 
 Python Internet 模块
 
+---
+获取本机IP地址：
+<pre>
+def get_ip_addr():
+    try:
+        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        s.connect(("8.8.8.8", 80))
+        return s.getsockname()[0]
+    except Exception:
+        if_data = ''.join(os.popen("LANG=C ifconfig").readlines())
+        ips = re.findall(r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}', if_data, flags=re.MULTILINE)
+        ip = filter(valid_ip, ips)
+        if ip:
+            return ip[0]
+    return ''
+</pre>
+
 以下列出了 Python 网络编程的一些重要模块：
 
 |协议|	功能用处|	端口号|	Python 模块|
