@@ -121,6 +121,7 @@ drop user '用户'@'授权服务器ip';
 
 #对账户重命名
 rename user 'jack'@'%' to 'jim'@'%';
+
 #修改密码
 SET PASSWORD FOR 'root'@'localhost' = PASSWORD('123456');
 #或者
