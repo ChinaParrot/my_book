@@ -35,4 +35,5 @@
    * [MySQL教程](mysqljiao_cheng.md)
        * [MySQL安装](mysqlan_zhuang.md)
        * [MySQL常用自带工具命令](mysqlchang_yong_ming_ling.md)
+       * MySQL(SQL)命令大全  
 
