@@ -118,5 +118,15 @@ select host,user,password from user;
 #删除
 drop user '用户'@'授权服务器ip';
 
-#
+#对账户重命名
+rename user 'jack'@'%' to 'jim'@'%';
+#修改密码
+SET PASSWORD FOR 'root'@'localhost' = PASSWORD('123456');
+#或者
+mysqladmin -uroot -p123456 password 1234abcd
+#或者
+use mysql
+update user set PASSWORD = PASSWORD('1234abcd') where user = 'root';
+
+
 </pre>
