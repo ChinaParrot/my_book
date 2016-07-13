@@ -113,7 +113,7 @@ try:
    cursor.execute(sql)
    # 提交到数据库执行
    db.commit()
-   
+   print cursor.lastrowid
 except:
    # Rollback in case there is any error
    db.rollback()
