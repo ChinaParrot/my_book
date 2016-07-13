@@ -64,4 +64,6 @@ mysqldump [option] -B数据库名 --table 表名
 </pre>
 
 ####5.mysql 对数据库授权
+<pre>
 
+</pre>
