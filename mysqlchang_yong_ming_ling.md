@@ -99,3 +99,4 @@ GRANT 权限 ON  数据库权限.表的权限范围  TO '用户名'@'权限ip' i
 |SHOW DATABASES|服务器管理|查看数据库权限|
 |SHUTDOWN|服务器管理|关闭数据库权限|
 |SUPER|服务器管理|执行kill线程权限|
+|CREATE USER|||
