@@ -113,6 +113,7 @@ try:
    cursor.execute(sql)
    # 提交到数据库执行
    db.commit()
+   
 except:
    # Rollback in case there is any error
    db.rollback()
