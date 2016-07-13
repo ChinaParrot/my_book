@@ -105,4 +105,18 @@ flush privileges;
 |TRIGGER|服务器管理|触发器权限|
 
 * 查看权限
+<pre>
+#查看当前用户的权限：
+show grants;
+#查看某个用户的权限：
+ show grants for '用户'@'授权服务器ip';
+#回收权限
+revoke delete on *.* from '用户'@'授权服务器ip';
+#删除用户
+#先查看用户
+select host,user,password from user;
+#删除
+drop user '用户'@'授权服务器ip';
 
+#
+</pre>
