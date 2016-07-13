@@ -61,6 +61,4 @@ mysqldump [option] -B数据库名 --table 表名
 
 #导出数据库中忽略sql错误
 --force
-
-
 </pre>
