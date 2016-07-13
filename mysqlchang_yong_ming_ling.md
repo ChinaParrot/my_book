@@ -87,82 +87,15 @@ GRANT 权限 ON  数据库权限.表的权限范围  TO '用户名'@'权限ip' i
 |SHOW VIEW|视图|查看视图权限|
 |ALTER ROUTINE|存储过程|更改存储过程权限|
 |CREATE ROUTINE|存储过程|创建存储过程权限|
-
-EXECUTE
-
-存储过程
-
-执行存储过程权限
-
-FILE
-
-服务器主机上的文件访问
-
-文件访问权限
-
-CREATE TEMPORARY TABLES
-
-服务器管理
-
-创建临时表权限
-
-LOCK TABLES
-
-服务器管理
-
-锁表权限
-
-CREATE USER
-
-服务器管理
-
-创建用户权限
-
-PROCESS
-
-服务器管理
-
-查看进程权限
-
-RELOAD
-
- 
-
- 
-
-服务器管理
-
-执行flush-hosts, flush-logs, flush-privileges, flush-status, flush-tables, flush-threads, refresh, reload等命令的权限
-
-REPLICATION CLIENT
-
-服务器管理
-
-复制权限
-
-REPLICATION SLAVE
-
-服务器管理
-
-复制权限
-
-SHOW DATABASES
-
-服务器管理
-
-查看数据库权限
-
-SHUTDOWN
-
-服务器管理
-
-关闭数据库权限
-
-SUPER
-
-服务器管理
-
-执行kill线程权限
-
-
-
+|EXECUTE|存储过程|执行存储过程权限|
+|FILE|服务器主机上的文件访问|文件访问权限|
+|CREATE TEMPORARY TABLES|服务器管理|创建临时表权限|
+|LOCK TABLES|服务器管理|锁表权限|
+|CREATE USER|服务器管理|创建用户权限|
+|PROCESS|服务器管理|查看进程权限|
+|RELOAD|服务器管理|执行flush-hosts, flush-logs, flush-privileges, flush-status, flush-tables, flush-threads, refresh, reload等命令的权限|
+|REPLICATION CLIENT|服务器管理|复制权限|
+|REPLICATION SLAVE|服务器管理|复制权限|
+|SHOW DATABASES|服务器管理|查看数据库权限|
+|SHUTDOWN|服务器管理|关闭数据库权限|
+|SUPER|服务器管理|执行kill线程权限|
