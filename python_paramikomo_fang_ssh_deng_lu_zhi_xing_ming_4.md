@@ -77,3 +77,5 @@ if __name__=="__main__":
                  t.close()
 </pre>
 
+* 通过公私钥免密码SSH连接服务器
+
