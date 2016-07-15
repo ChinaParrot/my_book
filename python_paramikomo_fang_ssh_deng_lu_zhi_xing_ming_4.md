@@ -126,3 +126,9 @@ sftp.get('/tmp/test3.py','/tmp/test4.py')
 
 t.close()
 </pre>
+
+* 交互式连接
+
+<pre>
+
+</pre>
