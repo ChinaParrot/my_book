@@ -1,5 +1,3 @@
-用户名和密码连接
-
 # python Paramiko(模仿ssh登录执行命
 
 ##安装模块
