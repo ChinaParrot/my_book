@@ -28,6 +28,7 @@
            * [python之ConfigParser读取配置文件](pythonzhi_configparser_du_qu_pei_zhi_wen_jian.md)
            * [python os.path详解](python_ospathxiang_jie.md)
            * [Python运行bash](pythonyun_xing_bash.md)
+           * python Paramiko(模仿ssh登录执行命令)
    * [Django教程](djangojiao_cheng.md)
        * [Django基础安装](djangoji_chu_an_zhuang.md)
        * [Django基本命令使用](djangoji_ben_ming_ling_shi_yong.md)
