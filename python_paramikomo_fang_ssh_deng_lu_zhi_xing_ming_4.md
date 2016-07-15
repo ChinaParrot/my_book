@@ -29,4 +29,50 @@ ssh.close()
 import paramiko
 import os,sys
 
+t = paramiko.Transport(('192.168.17.248',22))
+t.connect(username='root',password='123456')
+sftp = paramiko.SFTPClient.from_transport(t)
+#上传
+sftp.put('D:\log.conf','/tmp/log.conf')
+#下载
+sftp.get('/tmp/ks-script-mZm5Oi','D:\ks-script-mZm5Oi')
+t.close()
+
+
+多文件
+#!/usr/bin/env python
+import paramiko
+import os
+import datetime
+from ConfigParser import ConfigParser
+ConfigFile='config.ini'
+config=ConfigParser()
+config.read(ConfigFile)
+hostname1=''.join(config.get('IP','ipaddress'))
+address=hostname1.split(';')
+print address
+username='root'
+password='itpschina123'
+port=22
+local_dir='/tmp/'
+remote_dir='/tmp/test/'
+if __name__=="__main__":
+ #    try:
+        for ip in address:
+                 t=paramiko.Transport((ip,port))
+                 t.connect(username=username,password=password)
+                 sftp=paramiko.SFTPClient.from_transport(t)
+#                files=sftp.listdir(dir_path)
+                 files=os.listdir(local_dir)
+                 print files
+                 for f in files:
+                        print '####################################################'
+                        print 'Begin to upload file  to %s ' % ip
+                        print 'Uploading ',os.path.join(local_dir,f)
+
+                        print datetime.datetime.now()
+                        sftp.put(os.path.join(local_dir,f),os.path.join(remote_dir,f))
+                        print datetime.datetime.now()
+                        print '####################################################'
+                 t.close()
 </pre>
