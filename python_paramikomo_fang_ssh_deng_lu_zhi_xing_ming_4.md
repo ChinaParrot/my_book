@@ -29,7 +29,6 @@ ssh.close()
 <pre>
 import paramiko
 import os,sys
-
 t = paramiko.Transport(('192.168.17.248',22))
 t.connect(username='root',password='123456')
 sftp = paramiko.SFTPClient.from_transport(t)
@@ -40,7 +39,7 @@ sftp.get('/tmp/ks-script-mZm5Oi','D:\ks-script-mZm5Oi')
 t.close()
 
 
-多文件
+#多文件
 #!/usr/bin/env python
 import paramiko
 import os
