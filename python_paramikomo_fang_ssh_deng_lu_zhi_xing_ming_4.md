@@ -1,8 +1,7 @@
 用户名和密码连接
 
-# python Paramiko(模仿ssh登录执行命<p
-
-re>
+# python Paramiko(模仿ssh登录执行命
+<pre>
 </pre>令)
 
 
