@@ -84,6 +84,18 @@ if __name__=="__main__":
 ssh-keygen -t rsa
 ssh-copy-id -i ~/ssh/id_rsa.pub root@192.168.17.258
 
+import paramiko
 
+private_key_path = '/home/auto/.ssh/id_rsa'
+key = paramiko.RSAKey.from_private_key_file(private_key_path)
+
+ssh = paramiko.SSHClient()
+ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+ssh.connect('192.168.17.258 ', 22, 'wupeiqi', key)
+
+stdin, stdout, stderr = ssh.exec_command('df')
+print stdout.read()
+ssh.close();
 
 </pre>
+
