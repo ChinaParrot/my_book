@@ -80,5 +80,10 @@ if __name__=="__main__":
 * 通过公私钥免密码SSH连接服务器
 
 <pre>
+#公私钥生成
+ssh-keygen -t rsa
+ssh-copy-id -i ~/ssh/id_rsa.pub root@192.168.17.258
+
+
 
 </pre>
