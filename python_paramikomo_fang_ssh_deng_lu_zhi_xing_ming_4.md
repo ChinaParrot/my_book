@@ -132,7 +132,7 @@ t.close()
 <pre>
 import paramiko
 
-scp = paramiko.Transport(('182.92.219.86',22));
+scp = paramiko.Transport(('192.168.2.86',22));
 scp.connect(username='root',password='xxx');
 channel = scp.open_session();
 print channel.exec_command('mkdir hello')
