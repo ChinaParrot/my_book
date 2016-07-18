@@ -7,9 +7,6 @@
 pip install paramiko
 #ubuntu 需要安装：libssl-dev 
 #redhat 系列： openssl-devel
-
-
-
 源码地址：
 https://github.com/paramiko/paramiko
 <pre>
