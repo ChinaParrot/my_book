@@ -14,6 +14,7 @@ pip install paramiko
 * 连接远程服务器，并执行操作
 
 用户名和密码连接
+
 <pre>
 import paramiko
 ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy()) #作用是允许连接不在know_hosts文件中的主机
