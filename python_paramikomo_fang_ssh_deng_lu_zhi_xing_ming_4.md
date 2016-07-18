@@ -2,7 +2,11 @@
 
 ##安装模块
 
-```pip install paramiko```
+<pre>
+pip install paramiko
+ #ubuntu 需要安装：libssl-dev 
+<pre>
+
 
 
 ## paramiko 功能
