@@ -4,7 +4,7 @@
 
 <pre>
 pip install paramiko
- #ubuntu 需要安装：libssl-dev 
+#ubuntu 需要安装：libssl-dev 
 <pre>
 
 
