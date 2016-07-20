@@ -34,7 +34,7 @@ sudo apt-get install  python-pip
 3.  wget https://www.python.org/ftp/python/2.7.9/Python-2.7.9.tgz
 4.   解压缩：tar xfz Python-2.7.8.tgz
 5.   进入该目录：cd Python-2.7.8
-6.   配置： ./configure --pre
+6.   配置： ./configure --prefix=/opt/python
 7.   在上述文件夹内运行：make，然后运行：make install
 8.   祝你幸运
 9.   安装完毕
