@@ -43,6 +43,7 @@ sudo apt-get install  python-pip
 
 easy_install和pip安装
 <pre>
+方法一、
 #python 默认源码安装没有安装openssl
 #apt-get install libssl-dev
 #重新编译python
@@ -56,6 +57,9 @@ easy_install和pip安装
 #解压执行
 /opt/python2/bin/python ez_setup.py 
 /opt/python2/bin/easy_install  pip
+
+
+方法二
 
 </pre>
 
