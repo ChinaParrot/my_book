@@ -59,7 +59,7 @@ easy_install和pip安装
 /opt/python2/bin/easy_install  pip
 
 
-方法二
+方法二：
 
 
 </pre>
