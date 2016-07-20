@@ -66,6 +66,10 @@ https://pip.pypa.io/en/latest/installing/
 wget https://bootstrap.pypa.io/get-pip.py
 python get-pip.py
 
+如果想升级安装pip
+pip install --upgrade pip
+
+
 </pre>
 
 
