@@ -62,6 +62,7 @@ easy_install和pip安装
 
 方法二：
 
+https://pip.pypa.io/en/latest/installing/
 
 </pre>
 
