@@ -30,7 +30,7 @@ sudo apt-get install  python-pip
 ##三、源码安装适应各种平台
 
 1. 获得root权限
-2.  到上述地址下载某种版本的python: wge
+2.  到上述地址下载某种版本的python: 
 3.  wget https://www.python.org/ftp/python/2.7.9/Python-2.7.9.tgz
 4.   解压缩：tar xfz Python-2.7.8.tgz
 5.   进入该目录：cd Python-2.7.8
