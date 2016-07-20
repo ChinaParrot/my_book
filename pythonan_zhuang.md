@@ -46,8 +46,11 @@ easy_install和pip安装
 #python 默认源码安装没有安装openssl
 #apt-get install libssl-dev
 #重新编译python
-#编辑 Modules/Setup
+#编辑 Modules/Setup去掉注释
 
+![](python_install_ssl.jpg)
+
+然后make && make install
 
 
 #下载地址:https://pypi.python.org/pypi/ez_setup
