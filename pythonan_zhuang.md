@@ -42,8 +42,9 @@ sudo apt-get install  python-pip
 建议使用python2.7以上。
 
 easy_install和pip安装
+
 <pre>
-方法一、
+方法一：
 #python 默认源码安装没有安装openssl
 #apt-get install libssl-dev
 #重新编译python
