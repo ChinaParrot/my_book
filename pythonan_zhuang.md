@@ -52,10 +52,10 @@ easy_install和pip安装
 
 然后make && make install
 
-
 #下载地址:https://pypi.python.org/pypi/ez_setup
-
-
+#解压执行
+/opt/python2/bin/python ez_setup.py 
+/opt/python2/bin/easy_install  pip
 
 </pre>
 
