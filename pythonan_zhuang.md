@@ -41,6 +41,11 @@ sudo apt-get install  python-pip
 
 建议使用python2.7以上。
 
+easy_install和pip安装
+<pre>
+
+</pre>
+
 
 ##四、配置不同的python虚拟环境
 参考：
