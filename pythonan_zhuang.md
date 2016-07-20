@@ -43,6 +43,9 @@ sudo apt-get install  python-pip
 
 easy_install和pip安装
 <pre>
+#apt-get install libssl-dev
+
+
 #下载地址:https://pypi.python.org/pypi/ez_setup
 
 
