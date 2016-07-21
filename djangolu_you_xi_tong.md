@@ -33,5 +33,7 @@ urlpatterns = patterns('',
 url(r'^```, views.index),
 </pre>
 
+##二、按照顺序放置的动态路由
+
 
 
