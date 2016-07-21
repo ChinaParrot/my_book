@@ -106,6 +106,7 @@ urlpatterns = [
 
 这条关系的意思是将url为”app01/“的请求都交给app01下的urls去处理
 
+其次，在app01下创建一个urls.py文件，用来处理请求的url，使之与views建立映射
 
 ```
 from django.conf.urls import include, url
