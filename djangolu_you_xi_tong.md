@@ -76,6 +76,8 @@ url(r'^```, views.index),
 <pre>
  def user_list(request,v2,v1): 
      return HttpResponse(v1+v2)
+     
+
 </pre>
 
 
