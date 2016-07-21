@@ -94,5 +94,12 @@ url(r'^```, views.index),
 首先，在urls.py里写入urls映射条目。注意要导入include方法
 
 ```
+from django.conf.urls import include, url
+from django.contrib import admin
 
+urlpatterns = [
+
+    url(r'^app01/', include('app01.urls')),
+
+]
 ```
