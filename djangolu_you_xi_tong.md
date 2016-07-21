@@ -51,7 +51,7 @@ url(r'^```, views.index),
 
 相对应的url是： ”http://127.0.0.1/uer/8/9“，匹配到的数字会以参数的形式按照顺序传递给views里面相对应的函数
 
-1 def user_list(request,nid,nid2):
-2 
-3     return HttpResponse(nid+nid2)
-
+<pre>def user_list(request,nid,nid2):
+ 
+     return HttpResponse(nid+nid2)
+</pre>
