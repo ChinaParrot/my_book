@@ -55,3 +55,6 @@ url(r'^```, views.index),
  
      return HttpResponse(nid+nid2)
 </pre>
+
+##三、传参形式的动态路由
+
