@@ -70,7 +70,6 @@ url(r'^```, views.index),
 </pre>
 
 
-
 ```
 参数v1 = (?P<v1>\d+)
 
