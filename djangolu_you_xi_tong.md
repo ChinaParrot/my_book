@@ -74,10 +74,11 @@ url(r'^```, views.index),
  
 然后将此参数传递到views里对应的函数，可以不按照顺序
 
-1 def user_list(request,v2,v1):
-2 
-3     return HttpResponse(v1+v2)
-参数v1 = (?P<v1>\d+)
+<pre>
+ def user_list(request,v2,v1): 
+     return HttpResponse(v1+v2)
+</pre>
 
+参数v1 = (?P<v1>\d+)
 参数v2 = (?P<v2>\d+)
  
