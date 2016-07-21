@@ -34,6 +34,7 @@
        * [Django基本命令使用](djangoji_ben_ming_ling_shi_yong.md)
        * [Django 模型(model)数据库](django_mo_578b28_model_shu_ju_ku.md)
        * [Django路由系统](djangolu_you_xi_tong.md)
+       * Django 配置settings.py详解
    * [MySQL教程](mysqljiao_cheng.md)
        * [MySQL安装](mysqlan_zhuang.md)
        * [MySQL常用自带工具命令](mysqlchang_yong_ming_ling.md)
