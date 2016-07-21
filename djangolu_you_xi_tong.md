@@ -62,6 +62,7 @@ url(r'^```, views.index),
 
 ``` urlpatterns = [```
 ```     url(r'^user_list/(?P<v1>\d+)/(?P<v2>\d+)```,views.user_list),```
+
 ```  ]```
  
  
