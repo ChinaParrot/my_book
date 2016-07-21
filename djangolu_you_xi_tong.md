@@ -20,6 +20,7 @@ urlpatterns = patterns('',
 )
 
 </pre>
+
 1、先从创建的app下的views.py面定义处理数据的函数
 
 2、在urls.py里导入views
