@@ -58,3 +58,12 @@ url(r'^```, views.index),
 
 ##三、传参形式的动态路由
 
+利用正则表达式的分组方法，将url以参数的形式传递到函数，可以不按顺序排列。
+
+<pre> urlpatterns = [
+ 
+     url(r'^user_list/(?P<v1>\d+)/(?<v2>\d+)$',views.user_list),
+ 
+ ]
+ </pre>
+ 
