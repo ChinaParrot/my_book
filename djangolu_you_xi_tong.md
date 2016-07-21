@@ -29,7 +29,7 @@ urlpatterns = patterns('',
 
 5. 当写成”^$“时，不输入任何url时不会在返回黄页，而是返回后面函数里对应的页面。一般这一条会写在url的最后。如：
 
-
-
-```url(r'^```, views.index),```
+<pre>
+url(r'^```, views.index),
+</pre>
 
