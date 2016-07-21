@@ -76,10 +76,11 @@ url(r'^```, views.index),
 <pre>
  def user_list(request,v2,v1): 
      return HttpResponse(v1+v2)
-     
+</pre>
+
+
 参数v1 = (?P<v1>\d+)
 
 参数v2 = (?P<v2>\d+)
-</pre>
 
 
