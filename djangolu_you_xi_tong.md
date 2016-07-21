@@ -90,7 +90,7 @@ url(r'^```, views.index),
 ```
 #注意（？P<v1>\d+）添加参数的好处是，可以设置默认值：
 
- url(r'^user_list/(?P<v1>\d+) views.test,{v1:222}
+ url(r'^user_list/(?P<v1>\d+) views.test,{v1:222})
 
 ```
 
