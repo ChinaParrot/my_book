@@ -35,6 +35,24 @@ url(r'^```, views.index),
 
 ##二、按照顺序放置的动态路由
 
+<pre>
+ urlpatterns = [
+     url(r'^user/(\d+)$', views.user),
+     url(r'^user_list/(\d+)/(\d+)$', views.user_list),
+ 
+ ]
+ </pre>
+ 
+^user/(\d+)$ 
+相对应的url是： ”http://127.0.0.1/uer/8“ (\d+)是匹配任意的数字，在分页时灵活运用。
 
+ 
 
+^user_list/(\d+)/(\d+)$
+
+相对应的url是： ”http://127.0.0.1/uer/8/9“，匹配到的数字会以参数的形式按照顺序传递给views里面相对应的函数
+
+1 def user_list(request,nid,nid2):
+2 
+3     return HttpResponse(nid+nid2)
 
