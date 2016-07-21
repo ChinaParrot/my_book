@@ -92,3 +92,4 @@ url(r'^```, views.index),
 我们可以根据不同的app来分类不同的url请求。
 
 首先，在urls.py里写入urls映射条目。注意要导入include方法
+
