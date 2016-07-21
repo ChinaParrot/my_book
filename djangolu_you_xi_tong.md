@@ -66,7 +66,8 @@ url(r'^```, views.index),
  url(r'^user_list/(?P<v1>\d+)/(?P<v2>\d+)$',views.user_list),
  ]
  ```
-
+ 
+(?P<v1>\d+)
 
 正则表达式的分组，相当于一个字典， key=v1, value=\d+。 {"v1":"\d+"}
 然后将此参数传递到views里对应的函数，可以不按照顺序
