@@ -86,7 +86,7 @@ for k,v in name_info.items():
     
 </pre>
 
-##dic的key和value互换
+dic的key和value互换
 
 ```
 >>> a_dict = {'a': 1, 'b': 2, 'c': 3}
