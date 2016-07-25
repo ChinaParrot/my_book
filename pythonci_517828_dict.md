@@ -85,3 +85,12 @@ for k,v in name_info.items():
     print k,v
     
 </pre>
+
+#
+
+```
+>>> a_dict = {'a': 1, 'b': 2, 'c': 3}
+>>> {value:key for key, value in a_dict.items()}
+{1: 'a', 2: 'b', 3: 'c'}
+```
+
