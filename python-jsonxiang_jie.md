@@ -92,8 +92,11 @@ print json
 *  2、decode
 
 Python 可以使用 demjson.decode() 函数解码 JSON 数据。该函数返回 Python 字段的数据类型。
+
 语法
-demjson.decode(self, txt)
+
+```demjson.decode(self, txt)```
+
 实例
 以下实例展示了Python 如何解码 JSON 对象：
 #!/usr/bin/python
