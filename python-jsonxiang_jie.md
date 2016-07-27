@@ -89,4 +89,19 @@ print json
 
 ```[{"a":1,"b":2,"c":3,"d":4,"e":5}]```
 
+* 2、decode
 
+Python 可以使用 demjson.decode() 函数解码 JSON 数据。该函数返回 Python 字段的数据类型。
+语法
+demjson.decode(self, txt)
+实例
+以下实例展示了Python 如何解码 JSON 对象：
+#!/usr/bin/python
+import demjson
+
+json = '{"a":1,"b":2,"c":3,"d":4,"e":5}';
+
+text = demjson.decode(json)
+print  text
+以上代码执行结果为：
+{u'a': 1, u'c': 3, u'b': 2, u'e': 5, u'd': 4}
