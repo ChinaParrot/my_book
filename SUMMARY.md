@@ -29,6 +29,7 @@
            * [python os.path详解](python_ospathxiang_jie.md)
            * [Python运行bash](pythonyun_xing_bash.md)
            * [python Paramiko(模仿ssh登录执行命令)](python_paramikomo_fang_ssh_deng_lu_zhi_xing_ming_4.md)
+       * python-json详解
    * [Django教程](djangojiao_cheng.md)
        * [Django基础安装](djangoji_chu_an_zhuang.md)
        * [Django基本命令使用](djangoji_ben_ming_ling_shi_yong.md)
