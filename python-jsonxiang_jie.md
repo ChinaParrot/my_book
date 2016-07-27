@@ -45,6 +45,8 @@
 
 ##四、Python JSON
 
+### Demjson
+
 在使用 Python 编码或解码 JSON 数据前，我们需要先安装 JSON 模块。本教程我们会下载 [Demjson](http://deron.meranda.us/python/demjson/) 并安装：
 
 ```
@@ -117,3 +119,8 @@ print  text
 以上代码执行结果为：
 
 ```{u'a': 1, u'c': 3, u'b': 2, u'e': 5, u'd': 4}```
+
+
+###  python 自带JSON模块
+
+
