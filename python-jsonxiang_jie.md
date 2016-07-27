@@ -10,4 +10,5 @@
 ##二、语法
 
 *  对象，即一个变量名，一个值，对应的写法是：{name:value}
+*  列表，有多个元素是，写法是：[collection, collection]
 *  
