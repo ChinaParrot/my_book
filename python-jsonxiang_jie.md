@@ -123,4 +123,7 @@ print  text
 
 ###  python 自带JSON模块
 
+1. 从python原始类型向json类型的转换过程，具体的转换如下：
+
+
 
