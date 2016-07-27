@@ -138,6 +138,18 @@ print  text
 ```
 2. 从 json 类型向 python 的转换过程，具体的转换如下：
 
-
+```
+>>> import json
+>>> json.loads('{"a": 1, "b": 2, "c": 3}') # string to python objects
+{u'a': 1, u'c': 3, u'b': 2}
+ 
+ 
+# 1.txt 中的内容
+[{"a": [1, 2, 3, 4, 5]}, {"b": [1, 2, 3]}, {"c": ["English", "Chinese"]}]
+ 
+>>> f = open('1.txt')
+>>> json.load(f)
+[{u'a': [1, 2, 3, 4, 5]}, {u'b': [1, 2, 3]}, {u'c': [u'English', u'Chinese']}]
+```
 
 
