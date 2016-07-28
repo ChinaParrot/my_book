@@ -65,6 +65,8 @@ database = dragon
 * 通过json格式读取
 
 ```
+import json
+
 CONFIGURATION_FILE = os.path.join(BASE_DIR,'configue.json')
 
 if True == os.path.exists(CONFIGURATION_FILE):
