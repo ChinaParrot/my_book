@@ -51,7 +51,13 @@ config.read(os.path.join(BASE_DIR,'configue.conf'))
 # }
 
 #配置文件
-
+[db]
+engine = mysql
+host = 127.0.0.1
+port = 3306
+user = root
+password = root
+database = dragon
 
 
 ```
