@@ -12,6 +12,9 @@ DEBUG = False
 ##2.数据库连接配置从文件读取
 
 ```
+import os
+import ConfigParser
+
 # DATABASES = {}
 # if config.get('db', 'engine') == 'mysql':
 #     DB_HOST = config.get('db', 'host')
