@@ -66,6 +66,8 @@ database = dragon
 
 ```
 import json
+import os
+BASE_DIR = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 
 CONFIGURATION_FILE = os.path.join(BASE_DIR,'configue.json')
 
