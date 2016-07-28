@@ -62,5 +62,10 @@ password = root
 database = dragon
 ```
 
+* 通过json格式读取
 
+```
+
+
+```
 
