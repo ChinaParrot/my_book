@@ -11,6 +11,8 @@ DEBUG = False
 ```
 ##2.数据库连接配置从文件读取
 
+* 通过 ConfigParser
+
 ```
 import os
 import ConfigParser
@@ -58,7 +60,7 @@ port = 3306
 user = root
 password = root
 database = dragon
-
-
 ```
+
+
 
