@@ -65,7 +65,20 @@ database = dragon
 * 通过json格式读取
 
 ```
+CONFIGURATION_FILE = os.path.join(BASE_DIR,'configue.json')
 
+if True == os.path.exists(CONFIGURATION_FILE):
+    with open(CONFIGURATION_FILE) as json_file:
+        data = json.load(json_file)
+        DATABASES['default']['ENGINE'] = data['DB']['ENGINE']
+        DATABASES['default']['NAME'] = data['DB']['NAME']
+        DATABASES['default']['USER'] = data['DB']['USER']
+        DATABASES['default']['PASSWORD'] = data['DB']['PASSWORD']
+        DATABASES['default']['HOST'] = data['DB']['HOST']
+        DATABASES['default']['PORT'] = data['DB']['PORT']
+else:
+    print "File does not exist: " +CONFIGURATION_FILE
+    exit()
 
 ```
 
