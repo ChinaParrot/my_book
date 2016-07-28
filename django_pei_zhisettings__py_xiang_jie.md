@@ -14,6 +14,10 @@ DEBUG = False
 ```
 import os
 import ConfigParser
+BASE_DIR = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+
+config = ConfigParser.ConfigParser()
+config.read(os.path.join(BASE_DIR,'configue.conf'))
 
 # DATABASES = {}
 # if config.get('db', 'engine') == 'mysql':
