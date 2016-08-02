@@ -27,6 +27,8 @@ rdclass参数用于指定网络类型，可选的值有IN、CH与HS，其中IN�
 
 实例：
 
+* A记录查询
+
 ```
 #!/usr/bin/env python
 #-*- coding:utf-8 -*-
@@ -45,5 +47,22 @@ def main():
 if __name__ == '__main__':
     main()
 ```
+
+* max记录查询
+
+```
+#!/usr/bin/env python
+#-*- coding:utf-8 -*-
+
+import dns.resolver
+domain = raw_input("Please input an domain:")
+MX = dns.resolver.query(domain,'MX')#指定查询记录类型为max
+for i in MX:
+    print'MX preference=',i.preference,' mail exchanger=',i.exchange
+
+
+
+```
+
 
 
