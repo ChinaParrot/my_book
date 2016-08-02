@@ -31,7 +31,7 @@
            * [Python运行bash](pythonyun_xing_bash.md)
            * [python Paramiko(模仿ssh登录执行命令)](python_paramikomo_fang_ssh_deng_lu_zhi_xing_ming_4.md)
            * [python之系统性能信息模块psutil](pythonzhi_xi_tong_xing_neng_xin_xi_mo_kuai_psutil.md)
-           * python之IP地址处理模块IPy
+           * [python之IP地址处理模块IPy](pythonzhi_ip_di_zhi_chu_li_mo_kuai_ipy.md)
    * [Django教程](djangojiao_cheng.md)
        * [Django基础安装](djangoji_chu_an_zhuang.md)
        * [Django基本命令使用](djangoji_ben_ming_ling_shi_yong.md)
