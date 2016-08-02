@@ -24,3 +24,4 @@ PTR记录，反向解析，与A记录相反，将IP转换成主机名；
 SOA记录，SOA标记，一个起始授权区的定义。
 
 rdclass参数用于指定网络类型，可选的值有IN、CH与HS，其中IN为默认，使用最广泛。tcp参数用于指定查询是否启用TCP协议，默认为False（不启用）。source与source_port参数作为指定查询源地址与端口，默认值为查询设备IP地址和0。raise_on_no_answer参数用于指定当查询无应答时是否触发异常，默认为True。
+
