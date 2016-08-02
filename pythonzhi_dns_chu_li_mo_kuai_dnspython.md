@@ -60,8 +60,6 @@ MX = dns.resolver.query(domain,'MX')#指定查询记录类型为max
 for i in MX:
     print'MX preference=',i.preference,' mail exchanger=',i.exchange
 
-
-
 ```
 
 
