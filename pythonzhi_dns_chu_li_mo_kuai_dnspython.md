@@ -4,8 +4,11 @@ dnspython（http://www.dnspython.org/）是Python实现的一个DNS工具包，�
 
 dnspython模块提供了大量的DNS处理方法，最常用的方法是域名查询。dnspython提供了一个DNS解析器类—resolver，使用它的query方法来实现域名的查询功能。query方法的定义如下：
  
-
+```
 query(self, qname, rdtype=1, rdclass=1, tcp=False, source=None, raise_on_no_answer=True, source_port=0) 
+
+```
+
 其中，qname参数为查询的域名。rdtype参数用来指定RR资源的类型，常用的有以下几种：
 
 A记录，将主机名转换成IP地址；
