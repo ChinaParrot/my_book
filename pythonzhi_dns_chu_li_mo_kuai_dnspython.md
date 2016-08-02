@@ -64,6 +64,7 @@ for i in MX:
 
 * NS记录查询
 
+只限输入一级域名，baidu.com。
 ```
 #!/usr/bin/env python
 #-*- coding:utf-8 -*-
