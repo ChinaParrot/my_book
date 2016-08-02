@@ -71,3 +71,4 @@ print ('二进制地址：%s' % ips.strBin())
 print ('IP地址类型：%s' % ips.iptype())
 
 ```
+
