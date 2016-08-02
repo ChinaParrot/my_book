@@ -76,7 +76,11 @@ for i in ns.response.answer:
         print j.to_text()
 
 ```
+* CNAME记录查询
 
+```
+
+```
 
 
 
