@@ -93,6 +93,8 @@ for i in cname.response.answer:
 ```
 结果返回cname后的目标域名。
 
+##实例2
 
+DNS域名轮询业务监控
 
 
