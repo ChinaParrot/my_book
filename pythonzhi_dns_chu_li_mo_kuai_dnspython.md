@@ -90,6 +90,7 @@ for i in cname.response.answer:
         print j.to_text()
 
 ```
+结果返回cname后的目标域名。
 
 
 
