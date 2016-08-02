@@ -79,6 +79,15 @@ for i in ns.response.answer:
 * CNAME记录查询
 
 ```
+#!/usr/bin/env python
+#-*- coding:utf-8 -*-
+
+import dns.resolver
+domain = raw_input("Please input an domain:")
+cname = dns.resolver.query(domain,'CNAME') #指定查询类型为CNAME记录
+for i in cname.response.answer:
+    for j in i.items:
+        print j.to_text()
 
 ```
 
