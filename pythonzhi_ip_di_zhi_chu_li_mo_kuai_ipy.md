@@ -47,3 +47,27 @@ print(IP('192.168.1.0-192.168.1.255', make_net=True))
 
  
 ```
+
+示例　根据输入的IP或子网返回网络、掩码、广播、反向解析、子网数、IP类型等信息。
+
+```
+#!/usr/bin/env python
+#-*- coding:utf-8 -*-
+
+from IPy import IP
+
+ip_s = raw_input('请输入一个ip或 网段地址：')
+ips = IP(ip_s)
+if len(ips) > 1:
+    print ('net: %s' % ips.net()) #输出网络地址
+    print ('netmask: %s' % ips.netmask()) #输出网络地址掩码
+    print ('broadcast: %s' % ips.broadcast()) #输出网络广播地址
+    print ('reverse adress: %s' % ips.reverseName()[0]) #输出地址反向解析
+    print ('subnet: %s' %len(ips)) #输出网络子网数
+else: #为单个ip地址
+    print ('reverse adress: %s' % ips.reverseName()[0])
+print ('十六进制地址：%s' % ips.strHex())
+print ('二进制地址：%s' % ips.strBin())
+print ('IP地址类型：%s' % ips.iptype())
+
+```
