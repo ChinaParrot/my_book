@@ -5,6 +5,8 @@ psutil是一个跨平台库，能够轻松的实现获取系统运行的进程�
 
 
 
+#实例详解
+
 ```
 #!/usr/bin/env python
 #-*- coding:utf-8 -*-
