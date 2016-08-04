@@ -33,6 +33,7 @@
            * [python之系统性能信息模块psutil](pythonzhi_xi_tong_xing_neng_xin_xi_mo_kuai_psutil.md)
            * [python之IP地址处理模块IPy](pythonzhi_ip_di_zhi_chu_li_mo_kuai_ipy.md)
            * [Python之DNS处理模块dnspython](pythonzhi_dns_chu_li_mo_kuai_dnspython.md)
+           * Python之difflib模块对比文件内容差异
    * [Django教程](djangojiao_cheng.md)
        * [Django基础安装](djangoji_chu_an_zhuang.md)
        * [Django基本命令使用](djangoji_ben_ming_ling_shi_yong.md)
