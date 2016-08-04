@@ -67,3 +67,26 @@ dircmp提供了三个输出报告的方法：
 * subdirs，将common_dirs目录名映射到新的dircmp对象，格式为字典类型。
 
 
+```
+#python filecmp
+#比较文件/文件夹
+
+from filecmp import *
+
+def print_diff_files(dcmp):
+    print(dcmp.diff_files)
+    for name in dcmp.diff_files:
+        print("diff_file %s found in %s and %s" % (name, dcmp.left, dcmp.right))
+    for sub_dcmp in dcmp.subdirs.values():
+        print_diff_files(sub_dcmp)
+
+def main():
+    dirA = 'c:\\Download\\'
+    dirB = 'c:\\MyDrivers\\'
+    dcmp = dircmp(dirA, dirB)
+    print_diff_files(dcmp)
+
+if __name__ == '__main__':
+    main()
+    
+```
