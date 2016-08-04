@@ -16,3 +16,4 @@ True
 False
 
 ```
+##cmpfiles（多文件对比）
