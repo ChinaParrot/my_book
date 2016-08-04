@@ -42,3 +42,4 @@ d9dfc198c249bb4ac341198a752b9458  f3
 目录对比，通过dircmp(a, b[, ignore[, hide]])类创建一个目录比较对象，其中a和b是参加比较的目录名。ignore代表文件名忽略的列表，并默认为['RCS', 'CVS', 'tags']；hide代表隐藏的列表，默认为[os.curdir，os.pardir]。dircmp类可以获得目录比较的详细信息，如只有在a目录中包括的文件、a与b都存在的子目录、匹配的文件等，同时支持递归。
 ```
 
+##dircmp（目录对比）
