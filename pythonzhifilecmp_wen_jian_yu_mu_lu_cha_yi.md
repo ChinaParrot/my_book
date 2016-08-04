@@ -20,3 +20,21 @@ False
 多文件对比，采用filecmp.cmpfiles(dir1, dir2, common[, shallow])方法，对比dir1与dir2目录给定的文件清单。该方法返回文件名的三个列表，分别为匹配、不匹配、错误。匹配为包含匹配的文件的列表，不匹配反之，错误列表包括了目录不存在文件、不具备读权限或其他原因导致的不能比较的文件清单。
 
 示例：dir1与dir2目录中指定文件清单对比。
+
+```
+两目录下文件的md5信息如下，其中f1、f2文件匹配；f3不匹配；f4、f5对应目录中不存在，无法比较。
+[root@SN2013-08-020 dir2]# md5sum *        
+d9dfc198c249bb4ac341198a752b9458  f1
+aa9aa0cac0ffc655ce9232e720bf1b9f  f2
+33d2119b71f717ef4b981e9364530a39  f3
+d9dfc198c249bb4ac341198a752b9458  f5
+ [root@SN2013-08-020 dir1]# md5sum *  
+d9dfc198c249bb4ac341198a752b9458  f1
+aa9aa0cac0ffc655ce9232e720bf1b9f  f2
+d9dfc198c249bb4ac341198a752b9458  f3
+410d6a485bcf5d2d2d223f2ada9b9c52  f4
+使用cmpfiles对比的结果如下，符合我们的预期。
+>>>filecmp.cmpfiles("/home/test/filecmp/dir1","/home/test/filecmp/dir2",['f1','f2','f3','f4','f5'])
+(['f1', 'f2'], ['f3'], ['f4', 'f5'])
+目录对比，通过dircmp(a, b[, ignore[, hide]])类创建一个目录比较对象，其中a和b是参加比较的目录名。ignore代表文件名忽略的列表，并默认为['RCS', 'CVS', 'tags']；hide代表隐藏的列表，默认为[os.curdir，os.pardir]。dircmp类可以获得目录比较的详细信息，如只有在a目录中包括的文件、a与b都存在的子目录、匹配的文件等，同时支持递归。
+```
