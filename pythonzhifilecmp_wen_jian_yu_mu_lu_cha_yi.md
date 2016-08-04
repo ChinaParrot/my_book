@@ -44,10 +44,13 @@ d9dfc198c249bb4ac341198a752b9458  f3
 
 ##dircmp（目录对比）
 dircmp提供了三个输出报告的方法：
-report()，比较当前指定目录中的内容；
-report_partial_closure()，比较当前指定目录及第一级子目录中的内容；
-report_full_closure()，递归比较所有指定目录的内容。
+
+* report()，比较当前指定目录中的内容；
+* report_partial_closure()，比较当前指定目录及第一级子目录中的内容；
+* report_full_closure()，递归比较所有指定目录的内容。
+
 为输出更加详细的比较结果，dircmp类还提供了以下属性：
+
 left，左目录，如类定义中的a；
 right，右目录，如类定义中的b；
 left_list，左目录中的文件及目录列表；
