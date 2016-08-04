@@ -43,5 +43,23 @@ d9dfc198c249bb4ac341198a752b9458  f3
 ```
 
 ##dircmp（目录对比）
-
+dircmp提供了三个输出报告的方法：
+report()，比较当前指定目录中的内容；
+report_partial_closure()，比较当前指定目录及第一级子目录中的内容；
+report_full_closure()，递归比较所有指定目录的内容。
+为输出更加详细的比较结果，dircmp类还提供了以下属性：
+left，左目录，如类定义中的a；
+right，右目录，如类定义中的b；
+left_list，左目录中的文件及目录列表；
+right_list，右目录中的文件及目录列表；
+common，两边目录共同存在的文件或目录；
+left_only，只在左目录中的文件或目录；
+right_only，只在右目录中的文件或目录；
+common_dirs，两边目录都存在的子目录；
+common_files，两边目录都存在的子文件；
+common_funny，两边目录都存在的子目录（不同目录类型或os.stat()记录的错误）；
+same_files，匹配相同的文件；
+diff_files，不匹配的文件；
+funny_files，两边目录中都存在，但无法比较的文件；
+subdirs，将common_dirs目录名映射到新的dircmp对象，格式为字典类型。
 
