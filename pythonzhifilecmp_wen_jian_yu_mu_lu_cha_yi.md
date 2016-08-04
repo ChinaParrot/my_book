@@ -66,3 +66,4 @@ dircmp提供了三个输出报告的方法：
 * funny_files，两边目录中都存在，但无法比较的文件；
 * subdirs，将common_dirs目录名映射到新的dircmp对象，格式为字典类型。
 
+
