@@ -34,7 +34,11 @@ aa9aa0cac0ffc655ce9232e720bf1b9f  f2
 d9dfc198c249bb4ac341198a752b9458  f3
 410d6a485bcf5d2d2d223f2ada9b9c52  f4
 使用cmpfiles对比的结果如下，符合我们的预期。
+
 >>>filecmp.cmpfiles("/home/test/filecmp/dir1","/home/test/filecmp/dir2",['f1','f2','f3','f4','f5'])
+
 (['f1', 'f2'], ['f3'], ['f4', 'f5'])
+
 目录对比，通过dircmp(a, b[, ignore[, hide]])类创建一个目录比较对象，其中a和b是参加比较的目录名。ignore代表文件名忽略的列表，并默认为['RCS', 'CVS', 'tags']；hide代表隐藏的列表，默认为[os.curdir，os.pardir]。dircmp类可以获得目录比较的详细信息，如只有在a目录中包括的文件、a与b都存在的子目录、匹配的文件等，同时支持递归。
 ```
+
