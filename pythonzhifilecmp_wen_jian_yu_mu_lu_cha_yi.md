@@ -67,6 +67,8 @@ dircmp提供了三个输出报告的方法：
 * subdirs，将common_dirs目录名映射到新的dircmp对象，格式为字典类型。
 
 
+例子：
+
 ```
 #python filecmp
 #比较文件/文件夹
