@@ -5,3 +5,14 @@
 filecmp提供了三个操作方法，分别为cmp（单文件对比）、cmpfiles（多文件对比）、dircmp（目录对比）
 
 
+单文件对比，采用filecmp.cmp(f1, f2[, shallow])方法，比较文件名为f1和f2的文件，相同返回True，不相同返回False，shallow默认为True，意思是只根据os.stat()方法返回的文件基本信息进行对比，比如最后访问时间、修改时间、状态改变时间等，会忽略文件内容的对比。当shallow为False时，则os.stat()与文件内容同时进行校验。
+
+示例：比较单文件的差异。
+
+```
+>>> filecmp.cmp("/home/test/filecmp/f1","/home/test/filecmp/f3")
+True
+>>> filecmp.cmp("/home/test/filecmp/f1","/home/test/filecmp/f2")
+False
+
+```
