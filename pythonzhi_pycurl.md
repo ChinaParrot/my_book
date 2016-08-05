@@ -1,9 +1,12 @@
 # Python之pycurl
 下面介绍Curl对象几个常用的方法。
 
-* close()方法，对应libcurl包中的curl_easy_cleanup方法，无参数，实现关闭、回收Curl对象。
-* perform()方法，对应libcurl包中的curl_easy_perform方法，无参数，实现Curl对象请求的提交。
-* setopt(option, value)方法，对应libcurl包中的curl_easy_setopt方法，参数option是通过libcurl的常量来指定的，参数value的值会依赖option，可以是一个字符串、整型、长整型、文件对象、列表或函数等。下面列举常用的常量列表：
+
+<pre>
+ close()方法，对应libcurl包中的curl_easy_cleanup方法，无参数，实现关闭、回收Curl对象。
+ perform()方法，对应libcurl包中的curl_easy_perform方法，无参数，实现Curl对象请求的提交。
+ setopt(option, value)方法，对应libcurl包中的curl_easy_setopt方法，参数option是通过libcurl的常量来指定的，参数value的值会依赖option，可以是一个字符串、整型、长整型、文件对象、列表或函数等。下面列举常用的常量列表：
+ 
 c = pycurl.Curl()    #创建一个curl对象
 c.setopt(pycurl.CONNECTTIMEOUT, 5)    #连接的等待时间，设置为0则不等待
 c.setopt(pycurl.TIMEOUT, 5)    #请求超时时间
@@ -18,7 +21,9 @@ c.setopt(pycurl.HEADERFUNCTION, getheader)  #将返回的HTTP HEADER定向到回
 c.setopt(pycurl.WRITEFUNCTION, getbody)    #将返回的内容定向到回调函数getbody
 c.setopt(pycurl.WRITEHEADER, fileobj)     #将返回的HTTP HEADER定向到fileobj文件对象
 c.setopt(pycurl.WRITEDATA, fileobj)    #将返回的HTML内容定向到fileobj文件对象
-getinfo(option)方法，对应libcurl包中的curl_easy_getinfo方法，参数option是通过libcurl的常量来指定的。下面列举常用的常量列表：
+getinfo(option)方法，对应libcurl包中的curl_easy_getinfo方法，参数option是通过libcurl的常量来指定的。
+
+下面列举常用的常量列表：
 c = pycurl.Curl()    #创建一个curl对象
 c.getinfo(pycurl.HTTP_CODE)    #返回的HTTP状态码
 c.getinfo(pycurl.TOTAL_TIME)    #传输结束所消耗的总时间
@@ -32,4 +37,6 @@ c.getinfo(pycurl.SIZE_DOWNLOAD)    #下载数据包大小
 c.getinfo(pycurl.SPEED_DOWNLOAD)    #平均下载速度
 c.getinfo(pycurl.SPEED_UPLOAD)    #平均上传速度
 c.getinfo(pycurl.HEADER_SIZE)    #HTTP头部大小
+
 我们利用libcurl包提供的这些常量值来达到探测Web服务质量的目的。
+</pre>
