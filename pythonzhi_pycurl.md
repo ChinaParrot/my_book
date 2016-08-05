@@ -5,7 +5,10 @@
 <pre>
  close()方法，对应libcurl包中的curl_easy_cleanup方法，无参数，实现关闭、回收Curl对象。
  perform()方法，对应libcurl包中的curl_easy_perform方法，无参数，实现Curl对象请求的提交。
- setopt(option, value)方法，对应libcurl包中的curl_easy_setopt方法，参数option是通过libcurl的常量来指定的，参数value的值会依赖option，可以是一个字符串、整型、长整型、文件对象、列表或函数等。下面列举常用的常量列表：
+ setopt(option, value)方法，对应libcurl包中的curl_easy_setopt方法，参数option是通过libcurl的常量来指定的，参数value的值会依赖option，可以是一个字符串、整型、长整型、文件对象、列表或函数等。
+ 
+ 
+下面列举常用的常量列表：
  
 c = pycurl.Curl()    #创建一个curl对象
 c.setopt(pycurl.CONNECTTIMEOUT, 5)    #连接的等待时间，设置为0则不等待
