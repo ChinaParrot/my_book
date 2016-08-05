@@ -70,7 +70,7 @@ Worksheet类代表了一个Excel工作表，是XlsxWriter模块操作Excel内容
 
 ```worksheet.write_string(0, 0, 'Your text here')；```
 
-write_number()    写入数字类型数据，如：
+* ite_number()    写入数字类型数据，如：
 worksheet.write_number('A2', 2.3451)；
 write_blank()    写入空类型数据，如：
 worksheet.write('A2', None)；
