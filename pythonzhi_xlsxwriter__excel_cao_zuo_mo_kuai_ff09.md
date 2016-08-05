@@ -136,38 +136,36 @@ worksheet.set_column('E:G', None, None, {'hidden': 1})    #隐藏E到G列单元�
 |类别|	描述|	属性	|方法名|
 |-|-|-|-|
 |字体|	字体|	font_name|	set_font_name()|
-字体大小	font_size	set_font_size()
-字体颜色	font_color	set_font_color()
-加粗	bold	set_bold()
-斜体	italic	set_italic()
-下划线	underline	set_underline()
-删除线	font_strikeout	set_font_strikeout()
-上标/下标	font_script	set_font_script()
-数字	数字格式	num_format	set_num_format()
-保护	表格锁定	locked	set_locked()
-隐藏公式	hidden	set_hidden()
-对齐	水平对齐	align	set_align()
-垂直对齐	valign	set_align()
-旋转	rotation	set_rotation()
-文本包装	text_wrap	set_text_warp()
-底端对齐	text_justlast	set_text_justlast()
-中心对齐	center_across	set_center_across
-缩进	indent	set_indent()
-缩小填充	shrink	set_shrink()
-模式
-表格模式
-pattern	set_pattern()
-背景颜色	bg_color	set_bg_color()
-前景颜色	fg_color	set_fg_color()
-边框	表格边框	border	set_border()
-底部边框	bottom	set_bottom()
-上边框	top	set_top()
-右边框	right	set_right()
-边框颜色	border_color	set_border_color()
-底部颜色	bottom_color	set_bottom_color()
-顶部颜色	top_color	set_top_color()
-左边颜色	left_color	set_left_color()
-右边颜色	right_color	set_right_color()
+||字体大小|	font_size|	set_font_size()|
+||字体颜色|	font_color|	set_font_color()|
+||加粗|	bold|	set_bold()|
+||斜体|	italic|	set_italic()|
+||下划线	|underline|	set_underline()|
+||删除线|	font_strikeout|	set_font_strikeout()|
+||上标/下标	|font_script	|set_font_script()|
+|数字	|数字格式|	num_format|	set_num_format()|
+|保护|	表格锁定	|locked	|set_locked()|
+||隐藏公式	|hidden	|set_hidden()|
+|对齐|	水平对齐	|align	|set_align()|
+||垂直对齐|	valign	|set_align()|
+||旋转	|rotation|	set_rotation()|
+||文本包装|	text_wrap	|set_text_warp()|
+||底端对齐	|text_justlast	|set_text_justlast()|
+||中心对齐	|center_across|	set_center_across|
+||缩进	|indent|	set_indent()|
+||缩小填充|	shrink|	set_shrink()|
+|模式|表格模式|pattern|	set_pattern()|
+||背景颜色	|bg_color|	set_bg_color()|
+||前景颜色	|fg_color|	set_fg_color()|
+|边框	|表格边框|	border|	set_border()|
+||底部边框|	bottom	|set_bottom()|
+||上边框|	top|	set_top()|
+||右边框	|right|	set_right()|
+||边框颜色	|border_color|	set_border_color()|
+||底部颜色	|bottom_color|	set_bottom_color()|
+||顶部颜色	|top_color|	set_top_color()|
+||左边颜色	|left_color	|set_left_color()|
+||右边颜色	|right_color|	set_right_color()|
 
 
 ##3. Chart类
