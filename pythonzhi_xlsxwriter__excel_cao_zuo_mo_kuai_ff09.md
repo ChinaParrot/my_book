@@ -43,6 +43,7 @@ worksheet4 = workbook.add_worksheet()             # Sheet4
 ![](worksheet.png)
 
 add_format([properties])方法，作用是在工作表中创建一个新的格式对象来格式化单元格。参数properties（dict类型）为指定一个格式属性的字典，例如设置一个加粗的格式对象，workbook.add_format({'bold': True})。通过Format methods（格式化方法）也可以实现格式的设置，等价的设置加粗格式代码如下：
+
 ```
 bold = workbook.add_format()
 bold.set_bold()
