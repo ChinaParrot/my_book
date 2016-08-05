@@ -49,5 +49,6 @@ bold = workbook.add_format()
 bold.set_bold()
 ```
 更多格式化方法见http://xlsxwriter.readthedocs.org/working_with_formats.html。
+
 add_chart（options）方法，作用是在工作表中创建一个图表对象，内部是通过insert_chart()方法来实现，参数options（dict类型）为图表指定一个字典属性，例如设置一个线条类型的图表对象，代码为chart = workbook.add_chart({'type': 'line'})。
 close()方法，作用是关闭工作表文件，如workbook.close()。
