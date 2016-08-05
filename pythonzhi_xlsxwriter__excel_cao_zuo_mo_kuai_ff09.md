@@ -1,7 +1,7 @@
 # Python之XlsxWriter（Excel操作模块）
 
 
-以下演示基本excel操作：
+以下演示基本excel操作
 
 ```
 #!/usr/bin/env python
