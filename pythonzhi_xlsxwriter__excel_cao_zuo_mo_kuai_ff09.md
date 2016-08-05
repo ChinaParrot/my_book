@@ -106,10 +106,10 @@ worksheet.write(5, 0, '')               # write_blank()
 worksheet.write(6, 0, None)             # write_blank()
 
 ```
-set_row（row, height, cell_format, options）方法，作用是设置行单元格的属性。参数row（int类型）指定行位置，起始下标为0；参数height（float类型）设置行高，单位像素；参数cell_format（format类型）指定格式对象；参数options（dict类型）设置行hidden（隐藏）、level（组合分级）、collapsed（折叠）。操作示例如下：
+* set_row（row, height, cell_format, options）方法，作用是设置行单元格的属性。参数row（int类型）指定行位置，起始下标为0；参数height（float类型）设置行高，单位像素；参数cell_format（format类型）指定格式对象；参数options（dict类型）设置行hidden（隐藏）、level（组合分级）、collapsed（折叠）。操作示例如下：
 worksheet.write('A1', 'Hello')     #在A1单元格写入'Hellow'字符串
 cell_format = workbook.add_format({'bold': True})    #定义一个加粗的格式对象
 worksheet.set_row(0, 40, cell_format)    #设置第1行单元格高度为40像素，且引用加粗
                                          #格式对象
 worksheet.set_row(1, None, None, {'hidden': True})    #隐藏第2行单元格
-上述示例将创建一个如图3-4所示的工作表。
+ 
