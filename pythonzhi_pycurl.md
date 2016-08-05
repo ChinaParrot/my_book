@@ -1,9 +1,7 @@
 # Python之pycurl
 下面介绍Curl对象几个常用的方法。
 
-
-<pre>
- 
+<pre> 
 close()方法，对应libcurl包中的curl_easy_cleanup方法，无参数，实现关闭、回收Curl对象。
  
 perform()方法，对应libcurl包中的curl_easy_perform方法，无参数，实现Curl对象请求的提交。
