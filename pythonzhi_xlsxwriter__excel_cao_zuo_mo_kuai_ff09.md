@@ -42,3 +42,9 @@ worksheet4 = workbook.add_worksheet()             # Sheet4
 ```
 ![](worksheet.png)
 
+add_format([properties])方法，作用是在工作表中创建一个新的格式对象来格式化单元格。参数properties（dict类型）为指定一个格式属性的字典，例如设置一个加粗的格式对象，workbook.add_format({'bold': True})。通过Format methods（格式化方法）也可以实现格式的设置，等价的设置加粗格式代码如下：
+bold = workbook.add_format()
+bold.set_bold()
+更多格式化方法见http://xlsxwriter.readthedocs.org/working_with_formats.html。
+add_chart（options）方法，作用是在工作表中创建一个图表对象，内部是通过insert_chart()方法来实现，参数options（dict类型）为图表指定一个字典属性，例如设置一个线条类型的图表对象，代码为chart = workbook.add_chart({'type': 'line'})。
+close()方法，作用是关闭工作表文件，如workbook.close()。
