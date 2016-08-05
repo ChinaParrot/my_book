@@ -65,9 +65,11 @@ close()方法，作用是关闭工作表文件，如workbook.close()。
 Worksheet类代表了一个Excel工作表，是XlsxWriter模块操作Excel内容最核心的一个类，例如将数据写入单元格或工作表格式布局等。Worksheet对象不能直接实例化，取而代之的是通过Workbook对象调用add_worksheet()方法来创建。Worksheet类提供了非常丰富的操作Excel内容的方法，其中几个常用的方法如下：
 
 
-write(row, col, *args)方法，作用是写普通数据到工作表的单元格，参数row为行坐标，col为列坐标，坐标索引起始值为0；*args无名字参数为数据内容，可以为数字、公式、字符串或格式对象。为了简化不同数据类型的写入过程，write方法已经作为其他更加具体数据类型方法的别名，包括：
-write_string()    写入字符串类型数据，如：
-worksheet.write_string(0, 0, 'Your text here')；
+* write(row, col, *args)方法，作用是写普通数据到工作表的单元格，参数row为行坐标，col为列坐标，坐标索引起始值为0；*args无名字参数为数据内容，可以为数字、公式、字符串或格式对象。为了简化不同数据类型的写入过程，write方法已经作为其他更加具体数据类型方法的别名，包括：
+* ite_string()    写入字符串类型数据，如：
+
+```worksheet.write_string(0, 0, 'Your text here')；```
+
 write_number()    写入数字类型数据，如：
 worksheet.write_number('A2', 2.3451)；
 write_blank()    写入空类型数据，如：
