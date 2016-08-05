@@ -72,21 +72,31 @@ Worksheet类代表了一个Excel工作表，是XlsxWriter模块操作Excel内容
 
 * ite_number()    写入数字类型数据，如：
 
-worksheet.write_number('A2', 2.3451)；
+```worksheet.write_number('A2', 2.3451)；```
 
-write_blank()    写入空类型数据，如：
+ * write_blank()    写入空类型数据，如：
 
-worksheet.write('A2', None)；
+```worksheet.write('A2', None)；```
 
-write_formula()    写入公式类型数据，如：
-worksheet.write_formula(2, 0, '=SUM(B1:B5)')；
-write_datetime()    写入日期类型数据，如：
-worksheet.write_datetime(7, 0,datetime.datetime.strptime('2013-01-23', '%Y-%m-%d'),workbook.add_format({'num_format': 'yyyy-mm-dd'}))；
-write_boolean()    写入逻辑类型数据，如：
-worksheet.write_boolean(0, 0, True)；
-write_url()    写入超链接类型数据，如：
-worksheet.write_url('A1', 'ftp://www.python.org/')。
+ * write_formula()    写入公式类型数据，如：
+
+```worksheet.write_formula(2, 0, '=SUM(B1:B5)')；```
+
+ * write_datetime()    写入日期类型数据，如：
+ 
+```worksheet.write_datetime(7, 0,datetime.datetime.strptime('2013-01-23', '%Y-%m-%d'),workbook.add_format({'num_format': 'yyyy-mm-dd'}))；```
+ 
+ * write_boolean()    写入逻辑类型数据，如：
+ 
+```worksheet.write_boolean(0, 0, True)；```
+ 
+ * write_url()    写入超链接类型数据，如：
+
+```worksheet.write_url('A1', 'ftp://www.python.org/')。```
+
 下列通过具体的示例来观察别名write方法与数据类型方法的对应关系，代码如下：
+
+```
 worksheet.write(0, 0, 'Hello')          # write_string()
 worksheet.write(1, 0, 'World')          # write_string()
 worksheet.write(2, 0, 2)                # write_number()
@@ -94,3 +104,12 @@ worksheet.write(3, 0, 3.00001)          # write_number()
 worksheet.write(4, 0, '=SIN(PI()/4)')   # write_formula()
 worksheet.write(5, 0, '')               # write_blank()
 worksheet.write(6, 0, None)             # write_blank()
+
+```
+set_row（row, height, cell_format, options）方法，作用是设置行单元格的属性。参数row（int类型）指定行位置，起始下标为0；参数height（float类型）设置行高，单位像素；参数cell_format（format类型）指定格式对象；参数options（dict类型）设置行hidden（隐藏）、level（组合分级）、collapsed（折叠）。操作示例如下：
+worksheet.write('A1', 'Hello')     #在A1单元格写入'Hellow'字符串
+cell_format = workbook.add_format({'bold': True})    #定义一个加粗的格式对象
+worksheet.set_row(0, 40, cell_format)    #设置第1行单元格高度为40像素，且引用加粗
+                                         #格式对象
+worksheet.set_row(1, None, None, {'hidden': True})    #隐藏第2行单元格
+上述示例将创建一个如图3-4所示的工作表。
