@@ -60,3 +60,5 @@ chart = workbook.add_chart({'type': 'line'})
 close()方法，作用是关闭工作表文件，如workbook.close()。
 
 
+##2. Worksheet类
+
