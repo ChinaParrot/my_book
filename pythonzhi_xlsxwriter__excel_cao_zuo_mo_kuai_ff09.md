@@ -130,3 +130,5 @@ worksheet.set_column(0,1, 10,cell_format)
 worksheet.set_column('C:D', 20)    #设置C到D列单元格宽度为20像素
 worksheet.set_column('E:G', None, None, {'hidden': 1})    #隐藏E到G列单元格
 ```
+##3. Chart类
+
