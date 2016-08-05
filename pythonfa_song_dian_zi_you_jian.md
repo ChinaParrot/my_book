@@ -11,6 +11,8 @@ SMTP是发送邮件的协议，Python内置对SMTP的支持，可以发送纯文
 
 Python对SMTP支持有smtplib和email两个模块，email负责构造邮件，smtplib负责发送邮件。
 
+SMTP类具有如下方法：
+
 
 * SMTP.connect([host[, port]])方法，连接远程smtp主机方法，host为远程主机地址，port为远程主机smtp端口，默认25，也可以直接使用host:port形式来表示，例如：SMTP.connect（“smtp.163.com”，“25”）。
 * SMTP.login(user, password)方法，远程smtp主机的校验方法，参数为用户名与密码，如SMTP.login（“python_2014@163.com”，“sdjkg358”）。
