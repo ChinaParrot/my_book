@@ -133,8 +133,9 @@ worksheet.set_column('E:G', None, None, {'hidden': 1})    #隐藏E到G列单元�
 
 
 
-类别	描述	属性	方法名
-字体	字体	font_name	set_font_name()
+|类别|	描述|	属性	|方法名|
+|-|-|-|-|
+|字体|	字体|	font_name|	set_font_name()|
 字体大小	font_size	set_font_size()
 字体颜色	font_color	set_font_color()
 加粗	bold	set_bold()
