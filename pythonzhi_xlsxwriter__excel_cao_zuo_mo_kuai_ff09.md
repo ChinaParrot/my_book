@@ -218,3 +218,4 @@ set_size(options)方法，设置图表大小，如chart.set_size({'width': 720, 
 
 set_title(options)方法，设置图表标题，如chart.set_title({'name': 'Year End Results'})
 
+et_style(style_id)方法，设置图表样式，style_id为不同数字则代表不同样式
