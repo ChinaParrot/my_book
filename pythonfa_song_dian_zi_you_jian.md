@@ -11,6 +11,9 @@ SMTP是发送邮件的协议，Python内置对SMTP的支持，可以发送纯文
 
 Python对SMTP支持有smtplib和email两个模块，email负责构造邮件，smtplib负责发送邮件。
 
+
+
+
 ###1. 如果我们本机没有 sendmail等，也可以使用其他邮件服务商的 SMTP（QQ、网易、Google等）。
 
 <pre>
