@@ -40,4 +40,5 @@ worksheet3 = workbook.add_worksheet('Data')       # Data
 worksheet4 = workbook.add_worksheet()             # Sheet4
 
 ```
+![](worksheet.png)
 
