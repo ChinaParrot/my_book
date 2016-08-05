@@ -36,7 +36,7 @@
            * [Python之difflib模块对比文件内容差异](pythonzhidifflib_mo_kuai_dui_bi_wen_jian_nei_rong_.md)
            * [Python之filecmp文件与目录差异](pythonzhifilecmp_wen_jian_yu_mu_lu_cha_yi.md)
            * [Python之pycurl](pythonzhi_pycurl.md)
-           * Python之XlsxWriter（Excel操作模块）
+           * [Python之XlsxWriter（Excel操作模块）](pythonzhi_xlsxwriter__excel_cao_zuo_mo_kuai_ff09.md)
    * [Django教程](djangojiao_cheng.md)
        * [Django基础安装](djangoji_chu_an_zhuang.md)
        * [Django基本命令使用](djangoji_ben_ming_ling_shi_yong.md)
