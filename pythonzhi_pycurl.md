@@ -43,3 +43,10 @@ c.getinfo(pycurl.HEADER_SIZE)    #HTTP头部大小
 
 我们利用libcurl包提供的这些常量值来达到探测Web服务质量的目的。
 </pre>
+
+
+实现探测Web服务质量
+
+```
+
+```
