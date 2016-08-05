@@ -117,12 +117,16 @@ worksheet.set_row(1, None, None, {'hidden': True})    #隐藏第2行单元格
  
 ```
 
-* set_column（first_col, last_col, width, cell_format, options）方法，作用为设置一列或多列单元格属性。参数first_col（int类型）指定开始列位置，起始下标为0；参数last_col（int类型）指定结束列位置，起始下标为0，可以设置成与first_col一样；参数width（float类型）设置列宽；参数cell_format（Format类型）指定格式对象；参数options（dict类型）设置行hidden（隐藏）、level（组合分级）、collapsed（折叠）。操作示例如下：
+* set_column（first_col, last_col, width, cell_format, options）方法，作用为设置一列或多列单元格属性。参数first_col（int类型）指定开始列位置，起始下标为0；参数last_col（int类型）指定结束列位置，起始下标为0，可以设置成与first_col一样；参数width（float类型）设置列宽；参数cell_format（Format类型）指定格式对象；参数options（dict类型）设置行hidden（隐藏）、level（组合分级）、collapsed（折叠）。
+
+操作示例如下：
+
+```
 worksheet.write('A1', 'Hello')     #在A1单元格写入'Hello'字符串
 worksheet.write('B1', 'World')     #在B1单元格写入'World'字符串
 cell_format = workbook.add_format({'bold': True})    #定义一个加粗的格式对象
-                                   #设置0到1即(A到B) 列单元格宽度为10像素，
-                                    且引用加粗格式对象
+#设置0到1即(A到B) 列单元格宽度为10像素，且引用加粗格式对象
 worksheet.set_column(0,1, 10,cell_format)
 worksheet.set_column('C:D', 20)    #设置C到D列单元格宽度为20像素
 worksheet.set_column('E:G', None, None, {'hidden': 1})    #隐藏E到G列单元格
+```
