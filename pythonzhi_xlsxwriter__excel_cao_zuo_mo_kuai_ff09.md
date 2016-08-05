@@ -62,3 +62,27 @@ close()方法，作用是关闭工作表文件，如workbook.close()。
 
 ##2. Worksheet类
 
+Worksheet类代表了一个Excel工作表，是XlsxWriter模块操作Excel内容最核心的一个类，例如将数据写入单元格或工作表格式布局等。Worksheet对象不能直接实例化，取而代之的是通过Workbook对象调用add_worksheet()方法来创建。Worksheet类提供了非常丰富的操作Excel内容的方法，其中几个常用的方法如下：
+write(row, col, *args)方法，作用是写普通数据到工作表的单元格，参数row为行坐标，col为列坐标，坐标索引起始值为0；*args无名字参数为数据内容，可以为数字、公式、字符串或格式对象。为了简化不同数据类型的写入过程，write方法已经作为其他更加具体数据类型方法的别名，包括：
+write_string()    写入字符串类型数据，如：
+worksheet.write_string(0, 0, 'Your text here')；
+write_number()    写入数字类型数据，如：
+worksheet.write_number('A2', 2.3451)；
+write_blank()    写入空类型数据，如：
+worksheet.write('A2', None)；
+write_formula()    写入公式类型数据，如：
+worksheet.write_formula(2, 0, '=SUM(B1:B5)')；
+write_datetime()    写入日期类型数据，如：
+worksheet.write_datetime(7, 0,datetime.datetime.strptime('2013-01-23', '%Y-%m-%d'),workbook.add_format({'num_format': 'yyyy-mm-dd'}))；
+write_boolean()    写入逻辑类型数据，如：
+worksheet.write_boolean(0, 0, True)；
+write_url()    写入超链接类型数据，如：
+worksheet.write_url('A1', 'ftp://www.python.org/')。
+下列通过具体的示例来观察别名write方法与数据类型方法的对应关系，代码如下：
+worksheet.write(0, 0, 'Hello')          # write_string()
+worksheet.write(1, 0, 'World')          # write_string()
+worksheet.write(2, 0, 2)                # write_number()
+worksheet.write(3, 0, 3.00001)          # write_number()
+worksheet.write(4, 0, '=SIN(PI()/4)')   # write_formula()
+worksheet.write(5, 0, '')               # write_blank()
+worksheet.write(6, 0, None)             # write_blank()
