@@ -15,6 +15,7 @@ pip install scapy
 ```
 traceroute(target, dport=80, minttl=1, maxttl=30, sport=<RandShort>, l4=None, filter=None, 
 timeout=2, verbose=None, **kargs)
+
 ```
 
 该方法实现TCP跟踪路由功能，关键参数说明如下：
