@@ -8,4 +8,6 @@ scapy模板需要tcpdump程序支持，生成报表需要graphviz、ImageMagick�
 
 yum -y install tcpdump graphviz ImageMagick 
 
+pip install scapy
+
 
