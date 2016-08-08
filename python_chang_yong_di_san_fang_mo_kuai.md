@@ -15,3 +15,17 @@ scapy（http://www.secdev.org/projects/scapy/） 是一个强大的交互式数�
 # python setup.py install 
 ```
 
+scapy模块提供了众多网络数据包操作的方法，包括发包send()、SYN\ ACK扫描、嗅探sniff()、抓包wrpcap()、TCP路由跟踪traceroute()等，本节主要关注服务监控内容接下来详细介绍traceroute()方法，其具体定义如下：
+ 
+
+traceroute(target, dport=80, minttl=1, maxttl=30, sport=<RandShort>, l4=None, filter=None, timeout=2, verbose=None, **kargs) 
+该方法实现TCP跟踪路由功能，关键参数说明如下：
+
+target：跟踪的目标对象，可以是域名或IP，类型为列表，支持同时指定多个目标，如["www.qq.com","www.baidu.com","www.google.com.hk"]；
+
+dport：目标端口，类型为列表，支持同时指定多个端口，如[80,443]；
+
+minttl：指定路由跟踪的最小跳数（节点数）；
+
+maxttl：指定路由跟踪的最大跳数（节点数）。
+ 
