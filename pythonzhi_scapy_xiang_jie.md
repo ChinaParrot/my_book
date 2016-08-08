@@ -22,7 +22,7 @@ timeout=2, verbose=None, **kargs)
 
 该方法实现TCP跟踪路由功能，关键参数说明如下：
 
-target：跟踪的目标对象，可以是域名或IP，类型为列表，支持同时指定多个目标，如["www.qq.com","www.baidu.com","www.google.com.hk"]；
-dport：目标端口，类型为列表，支持同时指定多个端口，如[80,443]；
-minttl：指定路由跟踪的最小跳数（节点数）；
-maxttl：指定路由跟踪的最大跳数（节点数）。
+* target：跟踪的目标对象，可以是域名或IP，类型为列表，支持同时指定多个目标，如["www.qq.com","www.baidu.com","www.google.com.hk"]；
+* dport：目标端口，类型为列表，支持同时指定多个端口，如[80,443]；
+* minttl：指定路由跟踪的最小跳数（节点数）；
+* maxttl：指定路由跟踪的最大跳数（节点数）。
