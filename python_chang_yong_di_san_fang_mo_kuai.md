@@ -27,6 +27,7 @@ traceroute(target, dport=80, minttl=1, maxttl=30, sport=<RandShort>, l4=None, fi
 
 * minttl：指定路由跟踪的最小跳数（节点数）；
 
-*　maxttl：指定路由跟踪的最大跳数（节点数）。
+* maxttl：指定路由跟踪的最大跳数（节点数）。
+ 
  
  
