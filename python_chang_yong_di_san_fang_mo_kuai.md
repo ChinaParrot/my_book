@@ -19,6 +19,7 @@ scapy模块提供了众多网络数据包操作的方法，包括发包send()、
  
 
 traceroute(target, dport=80, minttl=1, maxttl=30, sport=<RandShort>, l4=None, filter=None, timeout=2, verbose=None, **kargs) 
+
 该方法实现TCP跟踪路由功能，关键参数说明如下：
 
 * target：跟踪的目标对象，可以是域名或IP，类型为列表，支持同时指定多个目标，如["www.qq.com","www.baidu.com","www.google.com.hk"]；
