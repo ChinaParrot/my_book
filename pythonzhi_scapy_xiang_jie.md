@@ -5,4 +5,7 @@ scapy（http://www.secdev.org/projects/scapy/） 是一个强大的交互式数�
 scapy模块的安装方法如下：
 
 scapy模板需要tcpdump程序支持，生成报表需要graphviz、ImageMagick图像处理包支持
+
 yum -y install tcpdump graphviz ImageMagick 
+
+
