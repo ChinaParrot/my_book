@@ -33,4 +33,8 @@ traceroute(target, dport=80, minttl=1, maxttl=30, sport=<RandShort>, l4=None, fi
 * maxttl：指定路由跟踪的最大跳数（节点数）。
  
  
- 
+实现TCP探测目标服务路由轨迹
+
+```
+
+```
