@@ -37,7 +37,7 @@
            * [Python之filecmp文件与目录差异](pythonzhifilecmp_wen_jian_yu_mu_lu_cha_yi.md)
            * [Python之pycurl](pythonzhi_pycurl.md)
            * [Python之scapy详解](pythonzhi_scapy_xiang_jie.md)
-           * python之pexpect详解
+           * [python之pexpect详解](pythonzhi_pexpect_xiang_jie.md)
    * [Django教程](djangojiao_cheng.md)
        * [Django基础安装](djangoji_chu_an_zhuang.md)
        * [Python之XlsxWriter（Excel操作模块）](pythonzhi_xlsxwriter__excel_cao_zuo_mo_kuai_ff09.md)
