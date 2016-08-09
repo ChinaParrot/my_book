@@ -157,5 +157,6 @@ sendeof() 发送eof
 >>> pexpect.run('scp /root/a.txt 192.168.56.102:/root',withexitstatus=1,events={'password': '123456\n'})
 ("root@192.168.56.102's password: \r\n\ra.txt        
   ```
-  ##
+  ##pxssh 类
+  
   
