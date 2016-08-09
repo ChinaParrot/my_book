@@ -93,3 +93,5 @@ elif index ==3:
   do_something_completely_different()
   
 ```
+以上等价于
+
