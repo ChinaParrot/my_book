@@ -35,3 +35,6 @@ child = pexpect.spawn('/usr/bin/ftp',[])
 child = pexpect.spawn('/usr/bin/ssh' ,['user@example.com'])
 child = pexpect.spawn('ls', ['-latr', '/tmp']) 
 ```
+参数timeout为等待结果的超时时间；参数maxread 为pexpect从终端控制台一次读取的最大字节数，searchwindowsize 参数为匹配缓冲区字符串的位置，默认是从开始位置匹配。
+
+
