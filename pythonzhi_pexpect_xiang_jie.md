@@ -77,4 +77,6 @@ child = pexpect.spawn("echo 'foobar'")
 print child.expect(['bar','foo','foobar'])
 输出：1，即'foo'被匹配
 ```
-参数timeout 指定等待匹配结果的超时时间，单位为秒。当超时被触发时，
+参数timeout 指定等待匹配结果的超时时间，单位为秒。当超时被触发时，expect将匹配到pexpect.TIMEOUT;参数searchwindows为匹配缓冲区字符串的位置，默认是从开始位置匹配。
+
+
