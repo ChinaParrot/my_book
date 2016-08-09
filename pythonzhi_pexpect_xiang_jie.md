@@ -139,6 +139,10 @@ sendcontrol(self,char) 发送控制字符，如child.sendcontrol('c') 等价于"
 sendeof() 发送eof
 
 ```
+
+实例：
+
+
  
  ##run函数
   run是使用pexpect进行封装的调用外部命令的函数，类似os.system或os.popen方法，不同的是，使用run()可以同时获得命令的输出结果及命令的退出状态。
