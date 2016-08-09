@@ -31,5 +31,7 @@ child = pexpect.spawn('ls -latr /tmp')
 当子程序需要参数时，还可以使用python列表来代替参数项：
 
 ```
-
+child = pexpect.spawn('/usr/bin/ftp',[]) 
+child = pexpect.spawn('/usr/bin/ssh' ,['user@example.com'])
+child = pexpect.spawn('ls', ['-latr', '/tmp']) 
 ```
