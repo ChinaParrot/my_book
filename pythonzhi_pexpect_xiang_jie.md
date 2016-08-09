@@ -127,4 +127,5 @@ print "after:" + child.after
 before： root@127.0.0.1's
 agter: password:
 ```
-##
+##read 相关方法
+
