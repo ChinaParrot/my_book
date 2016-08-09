@@ -37,4 +37,7 @@ child = pexpect.spawn('ls', ['-latr', '/tmp'])
 ```
 参数timeout为等待结果的超时时间；参数maxread 为pexpect从终端控制台一次读取的最大字节数，searchwindowsize 参数为匹配缓冲区字符串的位置，默认是从开始位置匹配。
 
+注意的是，pexpect不会解析shell命令中的元字符，包括重定向‘>’、管道‘|’或者‘*’，当然我没有可以通过将这三个特殊元字符的命令作为/bin/bash 的参数进行调用，例如
+
+
 
