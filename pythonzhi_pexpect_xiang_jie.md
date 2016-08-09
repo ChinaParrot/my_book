@@ -40,6 +40,9 @@ child = pexpect.spawn('ls', ['-latr', '/tmp'])
 注意的是，pexpect不会解析shell命令中的元字符，包括重定向‘>’、管道‘|’或者‘*’，当然我没有可以通过将这三个特殊元字符的命令作为/bin/bash 的参数进行调用，例如
 
 ```
+child = pexpect.spawn('/bin/bash -c "ls -l|grep LOG >logs.txt"')
+child.expect(pexpect.EOF)
 
 ```
+
 
