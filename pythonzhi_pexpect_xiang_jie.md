@@ -24,5 +24,7 @@ class pexpect.spawn(command,args=[],timeout=30,maxread=2000,searchwindowsize=Non
 其中command参数可以是任意已知的系统命令，比如：
 
 ```
-
+child = pexpect.spawn('/usr/bin/ftp') 
+child = pexpect.spawn('/usr/bin/ssh user@example.com')
+child = pexpect.spawn('ls -latr /tmp') 
 ```
