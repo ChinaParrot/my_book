@@ -111,5 +111,7 @@ try:
 expect 方法有两个非常棒的成员：before与after。before成员保存了最近匹配成功之前的内容，after成员保存了最近匹配成功之后的内容。例如：
 
 ```
+import pexpect
+import sys
 
 ```
