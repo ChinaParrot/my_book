@@ -140,7 +140,7 @@ sendeof() 发送eof
 
 ```
 
-实例：
+实例：ssh 的使用
 ```
 #!/usr/bin/env python
 
