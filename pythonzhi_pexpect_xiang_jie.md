@@ -133,7 +133,6 @@ agter: password:
 
 ```
 send(self,s) 发送命令，不回车
-
-sendline
+sendline(self,s)
 
 ```
