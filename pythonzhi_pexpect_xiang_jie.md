@@ -82,5 +82,6 @@ print child.expect(['bar','foo','foobar'])
 当pexpect.EOF、pexpect.TIMEOUT作为列表参数时，匹配时将返回处列表中的索引ID,例如：
 
 ```
+index = p.expect(['good','bad',pexpect.EOF,pexpect.TIMEOUT])
 
 ```
