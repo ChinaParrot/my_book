@@ -28,3 +28,4 @@ child = pexpect.spawn('/usr/bin/ftp')
 child = pexpect.spawn('/usr/bin/ssh user@example.com')
 child = pexpect.spawn('ls -latr /tmp') 
 ```
+
