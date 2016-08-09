@@ -85,5 +85,11 @@ print child.expect(['bar','foo','foobar'])
 index = p.expect(['good','bad',pexpect.EOF,pexpect.TIMEOUT])
 if index == 0:
   do_someting()
-
+elif index ==1:
+  do_something_else()
+elif index ==2:
+  do_some_other_thing()
+elif index ==3:
+  do_something_completely_different()
+  
 ```
