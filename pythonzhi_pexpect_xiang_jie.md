@@ -141,6 +141,7 @@ sendeof() 发送eof
 ```
  
  ##run函数
+  run是使用pexpect进行封装的调用外部命令的函数，类似os.system或os.popen方法，不同的是，使用run()可以同时获得命令的输出结果及命令的退出状态。
   
   ```
   run(command, timeout=-1, withexitstatus=False, events=None, extra_args=None, logfile=None, cwd=None, env=None)
