@@ -63,8 +63,4 @@ child.logfile = fout
 输出控制台：
 child = pexpect.spawn('some_command')
 child.logfile = sys.stdout
-
-
-
-
 ```
