@@ -79,4 +79,6 @@ print child.expect(['bar','foo','foobar'])
 ```
 参数timeout 指定等待匹配结果的超时时间，单位为秒。当超时被触发时，expect将匹配到pexpect.TIMEOUT;参数searchwindows为匹配缓冲区字符串的位置，默认是从开始位置匹配。
 
+当pexpect.EOF、pexpect.TIMEOUT作为列表参数时，匹配时将返回处列表中的索引ID,例如：
+
 
