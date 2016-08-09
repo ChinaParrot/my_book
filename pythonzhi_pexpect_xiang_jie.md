@@ -12,3 +12,6 @@ child.expect('Password:') #expect方法等待子程序产生的输出，判断�
 child.sendline(mypassword) #匹配后则发送密码串进行回应
 
 ```
+
+##spawn 类
+
