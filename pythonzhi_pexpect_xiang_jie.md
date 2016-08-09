@@ -127,7 +127,7 @@ print "after:" + child.after
 before： root@127.0.0.1's
 agter: password:
 ```
-##read 相关方法
+ * read 相关方法
 
 下面这些输入方法的作用都是向子程序发送响应命令，可以理解成代替了我们的标准输入键盘。
 
