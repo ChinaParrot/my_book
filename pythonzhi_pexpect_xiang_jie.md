@@ -96,5 +96,15 @@ elif index ==3:
 以上等价于
 
 ```
-
+try: 
+  index = p.expect(['good','bad'])
+  if index == 0:
+    do_something()
+  elif index == 1:
+    do_something_else()
+  except EOF:
+    do_some_other_thiing()
+  except TIMEOUT:
+    do_something_completely_different()
+    
 ```
