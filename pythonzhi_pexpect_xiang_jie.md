@@ -139,6 +139,4 @@ sendcontrol(self,char) 发送控制字符，如child.sendcontrol('c') 等价于"
 sendeof() 发送eof
 
 ```
-
-
-E
+ 
