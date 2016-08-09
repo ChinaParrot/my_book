@@ -17,5 +17,7 @@ child.sendline(mypassword) #匹配后则发送密码串进行回应
 
 spawn是pexpect的主要类接口，功能是启动和控制子应用程序。
 
+```
 class pexpect.spawn(command,args=[],timeout=30,maxread=2000,searchwindowsize=None,logfile=None,cwd=None,env=None,ignore_sighup=True)
 
+```
