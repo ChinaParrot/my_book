@@ -113,14 +113,17 @@ expect 方法有两个非常棒的成员：before与after。before成员保存�
 ```
 import pexpect
 import sys
-child = pexpect.spawn('ssh -p1206 root@127.0.0.1')
+child = pexpect.spawn('ssh  root@127.0.0.1')
 fout = file('mylog.txt','w')
 #child.logfile = fout
 child.logfile = sys.stdout
 child.expect('password:')
-child.sendline('xjq1206$')
-child.expect('#')
-child.sendline('ls /home')
-child.expect('#')
+child.sendline('123456')
+print "before:" + child.before
+print "after:" + child.after
 
+运行结果：
+
+before： root@127.0.0.1's
+agter: password:
 ```
