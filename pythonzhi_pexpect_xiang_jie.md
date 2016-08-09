@@ -49,6 +49,6 @@ child.expect(pexpect.EOF)
 ```
 shell_cmd = 'ls -l |grep LOG>logs.txt'
 child = pexpect.spawn('/bin/bash',['-c',shell_cmd]
-
+child.expect(pexpect.EOF)
 ```
 
