@@ -56,6 +56,8 @@ pexpect提供了2种途径写入log，一种为写到日志文件，另一种是
 
 ```
 写入日志文件：
+child = pexpect.spawn('some_command')
+fout = file('mylog.txt','w')
 
 
 ```
