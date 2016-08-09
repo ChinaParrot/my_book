@@ -64,3 +64,9 @@ child.logfile = fout
 child = pexpect.spawn('some_command')
 child.logfile = sys.stdout
 ```
+
+##expect方法
+
+expect定义了一个子程序输出的匹配规则。
+方法定义： expect(pattern,timeout=30,searchwindowsize=None)
+
