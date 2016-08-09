@@ -5,3 +5,12 @@ pexpect 是linux下expect的python封装，通过pexpect我们可以实现对ssh
 下载安装：
 http://pexpect.readthedocs.io/en/stable/install.html
 
+```
+import pexpect
+child = pexpect.spawn('scp foo user@example.com:.') #spawn 启动scp程序
+child.expect('Password:') #expect方法等待子程序产生的输出，判断是否匹配定义的字符串 'Password:'
+child.sendline(mypassword) #匹配后则发送密码串进行回应
+
+
+
+```
