@@ -52,3 +52,8 @@ child = pexpect.spawn('/bin/bash',['-c',shell_cmd]
 child.expect(pexpect.EOF)
 ```
 
+pexpect提供了2种途径写入log，一种为写到日志文件，另一种是标准输出。
+
+```
+
+```
