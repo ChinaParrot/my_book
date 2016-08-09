@@ -159,4 +159,6 @@ sendeof() 发送eof
   ```
   ##pxssh 类
   
+  pxssh 是pexpect的派生类，针对上ssh会话操作上再做一层封装，提供与基类更加直接的操作方法。
+  pxssh 类定义：
   
