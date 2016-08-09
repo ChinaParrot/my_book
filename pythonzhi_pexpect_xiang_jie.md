@@ -134,7 +134,8 @@ agter: password:
 ```
 send(self,s) 发送命令，不回车
 sendline(self,s='')发送命令，回车
+sendcontrol(self,char) 发送控制字符，如child.sendcontrol('c') 等价于"Ctrl+c"
 
-
+sendeof() 发送eof
 
 ```
