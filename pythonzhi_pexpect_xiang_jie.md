@@ -21,3 +21,8 @@ spawn是pexpect的主要类接口，功能是启动和控制子应用程序。
 class pexpect.spawn(command,args=[],timeout=30,maxread=2000,searchwindowsize=None,logfile=None,cwd=None,env=None,ignore_sighup=True)
 
 ```
+其中command参数可以是任意已知的系统命令，比如：
+
+```
+
+```
