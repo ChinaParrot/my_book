@@ -247,7 +247,8 @@ if __name__ == '__main__':
   
   ```
  #!/usr/bin/env python
- 
+ #-*- coding:utf-8 -*-
+
 import pxssh
 import getpass
 try:
