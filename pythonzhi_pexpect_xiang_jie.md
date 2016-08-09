@@ -166,4 +166,7 @@ sendeof() 发送eof
   
   ```
   
+  * login() 建立ssh连接；
+  * logout()断开连接；
+  * prompt()等待系统提示符，用于等待命令执行结束。
   
