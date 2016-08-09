@@ -44,5 +44,9 @@ child = pexpect.spawn('/bin/bash -c "ls -l|grep LOG >logs.txt"')
 child.expect(pexpect.EOF)
 
 ```
+或者
 
+```
+
+```
 
