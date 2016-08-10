@@ -38,7 +38,7 @@
            * [Python之pycurl](pythonzhi_pycurl.md)
            * [Python之scapy详解](pythonzhi_scapy_xiang_jie.md)
            * [python之pexpect详解](pythonzhi_pexpect_xiang_jie.md)
-           * python 之Fabric-SSH命令行工具
+           * [python 之Fabric-SSH命令行工具](python_zhi_fabric_-_ssh_ming_ling_xing_gong_ju.md)
    * [Django教程](djangojiao_cheng.md)
        * [Django基础安装](djangoji_chu_an_zhuang.md)
        * [Python之XlsxWriter（Excel操作模块）](pythonzhi_xlsxwriter__excel_cao_zuo_mo_kuai_ff09.md)
