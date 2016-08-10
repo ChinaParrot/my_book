@@ -287,6 +287,8 @@ except pxssh.ExceptionPxssh, e:
     
   ```
   
+  实现自动化ftp操作
+  
   ```
   #!/usr/bin/env python
 #-*- coding:utf-8 -*-
