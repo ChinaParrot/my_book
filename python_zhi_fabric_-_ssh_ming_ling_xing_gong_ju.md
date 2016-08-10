@@ -38,9 +38,10 @@ env环境变量可以控制很多fabric的行为，一般通过env.xxx可以进�
 fabric默认使用本地用户通过ssh进行连接远程机器，不过你可以通过env.user变量进行覆盖。
 当你进行ssh连接时，fabric会让你交互的让你输入远程机器密码，如果你设置了env.password变量，则就不需要交互的输入密码。
 下面介绍一些常用的环境变量：
-abort_on_prompts    设置是否运行在交互模式下，例如会提示输入密码之类，默认是false
-connection_attempts    fabric尝试连接到新服务器的次数，默认1次
-cwd    目前的工作目录，一般用来确定cd命令的上下文环境
+
+* abort_on_prompts    设置是否运行在交互模式下，例如会提示输入密码之类，默认是false
+* connection_attempts    fabric尝试连接到新服务器的次数，默认1次
+* cwd    目前的工作目录，一般用来确定cd命令的上下文环境
 disable_known_hosts    默认是false，如果是true，则会跳过用户知道的hosts文件
 exclude_hosts    指定一个主机列表，在fab执行时，忽略列表中的机器
 fabfile    默认值是fabfile.py在fab命令执行时，会自动搜索这个文件执行。
