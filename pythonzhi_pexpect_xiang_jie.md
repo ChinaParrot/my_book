@@ -287,6 +287,29 @@ except pxssh.ExceptionPxssh, e:
     
   ```
   
-  
+  ```
+  #!/usr/bin/env python
+#-*- coding:utf-8 -*-
+
+from __future__ import unicode_literals #使用Unicode编码
+import pexpect
+import sys
+
+child = pexpect.spawnu('ftp www.jqlinux.com') #运行ftp命令
+child.expect('(?i)name .*:') #(?i)表示后面的字符串正则匹配忽略大小写
+child.sendline('root') #输入ftp账号信息
+child.expect('(?i)password') #匹配密码输入提示
+child.sendline('123456')
+child.expect('ftp>')
+child.sendline('get python_test/scapy-test.py') #下载文件
+child.expect('ftp>')
+sys.stdout.write(child.before) #输出匹配“ftp>” 之前的输入与输出
+print("Escape character is '^]'.\n")
+sys.stdout.write(child.after)
+sys.stdout.flush()
+#调用interract()让出控制权，用户可以继续当前的回话手工控制程序，默认输入“^]” 字符跳出child.interact()
+child.sendline('bye')
+child.close()
+  ```
   
   
