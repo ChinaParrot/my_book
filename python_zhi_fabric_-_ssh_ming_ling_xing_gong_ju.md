@@ -27,3 +27,4 @@ Usage: fab [options] <command>[:arg1,arg2=val2,host=foo,hosts='h1;h2',...] ...
 fab -p 123456(密码) -H 192.168.1.21,192.168.1.22 -- 'uname -s'
 
 ```
+
