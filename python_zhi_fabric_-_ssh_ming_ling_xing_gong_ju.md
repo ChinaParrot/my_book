@@ -8,4 +8,5 @@ Fabric是基于python2.5及以上版本实现的SSH命令行工具，简化了SS
 ##fab的常用参数
 ``````
 Usage: fab [options] <command>[:arg1,arg2=val2,host=foo,hosts='h1;h2',...] ...
+
 ```
