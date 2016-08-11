@@ -93,7 +93,7 @@ def input_raw():
 
 def worktask(dirname):
         run("ls -l" + dirname)
-@task() #限定只有go函数对fab命令可见
+@task #限定只有go函数对fab命令可见
 def go():
     getdirname = raw_input()
     worktask(getdirname)
