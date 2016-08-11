@@ -65,4 +65,5 @@ fabric默认使用本地用户通过ssh进行连接远程机器，不过你可�
 * user   ssh使用哪个用户登录远程主机
 * local  执行本地命令，如： local('uname -s')
 * lcd   切换本地目录，如： lcd('/home')
-* 
+* cd 切换远程目录，如： cd('/data/logs')
+* run 执行远程命令 如： run('free -m')
