@@ -68,4 +68,10 @@ fabric默认使用本地用户通过ssh进行连接远程机器，不过你可�
 * cd 切换远程目录，如： cd('/data/logs')
 * run 执行远程命令 如： run('free -m')
 * sudo sudo方式执行命令，如sudo('/etc/init.d/httpd start')
-* put 上传
+* put 上传本地文件到远程主机，如put('/home/user.info',/data/user.info'')
+* get 从远程主机下载文件到本地，如get('/home/user.info',/data/user.info'')
+* prompt 获得用户输入信息，如： prompt('please input user:')
+* confirm 获得提示信息确认， 如： confirm('Tests failed. Continue[Y/N]?')
+* 
+
+
