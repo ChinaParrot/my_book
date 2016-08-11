@@ -104,5 +104,59 @@ def go():
 示例：网关模式文件上传与执行，就是通过堡垒机执行远程主机操作
 
 ```
+#!/usr/bin/env python
+#-*- coding:utf-8 -*-
 
+# from fabric.api import *
+#
+# env.user = 'root'
+# env.hosts = ['192.168.17.232','192.168.18.6']
+# env.password='123456'
+#
+# @runs_once
+# def input_raw():
+#     return prompt("please input directory name:",default="/home")
+#
+# def worktask(dirname):
+#         run("ls -l" + dirname)
+# @task() #限定只有go函数对fab命令可见
+# def go():
+#     getdirname = raw_input()
+#     worktask(getdirname)
+
+from fabric.api import *
+from fabric.context_managers import *
+from fabric.contrib.console import confirm
+
+env.user='root'
+env.gateway='192.168.1.23' #定义堡垒机ip，作为文件上传、执行的设备
+env.hosts=['192.168.1.21','192.168.1.22']
+#假如所有主机密码都不一样，可以通过env.passwords字典变量--指定
+env.passwords = {
+    'root@192.168.1.21:22': '123456',
+    'root@192.168.1.22:22': '1123456',
+    'root@192.168.1.23:22': 'test111'#堡垒机
+}
+lpackpath = "/home/install/test" #本地安装包路径
+rpackpath = "/tmp/install" #远程安装包路径
+
+@task
+def put_task():
+    run ("mkdir -p /tmp/install")
+
+with settings(warn_only=True):
+    result = put(lpackpath,rpackpath) #上传安装包
+if result.failed and not confirm("put file failed,Continue[y/n]"):
+    abort("Aborting file put task!")
+
+@task
+def run_task(): #执行远程命令，安装lnmp环境
+    with cd("/tmp/install"):
+        run("tar -zxvf test")
+        with cd("test/"):
+            run("./install")
+@task
+def go(): #上传、安装组合
+    put_task()
+    run_task()
 ```
