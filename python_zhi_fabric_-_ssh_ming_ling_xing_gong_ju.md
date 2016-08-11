@@ -42,24 +42,24 @@ fabric默认使用本地用户通过ssh进行连接远程机器，不过你可�
 * abort_on_prompts    设置是否运行在交互模式下，例如会提示输入密码之类，默认是false
 * connection_attempts    fabric尝试连接到新服务器的次数，默认1次
 * cwd    目前的工作目录，一般用来确定cd命令的上下文环境
-disable_known_hosts    默认是false，如果是true，则会跳过用户知道的hosts文件
-exclude_hosts    指定一个主机列表，在fab执行时，忽略列表中的机器
-fabfile    默认值是fabfile.py在fab命令执行时，会自动搜索这个文件执行。
-host_string    当fabric连接远程机器执行run、put时，设置的user/host/port等
-hosts    一个全局的host列表
-keepalive    默认0 设置ssh的keepalive
-loacl_user    一个只读的变量，包含了本地的系统用户，同user变量一样，但是user可以修改
-parallel    默认false，如果是true则会并行的执行所有的task
-pool_size    默认0 在使用parallel执行任务时设置的进程数
-password    ssh远程连接时使用的密码，也可以是在使用sudo时使用的密码
-passwords    一个字典，可以为每一台机器设置一个密码，key是ip，value是密码
-path    在使用run/sudo/local执行命令时设置的$PATH环境变量
-port    设置主机的端口
-roledefs    一个字典，设置主机名到规则组的映射
-roles    一个全局的role列表
-shell    默认是/bin/bash -1 -c 在执行run命令时，默认的shell环境
-skip_bad_hosts    默认false，为ture时，会导致fab跳过无法连接的主机
-sudo_prefix    默认值"sudo -S -p '%(sudo_prompt)s' " % env 执行sudo命令时调用的sudo环境
-sudo_prompt    默认值"sudo password:"
-timeout    默认10 网络连接的超时时间
-user   ssh使用哪个用户登录远程主机
+* disable_known_hosts    默认是false，如果是true，则会跳过用户知道的hosts文件
+* exclude_hosts    指定一个主机列表，在fab执行时，忽略列表中的机器
+* fabfile    默认值是fabfile.py在fab命令执行时，会自动搜索这个文件执行。
+* host_string    当fabric连接远程机器执行run、put时，设置的user/host/port等
+* hosts    一个全局的host列表
+* keepalive    默认0 设置ssh的keepalive
+* loacl_user    一个只读的变量，包含了本地的系统用户，同user变量一样，但是user可以修改
+* parallel    默认false，如果是true则会并行的执行所有的task
+* pool_size    默认0 在使用parallel执行任务时设置的进程数
+* password    ssh远程连接时使用的密码，也可以是在使用sudo时使用的密码
+* passwords    一个字典，可以为每一台机器设置一个密码，key是ip，value是密码
+* path    在使用run/sudo/local执行命令时设置的$PATH环境变量
+* port    设置主机的端口
+* roledefs    一个字典，设置主机名到规则组的映射
+* roles    一个全局的role列表
+* shell    默认是/bin/bash -1 -c 在执行run命令时，默认的shell环境
+* skip_bad_hosts    默认false，为ture时，会导致fab跳过无法连接的主机
+* sudo_prefix    默认值"sudo -S -p '%(sudo_prompt)s' " % env 执行sudo命令时调用的sudo环境
+* sudo_prompt    默认值"sudo password:"
+* timeout    默认10 网络连接的超时时间
+* user   ssh使用哪个用户登录远程主机
