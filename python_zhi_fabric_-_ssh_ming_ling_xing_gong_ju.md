@@ -163,4 +163,48 @@ def go(): #上传、安装组合
 
 实现不同业务环境，安装部署不同软件包
 
+```
+#!/usr/bin/env python
+#-*- coding:utf-8 -*-
 
+
+from fabric.api import *
+from fabric.colors import *
+
+env.user='root'
+env.roledefs = {
+    'webservers': ['192.168.1.21','192.168.1.22'],
+    'dbservers': ['192.168.1.23']
+}
+env.passwords = {
+    'root@192.168.1.21:22': '123456',
+    'root@192.168.1.22:22': '1123456',
+    'root@192.168.1.23:22': 'test111'
+}
+
+@roles('webservers')
+def webtask(): #部署nginx php php-fpm等环境
+    print yellow("Install nginx php php-fpm ...")
+    with settings(warn_only=True):
+        run("yum -y install nginx")
+        run("yum -y install php-fpm php-mysql php-mbstring php-xml php-gd")
+        run("chkconfig --levels 235 php-fpm on ")
+
+
+@roles('dbservers') #dbtask 任务函数引用'dbservers'角色修饰符
+def dbtask(): #部署mysql环境
+    print yellow("Install Mysql...")
+    with settings(warn_only=True):
+        run("yum -y install mysql mysql-server")
+        run("chkconfig --leverls 235 mysqld on")
+@roles('webservers','dbservers')
+def publictask():
+    print yellow("Install epel ntp...")
+    with settings(warn_only=True):
+        run("rpm -Uvh  http://mirrors.aliyun.com/repo/epel-7.repo")
+        run("yum -y install ntp")
+def deploy():
+    execute(publictask)
+    execute(webtask)
+    execute(dbtask)
+```
