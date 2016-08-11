@@ -74,6 +74,8 @@ fabric默认使用本地用户通过ssh进行连接远程机器，不过你可�
 * confirm 获得提示信息确认， 如： confirm('Tests failed. Continue[Y/N]?')
 * reboot 重启远程主机，如： reboot();
 * @task 函数修饰符，标识的函数为fab可调用的，非标记对fab不可见，纯业务逻辑。
-*  
+*  @runs_once, 函数修饰符，标识的函数只会执行一次，不会受多台主机的影响。
+
+
 
 
