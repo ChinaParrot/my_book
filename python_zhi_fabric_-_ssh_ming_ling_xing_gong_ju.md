@@ -76,6 +76,27 @@ fabric默认使用本地用户通过ssh进行连接远程机器，不过你可�
 * @task 函数修饰符，标识的函数为fab可调用的，非标记对fab不可见，纯业务逻辑。
 *  @runs_once, 函数修饰符，标识的函数只会执行一次，不会受多台主机的影响。
 
+实例：
+```
+#!/usr/bin/env python
+#-*- coding:utf-8 -*-
 
+from fabric.api import *
+
+env.user = 'root'
+env.hosts = ['192.168.17.232','192.168.18.6']
+env.password='123456'
+
+@runs_once
+def input_raw():
+    return prompt("please input directory name:",default="/home")
+
+def worktask(dirname):
+        run("ls -l" + dirname)
+@task() #限定只有go函数对fab命令可见
+def go():
+    getdirname = raw_input()
+    worktask(getdirname)
+```
 
 
