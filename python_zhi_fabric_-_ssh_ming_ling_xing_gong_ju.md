@@ -99,5 +99,6 @@ def go():
     worktask(getdirname)
 ```
 
-执行方式： fab -f 
+执行方式： fab -f  fab_test.py go
+
 
