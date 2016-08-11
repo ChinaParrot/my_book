@@ -63,3 +63,4 @@ fabric默认使用本地用户通过ssh进行连接远程机器，不过你可�
 * sudo_prompt    默认值"sudo password:"
 * timeout    默认10 网络连接的超时时间
 * user   ssh使用哪个用户登录远程主机
+
