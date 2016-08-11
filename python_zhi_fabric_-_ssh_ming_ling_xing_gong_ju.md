@@ -101,4 +101,6 @@ def go():
 
 执行方式： fab -f  fab_test.py go
 
+示例：网关模式文件上传与执行
+
 
