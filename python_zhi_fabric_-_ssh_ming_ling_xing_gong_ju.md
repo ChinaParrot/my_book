@@ -67,4 +67,5 @@ fabric默认使用本地用户通过ssh进行连接远程机器，不过你可�
 * lcd   切换本地目录，如： lcd('/home')
 * cd 切换远程目录，如： cd('/data/logs')
 * run 执行远程命令 如： run('free -m')
+* sudo sudo方式执行命令，如sudo('/etc/init.d/httpd start')
 * 
