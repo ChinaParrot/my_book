@@ -11,6 +11,7 @@ ansible是新出现的自动化运维工具，基于Python开发，集合了众�
 (1)、no agents：不需要在被管控主机上安装任何客户端；
 
 (2)、no server：无服务器端，使用时直接运行命令即可；
+
 (3)、modules in any languages：基于模块工作，可使用任意语言开发模块；
 (4)、yaml，not code：使用yaml语言定制剧本playbook；
 (5)、ssh by default：基于SSH工作；
