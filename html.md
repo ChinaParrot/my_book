@@ -9,7 +9,7 @@
 
 * HTML 使用标记标签来描述网页
 * HTML 文档包含了HTML 标签及文本内容
-HTML文档也叫做 web 页面
+* HTML文档也叫做 web 页面
 HTML 标签
 HTML 标记标签通常被称为 HTML 标签 (HTML tag)。
 HTML 标签是由尖括号包围的关键词，比如 <html>
