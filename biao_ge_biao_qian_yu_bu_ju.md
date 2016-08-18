@@ -54,7 +54,6 @@ colspan //跨列
     <td>上海</td>
   </tr>
   <tr>
-    <td>北京</td>
     <td bgcolor="green">上海</td>
   </tr>
 </table>
