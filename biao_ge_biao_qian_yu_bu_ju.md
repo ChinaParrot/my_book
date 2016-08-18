@@ -90,7 +90,7 @@ JavaScript
 
 <tr>
 <td colspan="2" style="background-color:#FFA500;text-align:center;">
-版权 © runoob.com</td>
+版权 © jqlinux.com</td>
 </tr>
 </table>
 
