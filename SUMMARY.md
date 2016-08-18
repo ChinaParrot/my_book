@@ -53,6 +53,6 @@
            * [mysql:连接Mysql数据库](mysqllian_jie_mysql_shu_ju_ku.md)
    * [Ansible](ansible.md)
    * [前端web教程](qian_duan_web_jiao_cheng.md)
-       * [html](html.md)
+       * [HTML](html.md)
            * HTML常用基本标签
 
