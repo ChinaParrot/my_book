@@ -14,8 +14,8 @@
 <th>这是个表格实例</th>
 <table border="1" width="600" height="50" cellspacing="0" cellpadding="0">
   <tr>
-    <td>北京</td>
-    <td>上海</td>
+    <td align="center">北京</td>
+    <td align="center">上海</td>
   </tr>
   <tr>
     <td>北京</td>
