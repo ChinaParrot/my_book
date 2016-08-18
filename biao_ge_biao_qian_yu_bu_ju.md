@@ -51,6 +51,7 @@ colspan //跨列
 <table border="1" width="600" height="50" cellspacing="0" cellpadding="0" bgcolor="#ccffff">
   <tr>
     <td align="center" rowspan="2">北京</td>
+    <td>上海</td>
   </tr>
   <tr>
     <td>北京</td>
