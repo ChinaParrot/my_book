@@ -19,7 +19,7 @@
   </tr>
   <tr>
     <td>北京</td>
-    <td>上海</td>
+    <td bgcolor="green">上海</td>
   </tr>
 </table>
 ```
