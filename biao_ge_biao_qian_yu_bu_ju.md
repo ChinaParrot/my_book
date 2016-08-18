@@ -35,7 +35,7 @@ colspan //跨列
 
 例子：
 ```
-<th>这是个表格实例</th>
+<th>这是个表格跨列实例</th>
 <table border="1" width="600" height="50" cellspacing="0" cellpadding="0" bgcolor="#ccffff">
   <tr>
     <td align="center">北京</td>
