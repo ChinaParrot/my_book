@@ -66,7 +66,7 @@ colspan //跨列
 <html>
 <head> 
 <meta charset="utf-8"> 
-<title>菜鸟教程(runoob.com)</title> 
+<title>页面布局</title> 
 </head>
 <body>
 
