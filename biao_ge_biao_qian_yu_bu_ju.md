@@ -12,7 +12,7 @@
 例子：
 ```
 <th>这是个表格实例</th>
-<table border="1" width="600" height="50" cellspacing="0" cellpadding="0">
+<table border="1" width="600" height="50" cellspacing="0" cellpadding="0" bgcolor="#ccffff">
   <tr>
     <td align="center">北京</td>
     <td align="center">上海</td>
