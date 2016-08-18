@@ -46,6 +46,18 @@ colspan //跨列
 </table>
 ```
 
+```
+<th>这是个表格跨列实例</th>
+<table border="1" width="600" height="50" cellspacing="0" cellpadding="0" bgcolor="#ccffff">
+  <tr>
+    <td align="center" colspan="2">北京</td>
+  </tr>
+  <tr>
+    <td>北京</td>
+    <td bgcolor="green">上海</td>
+  </tr>
+</table>
+```
 
 ##表格实例
 
