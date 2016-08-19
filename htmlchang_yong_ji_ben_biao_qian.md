@@ -17,5 +17,27 @@
 例子：
 
 ```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>跑马灯</title>
+</head>
+<body bgcolor="#f0ffff">
+<div align="center">
+    <h1><span style="color: black; ">我的相册</span></h1>
+    <hr>
+    <div style="height: 130px;line-height: 150px;background-color:seashell;padding: 20px">
+        <marquee>
+            <span>
+           <a href="#"><img src="../static/test.jpg" width="200" height="120"></a>
+            </span>
+        </marquee>
 
+    </div>
+</div>
+
+
+</body>
+</html>
 ```
