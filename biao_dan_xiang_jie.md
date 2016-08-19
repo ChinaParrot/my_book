@@ -19,6 +19,7 @@ method 属性规定在提交表单时所用的 HTTP 方法（GET 或 POST）：
 <form action="action_page.php" method="POST">
 
 ```
+区别：POST 的安全性更加，因为在页面地址栏中被提交的数据是不可见的。
 
 
 实例：
