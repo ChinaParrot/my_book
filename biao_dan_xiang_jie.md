@@ -11,9 +11,14 @@ action 属性定义在提交表单时执行的动作。
 
 * Method 属性
 method 属性规定在提交表单时所用的 HTTP 方法（GET 或 POST）：
+
+```
 <form action="action_page.php" method="GET">
 或：
 <form action="action_page.php" method="POST">
+
+```
+
 
 实例：
 ```
