@@ -9,7 +9,8 @@ tar xf Python-2.7.10.tgz && cd Python-2.7.10
 ./configure --prefix=/opt/python &&  make all  &&  make install
 
 #安装pip工具
-wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py
+wget https://bootstrap.pypa.io/get-pip.py
+
 \mv /usr/bin/python /usr/bin/python2.6 
 ln -s /opt/python/bin/python* /usr/bin/
  python  get-pip.py
