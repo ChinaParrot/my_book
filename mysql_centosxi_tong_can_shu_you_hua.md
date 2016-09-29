@@ -1,6 +1,7 @@
 # MySQL centos系统参数优化
 
- 添加 /etc/sysctl.conf
+ 
+### 内核优化添加 /etc/sysctl.conf
 
 
 ```
@@ -20,4 +21,8 @@ net.core.rmem_default = 87380
 net.core.rmem_max = 16777216
 
 ```
+
+###打开文件数优化
+
+
 
