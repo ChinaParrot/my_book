@@ -31,5 +31,4 @@ net.core.rmem_max = 16777216
 * soft nofile 65535
 * hard nofile 65535
 
-
 ```
