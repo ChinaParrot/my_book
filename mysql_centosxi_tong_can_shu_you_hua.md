@@ -1,5 +1,4 @@
-# MySQL centos系统# MySQL centos系统P参# MySQL centos系统# MySQL centos系统P参数优化
-
+ #MySQL centos系统层优化
  
 ### 内核优化添加 /etc/sysctl.conf
 
