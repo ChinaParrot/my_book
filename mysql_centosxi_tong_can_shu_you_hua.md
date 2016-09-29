@@ -25,4 +25,11 @@ net.core.rmem_max = 16777216
 ###打开文件数优化
 
 
+增加资源限制（/etc/secuity/limit.conf）
 
+```
+* soft nofile 65535
+* hard nofile 65535
+
+
+```
