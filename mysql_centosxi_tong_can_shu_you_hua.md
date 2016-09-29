@@ -34,3 +34,8 @@ net.core.rmem_max = 16777216
 ```
 ###磁盘调度策略
 
+```
+cat /sys/block/sda/queue/scheduler 
+noop anticipatory deadline [cfq] 
+
+```
