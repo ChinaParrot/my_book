@@ -54,4 +54,7 @@ CFQ适用于系统中存在多任务I/O请求的情况，通过在多进程中�
 
 EXT3/4 系统的挂载参数 （/etc/fstab）
 
+data =writeback | ordered |journal|noatime,nodiratime
+
+/dev/sda1/ext4 noatime,nodiratime,data=writeback 1 1
 
