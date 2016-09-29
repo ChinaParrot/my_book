@@ -1,4 +1,4 @@
-# MySQL centos系统参数优化
+# MySQL centos系统# MySQL centos系统P参# MySQL centos系统# MySQL centos系统P参数优化
 
  
 ### 内核优化添加 /etc/sysctl.conf
@@ -41,7 +41,9 @@ noop anticipatory deadline [cfq]
 ```
 
 * noop(电梯式调度策略)
-
+ NOOP 实现了一个FIFO队列，它像电梯的工作方法一样对I/O请求进行组织，当有一个新的请求到来时，它将请求合并到最近的请求之后，以此来保证请求同一个介质。NOOP倾向饿死读而不利于写，因此NOOP对于闪存设备、RAM及嵌入式是最好的选择。
 
 * cfq
+
+
 * 
