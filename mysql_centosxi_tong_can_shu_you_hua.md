@@ -32,3 +32,5 @@ net.core.rmem_max = 16777216
 * hard nofile 65535
 
 ```
+###磁盘调度策略
+
