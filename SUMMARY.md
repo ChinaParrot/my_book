@@ -52,7 +52,7 @@
        * [MySQL(SQL)命令大全](mysqlsqlming_ling_da_quan.md)
            * [mysql:连接Mysql数据库](mysqllian_jie_mysql_shu_ju_ku.md)
        * [mysql优化](mysqlyou_hua.md)
-           * [MySQL centos系统参数优化](mysql_centosxi_tong_can_shu_you_hua.md)
+           * [MySQL centos系统层优化](mysql_centosxi_tong_can_shu_you_hua.md)
    * [Ansible](ansible.md)
    * [前端web教程](qian_duan_web_jiao_cheng.md)
        * [HTML](html.md)
