@@ -32,7 +32,6 @@ ftp登陆连接
 ```
 
 
-
 from ftplib import FTP #加载ftp模块
 
 ftp=FTP() #设置变量
