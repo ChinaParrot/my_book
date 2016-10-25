@@ -26,11 +26,12 @@ ftp.storbinaly("STOR filename.txt",file_handel,bufsize) #上传目标文件
 ftp.retrbinary("RETR filename.txt",file_handel,bufsize) #下载FTP文件
 ```
 
-ftp登陆操作
+ftp登陆连接
+
 
 ```
 
-ftp登陆连接
+
 
 from ftplib import FTP #加载ftp模块
 
