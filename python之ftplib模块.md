@@ -4,7 +4,7 @@ python中默认安装的ftplib模块定义了FTP类，其中函数有限，可�
 
  相关方法：
 
-` 
+```
 ftp.cwd(pathname) #设置FTP当前操作的路径
 
 ftp.dir() #显示目录下所有目录信息
@@ -24,6 +24,6 @@ ftp.rename(fromname, toname)#将fromname修改名称为toname。
 ftp.storbinaly("STOR filename.txt",file_handel,bufsize) #上传目标文件
 
 ftp.retrbinary("RETR filename.txt",file_handel,bufsize) #下载FTP文件
-`
+```
 
 
