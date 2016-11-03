@@ -129,7 +129,7 @@ for循环的语法格式如下：
  <pre>for iterating_var in sequence:
    statements(s)</pre>
 
-<pre>
+```
 #!/usr/bin/python
 #-*- coding:UTF-8 -*-
 
@@ -139,7 +139,9 @@ fruits = ['banana', 'apple',  'mango']
 for fruit in fruits:
 	   print '当前水果 :', fruit
 print "Good bye!"
-</pre>
+
+```
+
 
 另外一种执行循环的遍历方式是通过索引，如下实例：
 <pre>
