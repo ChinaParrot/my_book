@@ -161,7 +161,7 @@ print "Good bye!"
 
 循环使用 else 语句：
 
-<pre>
+```
 #!/usr/bin/python
 #-*- coding:UTF-8 -*-
 
