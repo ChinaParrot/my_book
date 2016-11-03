@@ -144,7 +144,9 @@ print "Good bye!"
 
 
 另外一种执行循环的遍历方式是通过索引，如下实例：
-<pre>
+
+```
+
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 
@@ -153,7 +155,9 @@ for index in range(len(fruits)):
    print '当前水果 :', fruits[index]
 
 print "Good bye!"
-</pre>
+
+```
+
 
 循环使用 else 语句：
 
