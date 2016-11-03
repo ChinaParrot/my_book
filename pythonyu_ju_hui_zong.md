@@ -84,14 +84,14 @@ while 1:
 </pre>
  
  死循环
-<pre>
+
  #!/usr/bin/python
  # -*- coding: UTF-8 -*-
 import time
 while 1:
   print '死循环'
   time.sleep(1)
-</pre>
+
 
 循环使用 else 语句
 
