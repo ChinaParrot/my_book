@@ -105,8 +105,8 @@ while 1:
 
 循环使用 else 语句
 
-
 ```
+
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 count = 0
@@ -114,7 +114,10 @@ while count <6:
   print count,"is less than 5"
   count += 1
 else:
-  print count,"is not less than 5"```
+  print count,"is not less than 5"
+
+```
+
 
 ##三、for 循环语句
 
