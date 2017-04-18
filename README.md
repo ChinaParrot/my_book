@@ -27,8 +27,9 @@ npm install gitbook -g
 
 # 2、gitbook使用
 
-1__、使用 gitbook init 初始化书籍目录 <br />
-2、使用 gitbook serve 编译书籍<br />
+1__、使用 gitbook init 初始化书籍目录
+
+2、使用 gitbook serve 编译书籍
 
 ```
 mkdir book
