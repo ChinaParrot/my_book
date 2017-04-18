@@ -27,7 +27,7 @@ python中单行注释采用 # 开头。
 # 文件名：test.py
 
 # 第一个注释
-print "Hello, Python!";  # 第二个注释
+print ("Hello, Python!")  # 第二个注释
 ```
 python 中多行注释使用三个单引号(''')或三个双引号(""")。
 ```#!/usr/bin/python
