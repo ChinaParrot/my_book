@@ -14,14 +14,15 @@ https://www.gitbook.com/editor/windows
 
 # 1、安装gitbook
 
+···
 
-apt-get update<br />
-apt-get install -y build-essential<br />
-curl -sL https://deb.nodesource.com/setup | sudo bash -<br />
-apt-get install nodejs<br />
-npm install gitbook -g <br />
+apt-get update
+apt-get install -y build-essential
+curl -sL https://deb.nodesource.com/setup | sudo bash -
+apt-get install nodejs
+npm install gitbook -g 
 
-#2、gitbook使用
+# 2、gitbook使用
 
 1、使用 gitbook init 初始化书籍目录<br />
 2、使用 gitbook serve 编译书籍<br />
