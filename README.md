@@ -33,7 +33,7 @@ npm install gitbook -g
 ```
 mkdir book
 gitbook init
-启动服务
+#启动服务
 gitbook serve
 
 ```
