@@ -10,7 +10,7 @@
 
 **服务器环境**
 
-# 1、安装gitbook
+## 1、安装gitbook
 
 ```
 apt-get update
@@ -20,7 +20,7 @@ apt-get install nodejs
 npm install gitbook -g
 ```
 
-# 2、gitbook使用
+## 2、gitbook使用
 
 * 使用 gitbook init 初始化书籍目录
 * 使用 gitbook serve 编译书籍
