@@ -3,7 +3,7 @@
 ##输出
 用print()在括号中加上字符串，就可以向屏幕上输出指定的文字。比如输出'hello, world'，用代码实现如下：
 
- ```print 'hello, world'```
+ ```print ('hello, world')```
  
 print语句也可以跟上多个字符串，用逗号“,”隔开，就可以连成一串输出：
  
