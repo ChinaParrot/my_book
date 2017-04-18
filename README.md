@@ -14,7 +14,6 @@ https://www.gitbook.com/editor/windows
 
 # 1、安装gitbook
 
-···
 
 apt-get update
 apt-get install -y build-essential
