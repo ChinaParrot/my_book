@@ -102,9 +102,18 @@ counter = 100 # 赋值整型变量
 miles = 1000.0 # 浮点型
 name = "John" # 字符串
 
+mys = """
+aaaa
+bbbb
+dddd
+"""
+
 print counter
 print miles
 print name
+print mys
+
+
 </pre>
 
 数字类型：
