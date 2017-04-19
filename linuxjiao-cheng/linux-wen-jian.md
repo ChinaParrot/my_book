@@ -3,20 +3,20 @@ Linux系统是一种典型的多用户系统，不同的用户处于不同的地
 
 
 ```
-[root@bogon ~]# ll /
-total 94
-dr-xr-xr-x.   2 root root  4096 Apr 18 14:05 bin
-dr-xr-xr-x.   5 root root  1024 Apr 18 14:07 boot
-drwxr-xr-x   16 root root  3600 Apr 19 16:41 dev
-drwxr-xr-x.  69 root root  4096 Apr 19 14:13 etc
-drwxr-xr-x.   3 root root  4096 Apr 19 14:10 home
-dr-xr-xr-x.   8 root root  4096 Apr 18 14:05 lib
-dr-xr-xr-x.   9 root root 12288 Apr 18 14:06 lib64
-drwx------.   2 root root 16384 Mar  9 22:41 lost+found
-drwxr-xr-x.   2 root root  4096 Sep 23  2011 media
+[root@bogon ~]# ll 
+-rw-r--r--. 1 root root 8835 Mar  9 22:44 install.log
 
 ```
 
+权限对象：
+属主：u
+属组：g
+其他人: o
+所有人：a
 
+权限类型：
+读：r		4
+写：w		2
+执行: x		1
 
 
