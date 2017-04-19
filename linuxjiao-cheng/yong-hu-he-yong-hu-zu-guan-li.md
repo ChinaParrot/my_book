@@ -147,7 +147,7 @@ PASS_MAX_DAYS	99999      #注：用户的密码不过期最多的天数
 PASS_MIN_DAYS	0          #注：密码修改之间最小的天数
 PASS_MIN_LEN	5           #注：密码最小长度；
 PASS_WARN_AGE	7
-UID_MIN			  500
+UID_MIN			  500    #注：最小UID为500 ，也就是说添加用户时，UID 是从500开始的
 UID_MAX			60000
 GID_MIN			  500
 GID_MAX			60000
