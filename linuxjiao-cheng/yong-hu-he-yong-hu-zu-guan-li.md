@@ -20,8 +20,6 @@ c.用户组的管理。
 /etc/group	 root:x:0:root
 ```
 
-
-
 系统约定：
 uid: 0     特权用户
 uid: 1~499 系统用户
