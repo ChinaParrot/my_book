@@ -11,10 +11,16 @@ c.用户组的管理。
 
 和用户组相关的一些文件：
 
+
+
+```
 /etc/passwd 	root:x:0:0:root:/root:/bin/bash
                用户名:x:uid:gid:描述:HOME:shell
 /etc/shadow   	root:$1$MYG2NDG6$a1wtyr5GDM2esAPjug0YP0:15636:0:99999:7:::
-/etc/group	root:x:0:root
+/etc/group	 root:x:0:root
+```
+
+
 
 系统约定：
 uid: 0     特权用户
