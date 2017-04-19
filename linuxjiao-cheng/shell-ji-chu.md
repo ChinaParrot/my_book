@@ -32,6 +32,8 @@ e. !$
    cd /etc/sysconfig/network-scripts/
 ```
 
+*  别名
+
 
 # 2 、简单shell
 
