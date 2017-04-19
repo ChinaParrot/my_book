@@ -131,10 +131,10 @@ id命令可以显示真实有效的用户ID(UID)和组ID(GID)。UID 是对一个
 
 # 三、 相关配置文件
 
-* /etc/skel 目录
+* **/etc/skel 目录**
 /etc/skel目录一般是存放用户启动文件的目录，这个目录是由root权限控制，当我们添加用户时，这个目录下的文件自动复制到新添加的用户的家目录下；/etc/skel 目录下的文件都是隐藏文件，也就是类似.file格式的；我们可通过修改、添加、删除/etc/skel目录下的文件，来为用户提供一个统一、标准的、默认的用户环境；
 
-* /etc/login.defs 配置文件
+* **/etc/login.defs 配置文件**
 
 /etc/login.defs 文件是当创建用户时的一些规划，比如创建用户时，是否需要家目录，UID和GID的范围；用户的期限等等，这个文件是可以通过root来定义的；
 
@@ -157,6 +157,15 @@ USERGROUPS_ENAB yes
 ENCRYPT_METHOD SHA512 
 
 ```
+* **/etc/default/useradd 配置文件**
+
+
+
+```
+
+
+```
+
 
 
 
