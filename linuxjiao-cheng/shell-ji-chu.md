@@ -20,4 +20,7 @@ yum -y install man
 man [命令名称]
 ```
 
+看不懂英文只好找百度。
+
+
 
