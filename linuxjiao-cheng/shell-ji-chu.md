@@ -20,6 +20,20 @@ Shell 是一个用C语言编写的程序，它是用户使用Linux的桥梁。Sh
 
 
 
+```
+# history
+a. 光标上下键
+b. ^r (输入一段某条命令的关键字：必须是连续的)
+c. !220
+d. !字符串      如：！file  此命令执行的是file操作过的最后一条命令，它会先显示一下你所执行的命令
+e. !$ 
+   # ls /etc/sysconfig/network-scripts/
+   # cd !$
+   cd /etc/sysconfig/network-scripts/
+```
+
+
+
 
 # 2 、简单shell
 
