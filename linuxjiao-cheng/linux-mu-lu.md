@@ -6,3 +6,6 @@ bin  boot  dev  etc  home  lib  lib64  lost+found  media  mnt  opt  proc  root  
 
 ```
 
+以下是对这些目录的解释：
+
+
