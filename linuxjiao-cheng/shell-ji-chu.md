@@ -14,7 +14,6 @@ who
 
 # 3 、 命令手册
 
-
 ```
 yum -y install man
 
