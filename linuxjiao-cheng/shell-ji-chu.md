@@ -5,7 +5,7 @@ Shell 是一个用C语言编写的程序，它是用户使用Linux的桥梁。Sh
 
 ```
 #!/bin/bash
-. /etc/profile #加载环境变量
+. /etc/profile #加载用户环境变量
 date
 who
 ```
