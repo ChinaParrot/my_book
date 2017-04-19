@@ -145,7 +145,7 @@ id命令可以显示真实有效的用户ID(UID)和组ID(GID)。UID 是对一个
 MAIL_DIR	/var/spool/mail #注：创建用户时，要在目录/var/spool/mail中创建一个用户mail文件
 PASS_MAX_DAYS	99999      #注：用户的密码不过期最多的天数
 PASS_MIN_DAYS	0          #注：密码修改之间最小的天数
-PASS_MIN_LEN	5
+PASS_MIN_LEN	5           #注：密码最小长度；
 PASS_WARN_AGE	7
 UID_MIN			  500
 UID_MAX			60000
