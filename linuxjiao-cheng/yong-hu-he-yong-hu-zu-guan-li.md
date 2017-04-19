@@ -73,6 +73,8 @@ gpasswd(选项)(参数)
 -u<uid> 　修改用户ID。 
 -U 　解除密码锁定。
 
+* **userdel**
+
 
 
 
