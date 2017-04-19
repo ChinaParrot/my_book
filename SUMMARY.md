@@ -64,4 +64,5 @@
   * [linux教程](linuxjiao-cheng.md)
     * [shell 基础](linuxjiao-cheng/shell-ji-chu.md)
     * [用户和用户组管理](linuxjiao-cheng/yong-hu-he-yong-hu-zu-guan-li.md)
+    * [linux 目录](linuxjiao-cheng/linux-mu-lu.md)
 
