@@ -4,8 +4,6 @@ Shell 是一个用C语言编写的程序，它是用户使用Linux的桥梁。Sh
 # 简单shell
 
 
-
-
 ```
 #!/bin/bash
 . /etc/profile #加载用户环境变量
