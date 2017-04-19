@@ -11,3 +11,4 @@ bin  boot  dev  etc  home  lib  lib64  lost+found  media  mnt  opt  proc  root  
 | 目录 |介绍 |
 | -- | -- |
 |**/bin**|bin是Binary的缩写, 这个目录存放着最经常使用的命令。|
+|||
