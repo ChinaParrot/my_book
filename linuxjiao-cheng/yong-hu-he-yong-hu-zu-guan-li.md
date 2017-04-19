@@ -151,7 +151,7 @@ UID_MIN			  500    #注：最小UID为500 ，也就是说添加用户时，UID �
 UID_MAX			60000
 GID_MIN			  500
 GID_MAX			60000
-CREATE_HOME	yes
+CREATE_HOME	yes          # yes   注：是否创用户家目录，要求创建；
 UMASK           077
 USERGROUPS_ENAB yes
 ENCRYPT_METHOD SHA512 
