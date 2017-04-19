@@ -31,3 +31,36 @@ chmod命令用来变更文件或目录的权限。在UNIX系统家族里，文�
 <权限范围>=<权限设置>：指定权限范围的文件或目录的该选项权限设置；
 
 
+
+```
+1. 更改文件的属主、属组
+chown：
+[root@station230 ~]# chown alice.hr file1 	//改属主、属组
+[root@station230 ~]# chown alice    file1 	//只改属主
+[root@station230 ~]# chown      .hr file1	//只改属组
+chgrp：
+[root@station230 ~]# chgrp it file1		//改文件属组
+[root@station230 ~]# chgrp -R it dir1		//改文件属组
+	
+2. 更改权限
+
+a. 使用字符
+		对象		赋值符		权限类型
+		u		+		r
+chmod 		g		-		w
+		o		=		x
+		a
+[root@station230 ~]# chmod u+x file1	//属主加执行
+[root@station230 ~]# chmod a=rwx file1	//所有人等于读写执行
+[root@station230 ~]# chmod a=- file1	//所有人没有权限
+[root@station230 ~]# chmod ug=rw,o=r file1 	 //属主属组等于读写，其他人只读
+[root@station230 ~]# ll file1 			 //以长模式方式查看文件权限
+-rw-rw-r-- 1 alice it 17 10-25 16:45 file1	 //显示的结果
+
+b. 数字
+[root@station230 ~]# chmod 644 file1
+[root@station230 ~]# ll file1
+-rw-r--r-- 1 alice it 17 10-25 16:45 file1
+```
+
+
