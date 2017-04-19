@@ -62,4 +62,5 @@
       * [表格标签与布局](biao_ge_biao_qian_yu_bu_ju.md)
       * [表单详解](biao_dan_xiang_jie.md)
   * [linux教程](linuxjiao-cheng.md)
+    * [shell 基础](linuxjiao-cheng/shell-ji-chu.md)
 
