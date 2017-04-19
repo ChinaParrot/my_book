@@ -140,3 +140,23 @@ id命令可以显示真实有效的用户ID(UID)和组ID(GID)。UID 是对一个
 
 
 
+```
+# cat /etc/login.defs |grep -v '^#\|^$'
+MAIL_DIR	/var/spool/mail
+PASS_MAX_DAYS	99999
+PASS_MIN_DAYS	0
+PASS_MIN_LEN	5
+PASS_WARN_AGE	7
+UID_MIN			  500
+UID_MAX			60000
+GID_MIN			  500
+GID_MAX			60000
+CREATE_HOME	yes
+UMASK           077
+USERGROUPS_ENAB yes
+ENCRYPT_METHOD SHA512 
+
+```
+
+
+
