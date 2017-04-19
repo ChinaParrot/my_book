@@ -35,6 +35,16 @@ e. !$
 *  别名
 
 
+```
+# alias		查看系统当前的别名
+  ll='ls -l --color=tty'
+# alias tianyun='ls /etc/sysconfig/network-scripts/'	建立别名	
+# unalias  tianyun  取消tianyun这个别名
+
+```
+
+
+
 # 2 、简单shell
 
 
