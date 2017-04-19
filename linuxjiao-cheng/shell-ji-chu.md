@@ -12,5 +12,13 @@ who
 # test    # “#” shell 注释
 ```
 
+# 3 、 命令手册
+
+
+```
+yum -y install man
+
+man [命令名称]
+```
 
 
