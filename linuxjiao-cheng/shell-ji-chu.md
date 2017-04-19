@@ -11,7 +11,7 @@ date
 who
 # test    #shell 注释
 ```
-
+Bourne Again Shell（/bin/bash）
 
 
 
