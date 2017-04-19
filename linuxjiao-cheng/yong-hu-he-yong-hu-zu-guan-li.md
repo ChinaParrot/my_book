@@ -48,5 +48,7 @@ useradd 选项 用户名
 
 * **gpasswd**
 
+gpasswd(选项)(参数)
+
 
 
