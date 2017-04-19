@@ -34,7 +34,6 @@ e. !$
 
 *  别名
 
-
 ```
 # alias		查看系统当前的别名
   ll='ls -l --color=tty'
