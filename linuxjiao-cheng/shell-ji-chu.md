@@ -35,7 +35,17 @@ Linux文件有三种时间：stat 例如：stat profile.d/
 改变时间：ctime，文件 属性，比如权限
 
 ```
-
+[root@bogon ~]# ls -l install.log
+-rw-r--r--. 1 root root 8835 Mar  9 22:44 install.log
+[root@bogon ~]# stat install.log
+  File: `install.log'
+  Size: 8835      	Blocks: 24         IO Block: 4096   regular file
+Device: 803h/2051d	Inode: 261123      Links: 1
+Access: (0644/-rw-r--r--)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2017-03-09 22:41:58.253999993 +0800
+Modify: 2017-03-09 22:44:28.421999932 +0800
+Change: 2017-03-09 22:44:31.710999932 +0800
 
 ```
+
 
