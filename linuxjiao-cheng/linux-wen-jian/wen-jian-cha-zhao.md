@@ -52,3 +52,22 @@ find命令是用来在给定的目录下查找符合给定条件的文件
 
 
 
+```
+find .-type f -user root -exec chown tom {} \;
+#删除
+find $HOME/. -name "*.txt" -ok rm {} \;
+find . -type f -name "*.log" -print0 | xargs -0 rm -f
+
+find . -type f -name "*.txt" -exec cat {} \;> all.txt
+find . -type f -mtime +30 -name "*.log" -exec cp {} old \;
+find . -type f -name "*.txt" -exec printf "File: %s\n" {} \;
+
+find . -type f -name "*.php" -print0 | xargs -0 wc -l
+find . -type f -name "*.jpg" -print | xargs tar -czvf images.tar.gz
+#移动
+find /home/ -type f | xargs -n 1 -t -I {} mv {} /tmp/
+
+```
+
+
+
