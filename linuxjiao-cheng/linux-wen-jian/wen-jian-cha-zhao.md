@@ -57,7 +57,6 @@ find .-type f -user root -exec chown tom {} \;
 #删除
 find $HOME/. -name "*.txt" -ok rm {} \;
 find . -type f -name "*.log" -print0 | xargs -0 rm -f
-
 find . -type f -name "*.txt" -exec cat {} \;> all.txt
 find . -type f -mtime +30 -name "*.log" -exec cp {} old \;
 find . -type f -name "*.txt" -exec printf "File: %s\n" {} \;
