@@ -45,3 +45,5 @@ chmod 2775 xxx # 设置setgid权限
 chmod 1775 xxx # 设置stick bit权限，针对目录
 ```
 
+
+
