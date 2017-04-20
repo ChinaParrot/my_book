@@ -101,6 +101,37 @@ Default mount options:    user_xattr acl
 [root@www ~]# ll acl_test1
 -rwxr-xr--+ 1 root root 0 Feb 27 13:28 acl_test1
 # 无使用者列表，代表配置该文件拥有者，所以上面显示 root 的权限成为 rwx 了！
+
+
+# 2. 针对特定群组的方式：
+# 配置规范：『 g:[群组列表]:[rwx] 』，例如针对 mygroup1 的权限规范 rx ：
+[root@www ~]# setfacl -m g:mygroup1:rx acl_test1
+[root@www ~]# getfacl acl_test1
+# file: acl_test1
+# owner: root
+# group: root
+user::rwx
+user:vbird1:r-x
+group::r--
+group:mygroup1:r-x  <==这里就是新增的部分！多了这个群组的权限配置！
+mask::r-x
+other::r--
+
+
+# 3. 针对有效权限 mask 的配置方式：
+# 配置规范：『 m:[rwx] 』，例如针对刚刚的文件规范为仅有 r ：
+[root@www ~]# setfacl -m m:r acl_test1
+[root@www ~]# getfacl acl_test1
+# file: acl_test1
+# owner: root
+# group: root
+user::rwx
+user:vbird1:r-x        #effective:r-- <==vbird1+mask均存在者，仅有 r 而已！
+group::r--
+group:mygroup1:r-x     #effective:r--
+mask::r--
+other::r--
+
 ```
 
 
