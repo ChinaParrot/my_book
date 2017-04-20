@@ -70,4 +70,5 @@
       * [文件与目录特殊权限](linuxjiao-cheng/linux-wen-jian/wen-jian-yu-mu-lu-te-shu-quan-xian.md)
       * [文件查找](linuxjiao-cheng/linux-wen-jian/wen-jian-cha-zhao.md)
     * [linux vim文本编辑使用](linuxjiao-cheng/linux-vimwen-ben-bian-ji-shi-yong.md)
+    * [正则表达式](linuxjiao-cheng/zheng-ze-biao-da-shi.md)
 
