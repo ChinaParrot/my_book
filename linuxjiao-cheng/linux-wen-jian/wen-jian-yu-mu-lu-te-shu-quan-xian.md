@@ -57,7 +57,6 @@ ACL 是 Access Control List 的缩写，主要的目的是在提供传统的 own
 ## 1、查看是否支持acl
 
 
-
 ```
 [root@bogon /]# mount
 /dev/sda3 on / type ext4 (rw)
