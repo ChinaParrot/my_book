@@ -132,6 +132,50 @@ group:mygroup1:r-x     #effective:r--
 mask::r--
 other::r--
 
+
+# 4. 针对默认权限的配置方式：
+# 配置规范：『 d:[ug]:使用者列表:[rwx] 』
+
+# 让 myuser1 在 /srv/projecta 底下一直具有 rx 的默认权限！
+[root@www ~]# setfacl -m d:u:myuser1:rx /srv/projecta
+[root@www ~]# getfacl /srv/projecta
+# file: srv/projecta
+# owner: root
+# group: projecta
+user::rwx
+user:myuser1:r-x
+group::rwx
+mask::rwx
+other::---
+default:user::rwx
+default:user:myuser1:r-x
+default:group::rwx
+default:mask::rwx
+default:other::---
+
+[root@www ~]# cd /srv/projecta
+[root@www projecta]# touch zzz1
+[root@www projecta]# mkdir zzz2
+[root@www projecta]# ll -d zzz*
+-rw-rw----+ 1 root projecta    0 Feb 27 14:57 zzz1
+drwxrws---+ 2 root projecta 4096 Feb 27 14:57 zzz2
+# 看吧！确实有继承喔！然后我们使用 getfacl 再次确认看看！
+
+[root@www projecta]# getfacl zzz2
+# file: zzz2
+# owner: root
+# group: projecta
+user::rwx
+user:myuser1:r-x
+group::rwx
+mask::rwx
+other::---
+default:user::rwx
+default:user:myuser1:r-x
+default:group::rwx
+default:mask::rwx
+default:other::---
+
 ```
 
 
