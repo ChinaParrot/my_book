@@ -86,6 +86,23 @@ Default mount options:    user_xattr acl
 -k ：移除默认的 ACL 参数，关于所谓的『默认』参数于后续范例中介绍；
 -R ：递归配置 acl ，亦即包括次目录都会被配置起来；
 -d ：配置『默认 acl 参数』的意思！只对目录有效，在该目录新建的数据会引用此默认值
+
+# 1. 针对特定使用者的方式：
+# 配置规范：『 u:[使用者账号列表]:[rwx] 』，例如针对 vbird1 的权限规范 rx ：
+[root@www ~]# touch acl_test1
+[root@www ~]# ll acl_test1
+-rw-r--r-- 1 root root 0 Feb 27 13:28 acl_test1
+[root@www ~]# setfacl -m u:vbird1:rx acl_test1
+[root@www ~]# ll acl_test1
+-rw-r-xr--+ 1 root root 0 Feb 27 13:28 acl_test1
+# 权限部分多了个 + ，且与原本的权限 (644) 看起来差异很大！但要如何查阅呢？
+
+[root@www ~]# setfacl -m u::rwx acl_test1
+[root@www ~]# ll acl_test1
+-rwxr-xr--+ 1 root root 0 Feb 27 13:28 acl_test1
+# 无使用者列表，代表配置该文件拥有者，所以上面显示 root 的权限成为 rwx 了！
 ```
+
+
 
 ## 3、 
