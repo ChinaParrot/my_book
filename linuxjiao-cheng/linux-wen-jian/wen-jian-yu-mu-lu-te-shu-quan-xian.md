@@ -56,7 +56,7 @@ ACL 是 Access Control List 的缩写，主要的目的是在提供传统的 own
 默认属性 (mask)：还可以针对在该目录下在创建新文件/目录时，规范新数据的默认权限；
 ## 1、查看是否支持acl
 
-
+由于 ACL 是传统的 Unix-like 操作系统权限的额外支持项目，因此要使用 ACL 必须要有文件系统的支持才行。目前绝大部分的文件系统都有支持 ACL 的功能，包括 ReiserFS, EXT2/EXT3, JFS, XFS 等等。在我们的 CentOS 6.x 当中，默认使用 Ext4 是启动 ACL 支持的！至于察看你的文件系统是否支持 ACL 可以这样看：
 ```
 [root@bogon /]# mount
 /dev/sda3 on / type ext4 (rw)
@@ -73,4 +73,4 @@ Default mount options:    user_xattr acl
 
 ```
 
-
+## 2、
