@@ -66,6 +66,8 @@ find . -type f -name "*.php" -print0 | xargs -0 wc -l
 find . -type f -name "*.jpg" -print | xargs tar -czvf images.tar.gz
 #移动
 find /home/ -type f | xargs -n 1 -t -I {} mv {} /tmp/
+#介绍
+xargs -n1 多行输入单行输出：
 
 ```
 
