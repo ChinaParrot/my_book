@@ -66,4 +66,5 @@
     * [用户和用户组管理](linuxjiao-cheng/yong-hu-he-yong-hu-zu-guan-li.md)
     * [linux 目录了解](linuxjiao-cheng/linux-mu-lu.md)
     * [linux 文件与目录基本](linuxjiao-cheng/linux-wen-jian.md)
+      * [文件与目录常用命令](linuxjiao-cheng/linux-wen-jian/wen-jian-yu-mu-lu-chang-yong-ming-ling.md)
 
