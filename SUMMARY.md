@@ -68,4 +68,5 @@
     * [linux 文件与目录基本](linuxjiao-cheng/linux-wen-jian.md)
       * [文件与目录常用命令](linuxjiao-cheng/linux-wen-jian/wen-jian-yu-mu-lu-chang-yong-ming-ling.md)
       * [文件与目录特殊权限](linuxjiao-cheng/linux-wen-jian/wen-jian-yu-mu-lu-te-shu-quan-xian.md)
+    * [linux vim文本编辑使用](linuxjiao-cheng/linux-vimwen-ben-bian-ji-shi-yong.md)
 
