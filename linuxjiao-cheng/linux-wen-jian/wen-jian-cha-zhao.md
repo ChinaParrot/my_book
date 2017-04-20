@@ -61,8 +61,9 @@ find . -type f -name "*.log" -print0 | xargs -0 rm -f
 find . -type f -name "*.txt" -exec cat {} \;> all.txt
 find . -type f -mtime +30 -name "*.log" -exec cp {} old \;
 find . -type f -name "*.txt" -exec printf "File: %s\n" {} \;
-
+#统计
 find . -type f -name "*.php" -print0 | xargs -0 wc -l
+#压缩
 find . -type f -name "*.jpg" -print | xargs tar -czvf images.tar.gz
 #移动
 find /home/ -type f | xargs -n 1 -t -I {} mv {} /tmp/
