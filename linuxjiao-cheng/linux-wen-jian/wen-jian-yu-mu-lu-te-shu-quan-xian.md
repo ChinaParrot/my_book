@@ -29,3 +29,19 @@ SGID和SUID不同，可以用于目录
 
 
 **授权使用**
+
+
+```
+chmod u+s xxx # 设置setuid权限
+
+chmod g+s xxx # 设置setgid权限
+
+chmod o+t xxx # 设置stick bit权限，针对目录
+
+chmod 4775 xxx # 设置setuid权限
+
+chmod 2775 xxx # 设置setgid权限
+
+chmod 1775 xxx # 设置stick bit权限，针对目录
+```
+
