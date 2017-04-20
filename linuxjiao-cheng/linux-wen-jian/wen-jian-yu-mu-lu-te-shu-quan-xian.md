@@ -105,4 +105,25 @@ Default mount options:    user_xattr acl
 
 
 
-## 3、 
+## 3、 getfacl 命令用法
+
+
+
+```
+[root@www ~]# getfacl filename
+选项与参数：
+getfacl 的选项几乎与 setfacl 相同！
+
+# 请列出刚刚我们配置的 acl_test1 的权限内容：
+[root@www ~]# getfacl acl_test1
+# file: acl_test1   <==说明档名而已！
+# owner: root       <==说明此文件的拥有者，亦即 ll 看到的第三使用者字段
+# group: root       <==此文件的所属群组，亦即 ll 看到的第四群组字段
+user::rwx           <==使用者列表栏是空的，代表文件拥有者的权限
+user:vbird1:r-x     <==针对 vbird1 的权限配置为 rx ，与拥有者并不同！
+group::r--          <==针对文件群组的权限配置仅有 r 
+mask::r-x           <==此文件默认的有效权限 (mask)
+other::r--          <==其他人拥有的权限啰！
+```
+
+
