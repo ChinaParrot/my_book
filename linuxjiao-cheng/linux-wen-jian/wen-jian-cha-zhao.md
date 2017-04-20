@@ -68,6 +68,7 @@ find . -type f -name "*.jpg" -print | xargs tar -czvf images.tar.gz
 find /home/ -type f | xargs -n 1 -t -I {} mv {} /tmp/
 #介绍
 xargs -n1 多行输入单行输出：
+xargs的一个选项-I，使用-I指定一个替换字符串{}，这个字符串在xargs扩展时会被替换掉，当-I与xargs结合使用，每一个参数命令都会被执行一次：
 
 ```
 
