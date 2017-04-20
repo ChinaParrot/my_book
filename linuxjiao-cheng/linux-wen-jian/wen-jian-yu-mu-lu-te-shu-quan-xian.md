@@ -54,4 +54,24 @@ ACL 是 Access Control List 的缩写，主要的目的是在提供传统的 own
 使用者 (user)：可以针对使用者来配置权限；
 群组 (group)：针对群组为对象来配置其权限；
 默认属性 (mask)：还可以针对在该目录下在创建新文件/目录时，规范新数据的默认权限；
+## 1、查看是否支持acl
+
+
+
+```
+[root@bogon /]# mount
+/dev/sda3 on / type ext4 (rw)
+proc on /proc type proc (rw)
+sysfs on /sys type sysfs (rw)
+devpts on /dev/pts type devpts (rw,gid=5,mode=620)
+tmpfs on /dev/shm type tmpfs (rw)
+/dev/sda1 on /boot type ext4 (rw)
+none on /proc/sys/fs/binfmt_misc type binfmt_misc (rw)
+
+[root@bogon /]# dumpe2fs  -h /dev/sda3 |grep acl
+dumpe2fs 1.41.12 (17-May-2010)
+Default mount options:    user_xattr acl
+
+```
+
 
