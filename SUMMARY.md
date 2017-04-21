@@ -71,4 +71,5 @@
       * [文件查找](linuxjiao-cheng/linux-wen-jian/wen-jian-cha-zhao.md)
     * [linux vim文本编辑使用](linuxjiao-cheng/linux-vimwen-ben-bian-ji-shi-yong.md)
     * [正则表达式](linuxjiao-cheng/zheng-ze-biao-da-shi.md)
+    * [grep 命令](linuxjiao-cheng/grep-ming-ling.md)
 
