@@ -1,8 +1,8 @@
-``Linux系统中grep命令是一种强大的文本搜索工具，它能使用正则表达式搜索文本，并把匹 配的行打印出来。grep全称是Global Regular Expression Print，表示全局正则表达式版本，它的使用权限是所有用户。
+\`\`Linux系统中grep命令是一种强大的文本搜索工具，它能使用正则表达式搜索文本，并把匹 配的行打印出来。grep全称是Global Regular Expression Print，表示全局正则表达式版本，它的使用权限是所有用户。
 
 主要参数：
 
-grep  [options]
+grep  \[options\]
 
 ```
 -a 不要忽略二进制数据。
@@ -27,6 +27,8 @@ grep  [options]
 - E：支持扩展的正则表达式。
 - F：不支持正则表达式，按照字符串的字面意思进行匹配。
 -G   --basic-regexp   #将样式视为普通的表示法来使用。   
--L   --files-without-match   #列出文件内容不符合指定的样式的文件名称。 
+-L   --files-without-match   #列出文件内容不符合指定的样式的文件名称。
 ```
+
+
 
