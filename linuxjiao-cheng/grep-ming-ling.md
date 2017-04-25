@@ -44,11 +44,14 @@ sudo ifconfig | grep -A 4 eth0
 sudo ifconfig | grep -B 2 UP 
 #进行精确匹配搜索
 ifconfig | grep -w “RUNNING” 
-ifconfig | grep -w “RUN” 
-
+ifconfig | grep -w “RUN”
 ```
 
 ## 
+
+|  |
+| :--- |
+|  |
 
 
 
