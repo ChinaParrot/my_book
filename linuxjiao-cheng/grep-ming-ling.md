@@ -68,7 +68,6 @@ ifconfig | grep -w “RUNNING”
 ifconfig | grep -w “RUN”
 #将/etc/passwd，有出现 root 的行取出来,同时显示这些行在/etc/passwd的行号
 grep -n root /etc/passwd
-
 ```
 
 
