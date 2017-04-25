@@ -30,5 +30,12 @@ grep  \[options\]
 -L   --files-without-match   #列出文件内容不符合指定的样式的文件名称。
 ```
 
+例子：
+
+```
+
+
+```
+
 
 
