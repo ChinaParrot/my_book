@@ -47,7 +47,7 @@ ifconfig | grep -w “RUNNING”
 ifconfig | grep -w “RUN”
 ```
 
-## 
+
 
 |  |
 | :--- |
