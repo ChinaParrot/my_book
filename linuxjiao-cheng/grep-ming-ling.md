@@ -34,7 +34,17 @@ grep  \[options\]
 
 ```
 #搜索和寻找文件
-
+sudo dpkg -l | grep -i python 
+#搜索和过滤文件
+sudo grep -v "#" /etc/apache2/sites-available/default-ssl 
+#找出所有的mp3文件
+sudo find . -name ".mp3" | grep -i JayZ | grep -vi "remix"" 
+#在搜索字符串前面或者后面显示行号
+sudo ifconfig | grep -A 4 eth0 
+sudo ifconfig | grep -B 2 UP 
+#进行精确匹配搜索
+ifconfig | grep -w “RUNNING” 
+ifconfig | grep -w “RUN” 
 
 ```
 
