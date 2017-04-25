@@ -73,4 +73,5 @@
     * [正则表达式](linuxjiao-cheng/zheng-ze-biao-da-shi.md)
     * [grep 命令](linuxjiao-cheng/grep-ming-ling.md)
     * [sed 命令](linuxjiao-cheng/sed-ming-ling.md)
+    * [awk命令](linuxjiao-cheng/awkming-ling.md)
 
