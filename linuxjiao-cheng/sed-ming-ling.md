@@ -48,11 +48,17 @@ x\{m,\} 重复字符x，至少m次，如：/0\{5,\}/匹配至少有5个0的行�
 x\{m,n\} 重复字符x，至少m次，不多于n次，如：/0\{5,10\}/匹配5~10个0的行。
 ```
 
-
-
 # 二、例子
 
 ```
+#数据的搜寻并替换
+sed 's/要被取代的字串/新的字串/g'
+/sbin/ifconfig eth0 | grep 'inet addr' | sed 's/^.*addr://g'
+# 利用 sed 将 regular_express.txt 内每一行结尾若为 . 则换成 !
+sed -i 's/\.$/\!/g' regular_express.txt
+#利用 sed 直接在 regular_express.txt 最后一行加入『# This is a test』
+sed -i '$a # This is a test' regular_express.txt
+ 
 #将 /etc/passwd 的内容列出并且列印行号，同时，请将第 2~5 行删除！
 nl /etc/passwd | sed '2,5d'
 nl /etc/passwd | sed '2d' 
@@ -62,9 +68,41 @@ nl /etc/passwd | sed '2a drink tea'
 #那如果是要在第二行前
 nl /etc/passwd | sed '2i drink tea' 
 #如果是要增加两行以上，在第二行后面加入两行字，例如『Drink tea or .....』与『drink beer?』
- nl /etc/passwd | sed '2a Drink tea or ......\
+nl /etc/passwd | sed '2a Drink tea or ......\
 > drink beer ?'
+#搜索 /etc/passwd有root关键字的行
+nl /etc/passwd | sed '/root/p'
 
+#正则表达式 \w\+ 匹配每一个单词，使用 [&] 替换它，& 对应于之前所匹配到的单词：
+echo this is a test line | sed 's/\w\+/[&]/g'
+[this] [is] [a] [test] [line]
+# 所有以192.168.0.1开头的行都会被替换成它自已加localhost：
+sed 's/^192.168.0.1/&localhost/' file
+#匹配给定样式的其中一部分：
+
+echo this is digit 7 in a number | sed 's/digit \([0-9]\)/\1/' 
+this is 7 in a number
+#命令中 digit 7，被替换成了 7。样式匹配到的子串是 7，\(..\) 用于匹配子串，对于匹配到的第一个子串就标记为 \1，依此类推匹配到的第二个结果就是 \2，例如：
+echo aaa BBB | sed 's/\([a-z]\+\) \([A-Z]\+\)/\2 \1/' 
+BBB aaa
+#love被标记为1，所有loveable会被替换成lovers，并打印出来：
+
+sed -n 's/\(love\)able/\1rs/p' file
+
+#打印奇数行或偶数行
+方法1：
+ sed -n 'p;n' test.txt  #奇数行 
+ sed -n 'n;p' test.txt  #偶数行
+方法2： 
+sed -n '1~2p' test.txt #奇数行 
+sed -n '2~2p' test.txt #偶数行
+
+#一条sed命令，删除/etc/passwd第三行到末尾的数据，并把bash替换为blueshell
+#e表示多点编辑，第一个编辑命令删除/etc/passwd第三行到末尾的数据，第二条命令搜索bash替换为blueshell。
+
+nl /etc/passwd | sed -e '3,$d' -e 's/bash/blueshell/'
+1  root:x:0:0:root:/root:/bin/blueshell
+2  daemon:x:1:1:daemon:/usr/sbin:/bin/sh
 
 
 
