@@ -49,9 +49,3 @@ ifconfig | grep -w “RUN”
 
 
 
-|  |
-| :--- |
-
-
-
-
