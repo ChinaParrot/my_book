@@ -36,8 +36,6 @@ sort -t: -k3nr /etc/passwd
 
 #排序去重
 sort -t: -u /etc/passwd
-
-
 ```
 
 

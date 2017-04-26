@@ -76,4 +76,5 @@
       * [grep 命令](linuxjiao-cheng/linuxming-ling/grep-ming-ling.md)
       * [awk 命令](linuxjiao-cheng/linuxming-ling/awk-ming-ling.md)
       * sort 命令
+      * [uniq 命令](linuxjiao-cheng/linuxming-ling/uniq-ming-ling.md)
 
