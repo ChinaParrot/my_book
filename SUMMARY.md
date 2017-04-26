@@ -77,4 +77,5 @@
       * [awk 命令](linuxjiao-cheng/linuxming-ling/awk-ming-ling.md)
       * sort 命令
       * [uniq 命令](linuxjiao-cheng/linuxming-ling/uniq-ming-ling.md)
+      * [cut 命令](linuxjiao-cheng/linuxming-ling/cutming-ling.md)
 
