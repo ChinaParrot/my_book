@@ -4,8 +4,6 @@ cut命令用来显示行中的指定部分，删除文件中指定字段。cut�
 
 当文件较大时，文本在屏幕上迅速闪过（滚屏），用户往往看不清所显示的内容。因此，一般用more等命令分屏显示。为了控制滚屏，可以按Ctrl+S键，停止滚屏；按Ctrl+Q键可以恢复滚屏。按Ctrl+C（中断）键可以终止该命令的执行，并且返回Shell提示符状态。
 
-
-
 **命令参数**
 
 ```
@@ -23,7 +21,6 @@ cut命令用来显示行中的指定部分，删除文件中指定字段。cut�
 实例
 
 ```
-
 cut -d: -f 1 /etc/passwd
 
 root
@@ -54,9 +51,7 @@ cut -d: -f 1,2  --complement /etc/passwd
 1:1:bin:/bin:/sbin/nologin
 2:2:daemon:/sbin:/sbin/nologin
 3:4:adm:/var/adm:/sbin/nologin
-
-
 ```
 
-
+m
 
