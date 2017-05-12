@@ -13,11 +13,29 @@
 ## 1、安装gitbook
 
 ```
+#ubuntu
 apt-get update
 apt-get install -y build-essential
 curl -sL https://deb.nodesource.com/setup | sudo bash -
 apt-get install nodejs
-npm install gitbook -g
+
+```
+
+```
+#centos
+#添加epel源
+curl --silent --location https://rpm.nodesource.com/setup_5.x | bash -
+yum install -y nodejs
+
+```
+
+```
+#使用淘宝cnpm
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+
+#安装gitbook
+cnpm install gitbook -g
+
 ```
 
 ## 2、gitbook使用
