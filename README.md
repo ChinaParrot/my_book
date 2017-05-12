@@ -30,9 +30,13 @@ yum install -y nodejs
 ```
 #使用淘宝cnpm
 npm install -g cnpm --registry=https://registry.npm.taobao.org
-
+npm config set registry https://registry.npm.taobao.org 
 #安装gitbook
-cnpm install gitbook -g
+cnpm install -g gitbook-cli
+#启动服务
+gitbook serve
+
+
 ```
 
 ## 2、gitbook使用
