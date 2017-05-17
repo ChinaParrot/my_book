@@ -6,7 +6,6 @@
 
 ```
 
-``
 #Python安装
 yum -y install gcc gcc-c++ make autoconf
 wget http://lnmpsoft.b0.upaiyun.com/python/Python-2.7.10.tgz
