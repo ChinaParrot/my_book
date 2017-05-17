@@ -2,10 +2,10 @@
 
 ##一、 centos系列(注意yum安装不了)
 
+#Python安装
 
 ```
 
-#Python安装
 yum -y install gcc gcc-c++ make autoconf
 wget http://lnmpsoft.b0.upaiyun.com/python/Python-2.7.10.tgz
 tar xf Python-2.7.10.tgz && cd Python-2.7.10
