@@ -15,6 +15,7 @@ tar xf Python-2.7.10.tgz && cd Python-2.7.10
 ```
 
 #安装pip工具
+
 wget https://bootstrap.pypa.io/get-pip.py
 
 \mv /usr/bin/python /usr/bin/python2.6 
