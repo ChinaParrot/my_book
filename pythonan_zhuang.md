@@ -3,7 +3,6 @@
 ##一、 centos系列(注意yum安装不了)
 
 
-
 ```
 
 #Python安装
