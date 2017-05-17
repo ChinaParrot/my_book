@@ -12,8 +12,8 @@ wget http://lnmpsoft.b0.upaiyun.com/python/Python-2.7.10.tgz
 tar xf Python-2.7.10.tgz && cd Python-2.7.10
 ./configure --prefix=/opt/python &&  make all  &&  make install
 
-
 ```
+
 #安装pip工具
 wget https://bootstrap.pypa.io/get-pip.py
 
