@@ -284,7 +284,9 @@ print "My name is %s and weight is %d kg!" % ('Zara', 21)
 My name is Zara and weight is 21 kg!
 
 ```
+
 python字符串格式化符号:
+
 
 ```
       %c	 格式化字符及其ASCII码
