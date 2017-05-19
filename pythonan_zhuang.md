@@ -25,7 +25,7 @@ sed -i 's/python/python2.6/g' /usr/bin/yum
 sudo apt-get install  python-pip
 ```
 
-## 三、源码安装适应各种平台
+# 三、源码安装适应各种平台
 
 ```
 1. 获得root权限
@@ -72,7 +72,7 @@ python get-pip.py
 pip install --upgrade pip
 ```
 
-## 四、配置不同的python虚拟环境
+# 四、配置不同的python虚拟环境
 
 参考：
 
@@ -106,5 +106,7 @@ bin/deactivate.bat
 help('modules')
 ```
 
-五、源码编译加打包工具生成自定二进制安装
+# 五、源码编译加打包工具生成自定二进制安装
+
+
 
