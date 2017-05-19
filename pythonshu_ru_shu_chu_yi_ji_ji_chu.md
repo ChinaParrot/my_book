@@ -74,6 +74,7 @@ python 中多行注释使用三个单引号(''')或三个双引号(""")。
 #一个汉子占用3个字符
 
 ```
+
  >>> name = u"薛";                                                                                   
 >>> len(name)
 1
@@ -155,6 +156,7 @@ print mys
 字符串或串(String)是由数字、字母、下划线组成的一串字符。
 
 ```
+
 #!/usr/bin/python
 
 var1 = 'Hello World!'
@@ -183,6 +185,7 @@ S.islower() #S中的字母是否全是小写
 
 
 ```
+
 #请写一个字符串转成驼峰的方法？
 def convert(one_string,space_character):    #one_string:输入的字符串；space_character:字符串的间隔符，以其做为分隔标志
     string_list = str(one_string).split(space_character)    #将字符串转化为list
@@ -302,6 +305,7 @@ Python 支持格式化字符串的输出 。尽管这样可能会用到非常复
 如下实例：
 
 ```
+
 #!/usr/bin/python
 
 print "My name is %s and weight is %d kg!" % ('Zara', 21)
