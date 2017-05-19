@@ -106,6 +106,7 @@ Python 接收单引号(‘ )，双引号(” )，三引号(”’ “””) 来
 
 
 ```
+
 counter = 100 # 赋值整型变量
 miles = 1000.0 # 浮点型
 name = "John" # 字符串
@@ -120,7 +121,6 @@ print counter
 print miles
 print name
 print mys
-
 
 ```
 
@@ -161,8 +161,8 @@ S.istitle() #单词首字母是否大写的，且其它为小写<br>
 S.isupper() #S中的字母是否全是大写<br>
 S.islower() #S中的字母是否全是小写
 
-```
 
+```
 #请写一个字符串转成驼峰的方法？
 def convert(one_string,space_character):    #one_string:输入的字符串；space_character:字符串的间隔符，以其做为分隔标志
     string_list = str(one_string).split(space_character)    #将字符串转化为list
@@ -190,6 +190,7 @@ S.rstrip() 去掉字符串的右边空格
 
 
 ##python运算符
+
 Python算术运算符
 
 以下假设变量a为10，变量b为20：
@@ -219,6 +220,7 @@ Python算术运算符
 |//=|取整除赋值运算符|c //= a 等效于 c = c // a|
 
 ##Python比较运算符
+
 以下假设变量a为10，变量b为20：
 
 | 运算符	 | 描述 | 实例|
@@ -242,6 +244,7 @@ Python语言支持逻辑运算符，以下假设变量a为10，变量b为20：
 |not|布尔”非” – 如果x为True，返回False。如果x为False，它返回True|	not(a and b) 返回 false|
 
 ##Python成员运算符
+
 除了以上的一些运算符之外，Python还支持成员运算符，测试实例中包含了一系列的成员，包括字符串，列表或元组。
 
 |运算符	|描述	|实例|
