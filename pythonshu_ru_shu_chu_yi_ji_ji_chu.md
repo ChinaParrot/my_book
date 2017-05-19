@@ -54,7 +54,8 @@ python 中多行注释使用三个单引号(''')或三个双引号(""")。
 ```
 
 #一个汉子占用3个字符
-<pre>
+
+```
  >>> name = u"薛";                                                                                   
 >>> len(name)
 1
@@ -63,7 +64,8 @@ python 中多行注释使用三个单引号(''')或三个双引号(""")。
 3
 >>>name_utf_8.decode('utf-8')
 >>>u'\u859b'
- </pre>
+
+```
 
 ##Python 标识符
 在python里，标识符有字母、数字、下划线组成。<br />
@@ -103,7 +105,7 @@ Python 接收单引号(‘ )，双引号(” )，三引号(”’ “””) 来
 因此，变量可以指定不同的数据类型，这些变量可以存储整数，小数或字符。
 
 
-<pre>
+```
 counter = 100 # 赋值整型变量
 miles = 1000.0 # 浮点型
 name = "John" # 字符串
@@ -120,7 +122,7 @@ print name
 print mys
 
 
-</pre>
+```
 
 数字类型：
 
@@ -132,7 +134,8 @@ print mys
 
 字符串或串(String)是由数字、字母、下划线组成的一串字符。
 
-```#!/usr/bin/python
+```
+#!/usr/bin/python
 
 var1 = 'Hello World!'
 var2 = "Python Programming"
@@ -141,7 +144,9 @@ print "var1[0]: ", var1[0]
 print "var2[1:5]: ", var2[1:5]
 
 结果： var1[0]:  H
-      var2[1:5]:  ytho```
+      var2[1:5]:  ytho
+
+```
  
 1、 字符串的长度：
  
