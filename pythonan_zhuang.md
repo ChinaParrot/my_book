@@ -1,4 +1,4 @@
-一 、安装pip工具
+# 一 、安装pip工具
 
 ```
 wget https://bootstrap.pypa.io/get-pip.py
@@ -12,7 +12,7 @@ python -V
 sed -i 's/python/python2.6/g' /usr/bin/yum
 ```
 
-二、Ubuntu系统（建议使用Ubuntu15.10桌面）
+# 二、Ubuntu系统（建议使用Ubuntu15.10桌面）
 
 ```
 默认安装，无需安装
@@ -21,7 +21,7 @@ sed -i 's/python/python2.6/g' /usr/bin/yum
 sudo apt-get install python-pip
 ```
 
-三、源码安装适应各种平台
+# 三、源码安装适应各种平台
 
 ```
 获得root权限
@@ -48,7 +48,7 @@ apt-get install libssl-dev
 下载地址:[https://pypi.python.org/pypi/ez\_setup](https://pypi.python.org/pypi/ez_setup)
 
 解压执行  
-/opt/python2/bin/python ez\_setup.py   
+/opt/python2/bin/python ez\_setup.py  
 /opt/python2/bin/easy\_install pip  
 方法二：  
 [https://pip.pypa.io/en/latest/installing/](https://pip.pypa.io/en/latest/installing/)  
@@ -79,7 +79,7 @@ bin/deactivate.bat
 help\('modules'\)安装pip工具  
 wget [https://bootstrap.pypa.io/get-pip.py](https://bootstrap.pypa.io/get-pip.py)
 
-\mv /usr/bin/python /usr/bin/python2.6   
+\mv /usr/bin/python /usr/bin/python2.6  
 ln -s /opt/python/bin/python /usr/bin/  
 python get-pip.py  
 ln -s /opt/python/bin/pip /usr/bin/  
@@ -118,7 +118,7 @@ apt-get install libssl-dev
 下载地址:[https://pypi.python.org/pypi/ez\_setup](https://pypi.python.org/pypi/ez_setup)
 
 解压执行  
-/opt/python2/bin/python ez\_setup.py   
+/opt/python2/bin/python ez\_setup.py  
 /opt/python2/bin/easy\_install pip  
 方法二：  
 [https://pip.pypa.io/en/latest/installing/](https://pip.pypa.io/en/latest/installing/)  
