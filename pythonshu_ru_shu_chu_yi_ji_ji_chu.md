@@ -7,11 +7,11 @@
  
 print语句也可以跟上多个字符串，用逗号“,”隔开，就可以连成一串输出：
  
-<pre>
+```
 print ('The quick brown fox', 'jumps over', 'the lazy dog')
 #结果
 The quick brown fox jumps over the lazy dog
-</pre>
+```
 
 ##输入
 
