@@ -1,3 +1,5 @@
+# Python安装 {#python安装}
+
 # 一 、centos 系列
 
 # 安装pip工具
@@ -103,6 +105,8 @@ bin/deactivate.bat
 ```
 help('modules')
 ```
+
+五、源码编译加打包工具生成自定二进制安装
 
 
 
