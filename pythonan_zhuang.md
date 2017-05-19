@@ -13,13 +13,17 @@ sed -i 's/python/python2.6/g' /usr/bin/yum
 ```
 
 二、Ubuntu系统（建议使用Ubuntu15.10桌面）
+
+```
 默认安装，无需安装
  sudo apt-get install python2.7
-
 安装pip
 sudo apt-get install python-pip 
+```
 
 三、源码安装适应各种平台
+
+```
 获得root权限
 到上述地址下载某种版本的python:
 wget https://www.python.org/ftp/python/2.7.9/Python-2.7.9.tgz
@@ -31,6 +35,7 @@ wget https://www.python.org/ftp/python/2.7.9/Python-2.7.9.tgz
 安装完毕
 建议使用python2.7以上。
 easy_install和pip安装
+```
 
 方法一：
 
@@ -152,7 +157,6 @@ tar xf Python-2.7.10.tgz && cd Python-2.7.10
 
 
 ```
-
 #安装pip工具
 
 wget https://bootstrap.pypa.io/get-pip.py
@@ -164,18 +168,20 @@ ln -s /opt/python/bin/pip*  /usr/bin/
 ln -s /opt/python/bin/easy_install*  /usr/bin/
  python -V
 sed -i 's/python/python2.6/g' /usr/bin/yum
-</pre>
+```
 
 ##二、Ubuntu系统（建议使用Ubuntu15.10桌面）
 
-默认安装，无需安装
-<pre> sudo apt-get install python2.7
+```
+#默认安装，无需安装
+ sudo apt-get install python2.7
 #安装pip
 sudo apt-get install  python-pip 
-</pre>
+```
 
 ##三、源码安装适应各种平台
 
+```
 1. 获得root权限
 2.  到上述地址下载某种版本的python: 
 3.  wget https://www.python.org/ftp/python/2.7.9/Python-2.7.9.tgz
@@ -187,11 +193,14 @@ sudo apt-get install  python-pip
 9.   安装完毕
 
 建议使用python2.7以上。
+```
 
 easy_install和pip安装
 
-<pre>
+
 方法一：
+
+```
 #python 默认源码安装没有安装openssl
 #apt-get install libssl-dev
 #重新编译python
@@ -205,20 +214,18 @@ easy_install和pip安装
 #解压执行
 /opt/python2/bin/python ez_setup.py 
 /opt/python2/bin/easy_install  pip
-
+```
 
 方法二：
 
+```
 https://pip.pypa.io/en/latest/installing/
 wget https://bootstrap.pypa.io/get-pip.py
 python get-pip.py
 
 如果想升级安装pip
 pip install --upgrade pip
-
-
-</pre>
-
+```
 
 ##四、配置不同的python虚拟环境
 参考：
@@ -250,5 +257,7 @@ bin/deactivate.bat
 
 查看已经安装的模块：
 
-<pre>help('modules')
-</pre>
+```
+help('modules')
+
+```
