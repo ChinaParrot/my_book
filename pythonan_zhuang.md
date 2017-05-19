@@ -1,4 +1,4 @@
-# Python安装 {#python安装}
+**Python安装**
 
 # 一 、centos 系列
 
@@ -107,6 +107,4 @@ help('modules')
 ```
 
 五、源码编译加打包工具生成自定二进制安装
-
-
 
