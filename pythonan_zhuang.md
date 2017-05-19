@@ -1,4 +1,6 @@
-# 一 、安装pip工具
+# 一 、centos 系列
+
+# 安装pip工具
 
 ```
 wget https://bootstrap.pypa.io/get-pip.py
@@ -11,8 +13,6 @@ ln -s /opt/python/bin/easy_install* /usr/bin/
 python -V
 sed -i 's/python/python2.6/g' /usr/bin/yum
 ```
-
-
 
 ## 二、Ubuntu系统（建议使用Ubuntu15.10桌面）
 
