@@ -53,6 +53,7 @@ x\{m,n\} 重复字符x，至少m次，不多于n次，如：/0\{5,10\}/匹配5~1
 ```
 #数据的搜寻并替换
 sed 's/要被取代的字串/新的字串/g'
+sed '2s/原字符串/替换字符串/g' //替换第2行
 /sbin/ifconfig eth0 | grep 'inet addr' | sed 's/^.*addr://g'
 # 利用 sed 将 regular_express.txt 内每一行结尾若为 . 则换成 !
 sed -i 's/\.$/\!/g' regular_express.txt
