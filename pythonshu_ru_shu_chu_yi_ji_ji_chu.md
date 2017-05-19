@@ -161,7 +161,8 @@ S.istitle() #单词首字母是否大写的，且其它为小写<br>
 S.isupper() #S中的字母是否全是大写<br>
 S.islower() #S中的字母是否全是小写
 
-<pre>
+```
+
 #请写一个字符串转成驼峰的方法？
 def convert(one_string,space_character):    #one_string:输入的字符串；space_character:字符串的间隔符，以其做为分隔标志
     string_list = str(one_string).split(space_character)    #将字符串转化为list
@@ -175,7 +176,8 @@ if __name__=='__main__':
     print "the string is:ab-cd-ef"
     print "convert to hump:"
     print convert("ab-cd-ef","-")
-</pre>
+
+```
 
 
 3、去掉字符串左右空格
@@ -280,9 +282,11 @@ Python 支持格式化字符串的输出 。尽管这样可能会用到非常复
 print "My name is %s and weight is %d kg!" % ('Zara', 21)
 #结果
 My name is Zara and weight is 21 kg!
+
 ```
 python字符串格式化符号:
 
+```
       %c	 格式化字符及其ASCII码
       %s	 格式化字符串
       %d	 格式化整数
@@ -297,4 +301,4 @@ python字符串格式化符号:
       %G	 %f 和 %E 的简写
       %p	 用十六进制数格式化变量的地址
       
-
+```
