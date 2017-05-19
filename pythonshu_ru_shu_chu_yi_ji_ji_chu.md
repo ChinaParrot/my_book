@@ -22,15 +22,20 @@ The quick brown fox jumps over the lazy dog
 ##Python注释
 
 python中单行注释采用 # 开头。
-```#!/usr/bin/python
+
+```
+#!/usr/bin/python
 # -*- coding: UTF-8 -*-
 # 文件名：test.py
 
 # 第一个注释
 print ("Hello, Python!")  # 第二个注释
+
 ```
 python 中多行注释使用三个单引号(''')或三个双引号(""")。
-```#!/usr/bin/python
+
+```
+#!/usr/bin/python
 # -*- coding: UTF-8 -*-
 # 文件名：test.py
 
@@ -45,7 +50,8 @@ python 中多行注释使用三个单引号(''')或三个双引号(""")。
 这是多行注释，使用双引号。
 这是多行注释，使用双引号。
 这是多行注释，使用双引号。
-"""```
+"""
+```
 
 #一个汉子占用3个字符
 <pre>
