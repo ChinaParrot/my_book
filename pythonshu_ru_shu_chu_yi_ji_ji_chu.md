@@ -29,7 +29,10 @@ The quick brown fox jumps over the lazy dog
 
 现在，你已经可以用print()输出你想要的结果了。但是，如果要让用户从电脑输入一些字符怎么办？Python提供了一个input()，可以让用户输入字符串，并存放到一个变量里。比如输入用户的名字：
 
-```name = input()```
+```
+name = input()
+
+```
 
 ##Python注释
 
