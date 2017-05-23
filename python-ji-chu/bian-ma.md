@@ -21,6 +21,10 @@ c = b.decode("utf-8")
 print (b)
 print (c)
 
+#结果
+utf-8
+b'\xe4\xb8\xad\xe5\x9b\xbd'
+中国
 ```
 
 
