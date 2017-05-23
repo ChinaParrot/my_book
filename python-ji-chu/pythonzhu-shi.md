@@ -3,7 +3,7 @@
 Python中单行注释以**\#**开头，实例如下：
 
 ```
-#!/usr/bin/python3
+#!/usr/bin/env python3
 ```
 
 ```
