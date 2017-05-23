@@ -5,7 +5,7 @@
     * [Python安装](pythonan_zhuang.md)
     * [Python 入门](python-ru-men.md)
     * [Python 基础](python-ji-chu.md)
-      * [编码](python-ji-chu/bian-ma.md)
+      * [Python编码](python-ji-chu/bian-ma.md)
       * [Python注释](python-ji-chu/pythonzhu-shi.md)
     * [Python语法规则](pythonyu_fa_gui_ze.md)
     * [Python语句汇总](pythonyu_ju_hui_zong.md)
