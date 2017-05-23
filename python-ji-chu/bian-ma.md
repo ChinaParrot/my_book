@@ -10,6 +10,16 @@
 >>> import sys
 >>> sys.getdefaultencoding()
 'utf-8'
+```
+
+使用Python解释器进行如下编码解码操作，在bytes和str之间转换：
+
+```
+a = "中国"
+b = a.encode()
+c = b.decode("utf-8")
+print (b)
+print (c)
 
 ```
 
