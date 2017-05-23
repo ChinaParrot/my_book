@@ -8,7 +8,7 @@
       * [Python编码](python-ji-chu/bian-ma.md)
       * [Python注释](python-ji-chu/pythonzhu-shi.md)
       * [python字符串前面加u,r,b的含义](python-ji-chu/pythonzi-fu-chuan-qian-mian-jia-u-r-b-de-han-yi.md)
-      * Python输入输出
+      * [Python输入输出](python-ji-chu/pythonshu-ru-shu-chu.md)
     * [Python语法规则](pythonyu_fa_gui_ze.md)
     * [Python语句汇总](pythonyu_ju_hui_zong.md)
     * [Python词典\(dict\)](pythonci_517828_dict.md)
