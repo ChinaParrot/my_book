@@ -40,7 +40,10 @@ method 属性规定在提交表单时所用的 HTTP 方法（GET 或 POST）：
 |```<output>New```|	定义一个计算结果|
 
 实例：
+
 ```
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -135,5 +138,6 @@ method 属性规定在提交表单时所用的 HTTP 方法（GET 或 POST）：
     </div>
 </body>
 </html>
+
 ```
 
