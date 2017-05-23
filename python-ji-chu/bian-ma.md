@@ -6,5 +6,12 @@
 # -*- coding: cp-1252 -*-
 ```
 
+```
+>>> import sys
+>>> sys.getdefaultencoding()
+'utf-8'
+
+```
+
 
 
