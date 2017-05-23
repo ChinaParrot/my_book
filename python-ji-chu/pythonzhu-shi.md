@@ -29,10 +29,7 @@ print("Hello, Python!")
 执行以上代码，输出结果为：
 
 ```
-Hello
-,
-Python
-!
+Hello,Python!
 ```
 
 
