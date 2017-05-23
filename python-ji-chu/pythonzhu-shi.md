@@ -14,10 +14,7 @@ print("Hello, Python!")# 第二个注释
 执行以上代码，输出结果为：
 
 ```
-Hello
-,
-Python
-!
+Hello,Python!
 ```
 
 多行注释可以用多个 \# 号：
@@ -26,10 +23,7 @@ Python
 #!/usr/bin/python3
 # 第一个注释
 # 第二个注释
-print
-(
-"Hello, Python!"
-)
+print("Hello, Python!")
 ```
 
 执行以上代码，输出结果为：
