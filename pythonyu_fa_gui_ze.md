@@ -12,16 +12,27 @@ python最具特色的就是使用缩进来表示代码块，不需要使用大�
 
 ```
  if True:
-	print ("True")
+    print ("True")
 else:
-	print ("False")
+    print ("False")
 ```
 
 ## 多行语句
 
 Python 通常是一行写完一条语句，但如果语句很长，我们可以使用反斜杠\(\\)来实现多行语句，例如：
 
+```
+total = item_one + \
+        item_two + \
+        item_three
+```
 
+在 \[\], {}, 或 \(\) 中的多行语句，不需要使用反斜杠\(\\)，例如：
+
+```
+total = ['item_one', 'item_two', 'item_three',
+        'item_four', 'item_five']
+```
 
 ## 二、变量
 
@@ -38,8 +49,6 @@ Python 通常是一行写完一条语句，但如果语句很长，我们可以�
 6. 变量必须先赋值。
 
 7. 单引号\(''\)与双引号\(""\)表示相同
-
-
 
 
 
