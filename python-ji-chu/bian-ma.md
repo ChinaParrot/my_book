@@ -20,6 +20,9 @@ b = a.encode()
 c = b.decode("utf-8")
 print (b)
 print (c)
+print (len(a))
+print (len(b))
+print (len(c))
 
 #结果
 utf-8
