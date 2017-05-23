@@ -28,6 +28,10 @@ print (len(c))
 utf-8
 b'\xe4\xb8\xad\xe5\x9b\xbd'
 中国
+2
+6
+2
+#同时说明一个汉子占用3个字符
 ```
 
 
