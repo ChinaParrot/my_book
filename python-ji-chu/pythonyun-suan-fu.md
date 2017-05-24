@@ -1,6 +1,6 @@
-## python运算符
+# python运算符
 
-Python算术运算符
+## Python算术运算符
 
 以下假设变量a为10，变量b为20：
 
