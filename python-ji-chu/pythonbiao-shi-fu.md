@@ -8,5 +8,17 @@ python中的标识符是区分大小写的。
 
 ## Python保留字符
 
+具有特定意义的字符串，通常也称为保留字。用户定义的标识符不应与关键字相同
 
-
+| 保留字 |保留字 |保留字 |
+| -- | -- | -- |
+| assert | finally | or |
+| and | exec | not |
+| break | for | pass |
+| class | from | print |
+| continue | global |raise |
+| del | if | return |
+| elif | import | try |
+| in| while | else |
+| is | with | except |
+|lambda|yield|def|
