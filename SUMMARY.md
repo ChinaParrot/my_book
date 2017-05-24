@@ -11,6 +11,7 @@
       * [Python输入输出](python-ji-chu/pythonshu-ru-shu-chu.md)
       * [Python标识符-保留字](python-ji-chu/pythonbiao-shi-fu.md)
       * [python运算符](python-ji-chu/pythonyun-suan-fu.md)
+      * [python转义字符](python-ji-chu/pythonzhuan-yi-zi-fu.md)
     * [Python语法规则](pythonyu_fa_gui_ze.md)
     * [Python语句汇总](pythonyu_ju_hui_zong.md)
     * [Python词典\(dict\)](pythonci_517828_dict.md)
