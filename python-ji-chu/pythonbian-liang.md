@@ -19,11 +19,11 @@ Python 中的变量赋值不需要类型声明。
 ```
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
- 
+
 counter = 100 # 赋值整型变量
 miles = 1000.0 # 浮点型
 name = "John" # 字符串
- 
+
 print counter
 print miles
 print name
@@ -45,6 +45,21 @@ a, b, c = 1, 2, "john"
 
 ## 标准数据类型
 
-  
+在内存中存储的数据可以有多种类型。
+
+例如，一个人的年龄可以用数字来存储，他的名字可以用字符来存储。
+
+Python 定义了一些标准类型，用于存储各种类型的数据。
+
+Python有五个标准的数据类型：
+
+* Numbers（数字）
+* String（字符串）
+* List（列表）
+* Tuple（元组）
+* Dictionary（字典）
+
+
+
 
 
