@@ -231,8 +231,7 @@ print (tinydict.keys())      # 输出所有键
 print (tinydict.values())    # 输出所有值
 ```
 
-输出结果为：  
-
+输出结果为：
 
 ```
 This is one
