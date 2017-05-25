@@ -24,9 +24,9 @@ counter = 100 # 赋值整型变量
 miles = 1000.0 # 浮点型
 name = "John" # 字符串
 
-print counter
-print miles
-print name
+print （counter）
+print （miles）
+print （name）
 ```
 
 ## 多个变量赋值
@@ -128,7 +128,27 @@ python的字串列表有2种取值顺序:
 
 `s = 'ilovepython'`
 
+**s\[1:5\]**的结果是love。
 
+当使用以冒号分隔的字符串，python返回一个新的对象，结果包含了以这对偏移标识的连续的内容，左边的开始是包含了下边界。
+
+上面的结果包含了s\[1\]的值l，而取到的最大范围不包括上边界，就是s\[5\]的值p。
+
+加号（+）是字符串连接运算符，星号（\*）是重复操作。如下实例：
+
+```
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+ 
+str = 'Hello World!'
+ 
+print （str）           # 输出完整字符串
+print （str[0]）        # 输出字符串中的第一个字符
+print （str[2:5]）      # 输出字符串中第三个至第五个之间的字符串
+print （str[2:]）       # 输出从第三个字符开始的字符串
+print （str * 2）       # 输出字符串两次
+print （str + "TEST"）  # 输出连接的字符串
+```
 
 
 
