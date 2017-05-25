@@ -126,5 +126,9 @@ python的字串列表有2种取值顺序:
 
 比如:
 
-s = 'ilovepython'
+`s = 'ilovepython'`
+
+
+
+
 
