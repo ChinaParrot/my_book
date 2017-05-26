@@ -21,9 +21,9 @@ print (tinydict.keys())      # 输出所有键
 print (tinydict.values())    # 输出所有值
 
 #删除字典
-del dict['name'] # 删除键 'name'
-dict.clear()     # 删除字典
-del dict         # 删除字典
+del tinydict ['name'] # 删除键 'name'
+tinydict .clear()     # 删除字典
+del tinydict # 删除字典
 ```
 
 输出结果为：
