@@ -78,12 +78,12 @@ print (tup)
 
 Python元组包含了以下内置函数
 
-| 序号 | 方法及描述 | 实例 |
-| :--- | :--- | :--- |
-| 1 | len\(tuple\) 计算元组元素个数。 | &gt;&gt;&gt; tuple1 = \('Google', 'W3CSchool', 'Taobao'\)&gt;&gt;&gt; len\(tuple1\)3&gt;&gt;&gt; |
-| 2 | max\(tuple\) 返回元组中元素最大值。 | &gt;&gt;&gt; tuple2 = \('5', '4', '8'\)&gt;&gt;&gt; max\(tuple2\)'8'&gt;&gt;&gt; |
-| 3 | min\(tuple\) 返回元组中元素最小值。 | &gt;&gt;&gt; tuple2 = \('5', '4', '8'\)&gt;&gt;&gt; min\(tuple2\)'4'&gt;&gt;&gt; |
-| 4 | tuple\(seq\) 将列表转换为元组。 | &gt;&gt;&gt; list1= \['Google', 'Taobao', 'W3CSchool', 'Baidu'\]&gt;&gt;&gt; tuple1=tuple\(list1\)&gt;&gt;&gt; tuple1\('Google', 'Taobao', 'W3CSchool', 'Baidu'\) |
+| 方法及描述 | 实例 |
+| :--- | :--- |
+| len\(tuple\) 计算元组元素个数。 | &gt;&gt;&gt; tuple1 = \('Google', 'W3CSchool', 'Taobao'\)&gt;&gt;&gt; len\(tuple1\)3&gt;&gt;&gt; |
+| max\(tuple\) 返回元组中元素最大值。 | &gt;&gt;&gt; tuple2 = \('5', '4', '8'\)&gt;&gt;&gt; max\(tuple2\)'8'&gt;&gt;&gt; |
+| min\(tuple\) 返回元组中元素最小值。 | &gt;&gt;&gt; tuple2 = \('5', '4', '8'\)&gt;&gt;&gt; min\(tuple2\)'4'&gt;&gt;&gt; |
+| tuple\(seq\) 将列表转换为元组。 | &gt;&gt;&gt; list1= \['Google', 'Taobao', 'W3CSchool', 'Baidu'\]&gt;&gt;&gt; tuple1=tuple\(list1\)&gt;&gt;&gt; tuple1\('Google', 'Taobao', 'W3CSchool', 'Baidu'\) |
 
 
 
