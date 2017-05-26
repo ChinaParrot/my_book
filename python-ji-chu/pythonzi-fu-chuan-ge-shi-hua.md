@@ -70,6 +70,8 @@ python字符串格式化符号:
 | s.index\("python"\) | s.index\(\)g跟find\(\)方法一样，只是查不到会抛异常 |
 | s.replace\("love","like"\) | 替换s中的love为like |
 | s.replace\("python","scala",2\) | 替换s中的python为scala,最后一个参数为替换的次数 |
+| s3 = "  i love python    "                                                                  print\(s3.strip\(\)\)                                                                             print\(s3.lstrip\(\)\)                                                                           print\(s3.rstrip\(\)\)     |                                                                                                      去两边空格                                                                                    去左边空格                                                                                     去右边空格                                                                                                      |
+|  |  |
 |  |  |
 |  |  |
 |  |  |
