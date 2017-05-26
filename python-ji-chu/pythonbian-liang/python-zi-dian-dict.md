@@ -44,3 +44,17 @@ del tinydict # 删除字典
 
 1）不允许同一个键出现两次。创建时如果同一个键被赋值两次，后一个值会被记住，如下实例：
 
+```
+#!/usr/bin/python3
+dict = {'Name': 'W3CSchool', 'Age': 7, 'Name': '小菜鸟'}
+print ("dict['Name']: ", dict['Name'])
+```
+
+以上实例输出结果：
+
+```
+dict['Name']:  小菜鸟
+```
+
+
+
