@@ -59,5 +59,20 @@ print (tup3)
 (12, 34.56, 'abc', 'xyz')
 ```
 
+**删除元组**
+
+元组中的元素值是不允许删除的，但我们可以使用del语句来删除整个元组，如下实例:
+
+```
+#!/usr/bin/python3
+
+tup = ('Google', 'xxx', 1997, 1997)
+
+print (tup)
+del tup;
+print ("删除后的元组 tup : ")
+print (tup)
+```
+
 
 
