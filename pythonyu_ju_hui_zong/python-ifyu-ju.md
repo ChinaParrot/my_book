@@ -26,9 +26,9 @@ else:
 # -*- coding: UTF-8 -*-
 name = 'python'
 if name == 'python':
-    print 'python'
+    print ('python')
 else:
-    print 'other'
+    print ('other')
 
 
 
@@ -36,11 +36,11 @@ else:
 # -*- coding: UTF-8 -*-
 name = 'python'
 if name == 'python':
-    print 'python'
+    print ('python')
 elif name == 'python2':
-    print 'python2'
+    print ('python2')
 elif name == 'python3':
-    print 'python3'
+    print ('python3')
 ```
 
 
