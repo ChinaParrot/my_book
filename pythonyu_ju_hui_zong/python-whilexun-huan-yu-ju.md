@@ -65,6 +65,12 @@ while var == 1:
     i = i + 1
     print ("你第 %s 次输入的是：%s" % (i,num))
 print ("bye!!!")
+
+
+import time
+while 1:
+    print ('死循环')
+    time.sleep(1)
 ```
 
 
