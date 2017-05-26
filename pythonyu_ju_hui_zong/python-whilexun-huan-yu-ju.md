@@ -7,10 +7,10 @@ while 判断条件：
 例子：
 
 ```
-#!/usr/bin/python
+#!/usr/bin/python3
 count = 0
 while (count <20):
-print 'The count is:',count
+print 'The count is:',(count)
 count = count + 2
 print 'Good bye!'
 ```
