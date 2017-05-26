@@ -68,7 +68,7 @@ python字符串格式化符号:
 | s.rfind\("python"\) | 从右边开始搜索 |
 | s.count\("p"\) | 统计该字符串出现的次数 |
 | s.index\("python"\) | s.index\(\)g跟find\(\)方法一样，只是查不到会抛异常 |
-|  |  |
+| s.replace\("love","like"\) | t替换s1中的love为like |
 |  |  |
 |  |  |
 |  |  |
