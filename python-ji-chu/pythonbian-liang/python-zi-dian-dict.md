@@ -85,9 +85,9 @@ Python字典包含了以下内置函数：
 
 | 函数及描述 | 实例 |
 | :--- | :--- |
-| len\(dict\) 计算字典元素个数，即键的总数。 | &gt;&gt;&gt; dict = {'Name': 'xxx', 'Age': 7, 'Class': 'First'}&gt;&gt;&gt; len\(dict\)3 |
-| str\(dict\) 输出字典以可打印的字符串表示。 | &gt;&gt;&gt; dict = {'Name': 'xxx', 'Age': 7, 'Class': 'First'}&gt;&gt;&gt; str\(dict\)"{'Name': 'xxx', 'Class': 'First', 'Age': 7}" |
-| type\(variable\) 返回输入的变量类型，如果变量是字典就返回字典类型。 | &gt;&gt;&gt; dict = {'Name': 'xxx', 'Age': 7, 'Class': 'First'}&gt;&gt;&gt; type\(dict\)&lt;class 'dict'&gt; |
+| len\(dict\) 计算字典元素个数，即键的总数。 | &gt;&gt;&gt; dict = {'Name': 'xxx', 'Age': 7, 'Class': 'First'}                       &gt;&gt;&gt; len\(dict\)3 |
+| str\(dict\) 输出字典以可打印的字符串表示。 | &gt;&gt;&gt; dict = {'Name': 'xxx', 'Age': 7, 'Class': 'First'}                       &gt;&gt;&gt; str\(dict\)"{'Name': 'xxx', 'Class': 'First', 'Age': 7}" |
+| type\(variable\) 返回输入的变量类型，如果变量是字典就返回字典类型。 | &gt;&gt;&gt; dict = {'Name': 'xxx', 'Age': 7, 'Class': 'First'}                       &gt;&gt;&gt; type\(dict\)&lt;class 'dict'&gt; |
 
 Python字典包含了以下内置方法：
 
