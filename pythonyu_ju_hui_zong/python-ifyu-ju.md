@@ -20,3 +20,27 @@ else:
 执行语句4……
 
 ```
+例子：
+
+```
+
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+name = 'python'
+if name == 'python':
+print 'python'
+else:
+print 'other'
+
+
+
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+name = 'python'
+if name == 'python':
+print 'python'
+elif name == 'python2':
+print 'python2'
+elif name == 'python3':
+print 'python3'
+```
