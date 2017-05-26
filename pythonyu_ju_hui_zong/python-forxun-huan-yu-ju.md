@@ -20,20 +20,12 @@ fruits = ['banana', 'apple', 'mango']
 for fruit in fruits:
     print ('当前水果 :', fruit)
 print ("Good bye!")
-
 ```
 
 另外一种执行循环的遍历方式是通过索引，如下实例：
 
 ```
-#!/usr/bin/python
-# -*- coding: UTF-8 -*-
 
-fruits = ['banana', 'apple', 'mango']
-for index in range(len(fruits)):
-print '当前水果 :', fruits[index]
-
-print "Good bye!"
 ```
 
 循环使用 else 语句：
