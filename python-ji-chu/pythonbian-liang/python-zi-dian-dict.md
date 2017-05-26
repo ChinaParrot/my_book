@@ -93,16 +93,16 @@ Python字典包含了以下内置方法：
 
 | 函数及描述 |
 | :--- |
-| [radiansdict.clear\(\)](https://www.w3cschool.cn/python3/python3-att-dictionary-clear.html) 删除字典内所有元素 |
-| [radiansdict.copy\(\)](https://www.w3cschool.cn/python3/python3-att-dictionary-copy.html) 返回一个字典的浅复制 |
-| [radiansdict.fromkeys\(\)](https://www.w3cschool.cn/python3/python3-att-dictionary-fromkeys.html) 创建一个新字典，以序列seq中元素做字典的键，val为字典所有键对应的初始值 |
-| [radiansdict.get\(key, default=None\)](https://www.w3cschool.cn/python3/python3-att-dictionary-get.html) 返回指定键的值，如果值不在字典中返回default值 |
-| [key in dict](https://www.w3cschool.cn/python3/python3-att-dictionary-in.html) 如果键在字典dict里返回true，否则返回false |
-| [radiansdict.items\(\)](https://www.w3cschool.cn/python3/python3-att-dictionary-items.html) 以列表返回可遍历的\(键, 值\) 元组数组 |
-| [radiansdict.keys\(\)](https://www.w3cschool.cn/python3/python3-att-dictionary-keys.html) 以列表返回一个字典所有的键 |
-| [radiansdict.setdefault\(key, default=None\)](https://www.w3cschool.cn/python3/python3-att-dictionary-setdefault.html) 和get\(\)类似, 但如果键不存在于字典中，将会添加键并将值设为default |
-| [radiansdict.update\(dict2\)](https://www.w3cschool.cn/python3/python3-att-dictionary-update.html) 把字典dict2的键/值对更新到dict里 |
-| [radiansdict.values\(\)](https://www.w3cschool.cn/python3/python3-att-dictionary-values.html) 以列表返回字典中的所有值 |
+| radiansdict.clear\(\) 删除字典内所有元素 |
+| radiansdict.copy\(\) 返回一个字典的浅复制 |
+| radiansdict.fromkeys\(\) 创建一个新字典，以序列seq中元素做字典的键，val为字典所有键对应的初始值 |
+| radiansdict.get\(key, default=None\) 返回指定键的值，如果值不在字典中返回default值 |
+| key in dict 如果键在字典dict里返回true，否则返回false |
+| radiansdict.items\(\) 以列表返回可遍历的\(键, 值\) 元组数组 |
+| radiansdict.keys\(\) 以列表返回一个字典所有的键 |
+| radiansdict.setdefault\(key, default=None\) 和get\(\)类似, 但如果键不存在于字典中，将会添加键并将值设为default |
+| radiansdict.update\(dict2\) 把字典dict2的键/值对更新到dict里 |
+| radiansdict.values\(\) 以列表返回字典中的所有值 |
 
 
 
