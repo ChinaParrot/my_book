@@ -25,12 +25,12 @@ This is two
 {'dept': 'sales', 'code': 6734, 'name': 'john'}
 ['dept', 'code', 'name']
 ['sales', 6734, 'john']
-
 ```
 
 删除字典
 
 ```
+tinydict = {'name': 'john','code':6734, 'dept': 'sales'}
 del tinydict ['name'] # 删除键 'name'
 tinydict .clear()     # 删除字典
 del tinydict # 删除字典
