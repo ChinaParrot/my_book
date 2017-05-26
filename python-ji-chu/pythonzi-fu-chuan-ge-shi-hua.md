@@ -69,7 +69,7 @@ python字符串格式化符号:
 | s.count\("p"\) | 统计该字符串出现的次数 |
 | s.index\("python"\) | s.index\(\)g跟find\(\)方法一样，只是查不到会抛异常 |
 | s.replace\("love","like"\) | 替换s中的love为like |
-|  |  |
+|  | 替换s中的python为scala,最后一个参数为替换的次数 |
 |  |  |
 |  |  |
 |  |  |
