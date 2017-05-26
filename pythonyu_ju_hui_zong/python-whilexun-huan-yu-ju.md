@@ -33,7 +33,6 @@ while 1:
     i +=1
     if i >10:
         break
-        
 ```
 
 以下实例使用了 while 来计算 1 到 100 的总和：
@@ -49,6 +48,23 @@ while counter <= n:
     sum = sum + counter
     counter += 1
 print("1 到 %d 之和为: %d" % (n,sum))
+```
+
+while 实现死循环
+
+```
+#!/usr/bin/env python3
+# -*- coding: UTF-8 -*-
+
+
+var = 1
+i = 0
+while var == 1:
+    num = input("请输入：")
+    #i += 1
+    i = i + 1
+    print ("你第 %s 次输入的是：%s" % (i,num))
+print ("bye!!!")
 ```
 
 
