@@ -14,6 +14,7 @@
       * [python转义字符](python-ji-chu/pythonzhuan-yi-zi-fu.md)
       * [Python字符串](python-ji-chu/pythonzi-fu-chuan-ge-shi-hua.md)
       * [Python变量类型](python-ji-chu/pythonbian-liang.md)
+        * [python 字典dict](python-ji-chu/pythonbian-liang/python-zi-dian-dict.md)
     * [Python语法规则](pythonyu_fa_gui_ze.md)
     * [Python语句汇总](pythonyu_ju_hui_zong.md)
       * [python if语句](pythonyu_ju_hui_zong/python-ifyu-ju.md)
