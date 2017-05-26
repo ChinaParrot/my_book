@@ -20,6 +20,7 @@
     * [Python语句汇总](pythonyu_ju_hui_zong.md)
       * [python if语句](pythonyu_ju_hui_zong/python-ifyu-ju.md)
       * [python While循环语句](pythonyu_ju_hui_zong/python-whilexun-huan-yu-ju.md)
+      * [python for循环语句](pythonyu_ju_hui_zong/python-forxun-huan-yu-ju.md)
     * [Python词典\(dict\)](pythonci_517828_dict.md)
     * [Python列表（list）](pythonlie_biao_ff08_list.md)
     * [Python集合\(set\)](pythonji_540828_set.md)
