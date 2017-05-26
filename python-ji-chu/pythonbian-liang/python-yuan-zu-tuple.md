@@ -7,10 +7,10 @@
 ```
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
- 
-tuple = ( 'runoob', 786 , 2.23, 'john', 70.2 )
+
+tuple = ( 'xxx', 786 , 2.23, 'john', 70.2 )
 tinytuple = (123, 'john')
- 
+
 print tuple               # 输出完整元组
 print tuple[0]            # 输出元组的第一个元素
 print tuple[1:3]          # 输出第二个至第三个的元素 
