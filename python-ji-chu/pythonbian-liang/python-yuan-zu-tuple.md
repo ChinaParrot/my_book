@@ -17,6 +17,14 @@ print (tuple[1:3])          # 输出第二个至第三个的元素
 print (tuple[2:])           # 输出从第三个开始至列表末尾的所有元素
 print (tinytuple * 2)       # 输出元组两次
 print (tuple + tinytuple)   # 打印组合的元组
+
+#
+'xxx', 786, 2.23, 'john', 70.2)
+xxx
+(786, 2.23)
+(2.23, 'john', 70.2)
+(123, 'john', 123, 'john')
+('xxx', 786, 2.23, 'john', 70.2, 123, 'john')
 ```
 
 
