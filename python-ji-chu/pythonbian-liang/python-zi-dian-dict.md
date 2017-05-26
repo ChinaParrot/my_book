@@ -26,14 +26,15 @@ This is two
 ['dept', 'code', 'name']
 ['sales', 6734, 'john']
 
+```
 
-#删除字典
+删除字典
+
+```
 del tinydict ['name'] # 删除键 'name'
 tinydict .clear()     # 删除字典
 del tinydict # 删除字典
 ```
-
-
 
 
 
