@@ -1,6 +1,5 @@
 # if语句
 
-
 Python 编程中 if 语句用于控制程序的执行，基本形式为：
 
 ```
@@ -18,19 +17,18 @@ elif 判断条件3:
 执行语句3……
 else:
 执行语句4……
-
 ```
+
 例子：
 
 ```
-
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 name = 'python'
 if name == 'python':
-print 'python'
+    print 'python'
 else:
-print 'other'
+    print 'other'
 
 
 
@@ -38,9 +36,12 @@ print 'other'
 # -*- coding: UTF-8 -*-
 name = 'python'
 if name == 'python':
-print 'python'
+    print 'python'
 elif name == 'python2':
-print 'python2'
+    print 'python2'
 elif name == 'python3':
-print 'python3'
+    print 'python3'
 ```
+
+
+
