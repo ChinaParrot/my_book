@@ -5,8 +5,11 @@ Python for循环可以遍历任何序列的项目，如一个列表或者一个�
 语法：
 for循环的语法格式如下：
 
-<pre>for iterating_var in sequence:
-statements(s)</pre>
+ 
+```
+for iterating_var in sequence:
+        statements(s)
+```
 
 ```
 #!/usr/bin/python
