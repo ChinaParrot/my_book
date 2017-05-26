@@ -26,6 +26,14 @@ print ("Good bye!")
 
 ```
 
+#!/usr/bin/env python3
+# -*- coding: UTF-8 -*-
+
+fruits = ['banana', 'apple', 'mango']
+for index in range(len(fruits)):
+    print ('当前水果 :', fruits[index])
+    print ('当前index是：', index)
+print ("Good bye!")
 ```
 
 循环使用 else 语句：
