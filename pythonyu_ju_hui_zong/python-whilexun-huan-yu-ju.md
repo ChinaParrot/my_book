@@ -12,10 +12,8 @@ count = 0
 while (count <20):
     print ('The count is:', count)
     count = count + 2
-    print ('Good bye!')
+print ('Good bye!')
 ```
 
 while 语句时还有另外两个重要的命令 continue，break 来跳过循环，continue 用于跳过该次循环，break 则是用于退出循环，此外"判断条件"还可以是个常值，表示循环必定成立，具体用法如下：
-
-
 
