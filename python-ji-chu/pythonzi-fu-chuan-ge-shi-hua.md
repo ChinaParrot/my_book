@@ -70,11 +70,30 @@ python字符串格式化符号:
 | s.index\("python"\) | s.index\(\)g跟find\(\)方法一样，只是查不到会抛异常 |
 | s.replace\("love","like"\) | 替换s中的love为like |
 | s.replace\("python","scala",2\) | 替换s中的python为scala,最后一个参数为替换的次数 |
-| s3 = "  i love python    "                                                                  print\(s3.strip\(\)\)                                                                             print\(s3.lstrip\(\)\)                                                                           print\(s3.rstrip\(\)\)     |                                                                                                      去两边空格                                                                                    去左边空格                                                                                     去右边空格                                                                                                      |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
+| s3 = "  i love python    "                                                                  print\(s3.strip\(\)\)                                                                             print\(s3.lstrip\(\)\)                                                                           print\(s3.rstrip\(\)\) | 去两边空格                                                                                    去左边空格                                                                                     去右边空格 |
+| s4 = "i love python"                                                                        print\(s4.strip\("i"\)\)                                                                          print\(s4.lstrip\("i"\)\)                                                                         print\(s4.rstrip\("python"\)\) |                                                                                                         \#去两边字符串                                                                               去左边字符串                                                                                去右边字符串 |
+| print\(s.split\(" "\)\) | 按指定字符分割字符串为数组 |
+| print\(s.startswith\("study"\)\) | 是否以study开头 |
+| print\(s.endswith\("python"\)\) | 是否以python结尾 |
+| print\(s.isalnum\(\)\) | 是否全为字母或数字\(要么全是字母，要么全是数字\) |
+| print\(s.isalpha\(\)\) | 是否全为字母 |
+| print\(s.isdigit\(\)\) | 是否全为数字 |
+| print\(s.islower\(\)\) | 是否全是小写 |
+| print\(s.isupper\(\)\) | 是否全是大写 |
+| print\(s.istitle\(\)\) | s的首字母是否是大写 |
+
+```
+#编解码
+#解码函数
+print(type(s))
+s = s.decode("utf-8")
+print(type(s))
+#编码函数
+s = s.encode("utf-8")
+print(type(s))
+#cmp函数用于比较两个对象s<s2返回-1，s>s2返回1 s=s2返回0
+print(cmp(s1,s2))
+```
 
 
 
