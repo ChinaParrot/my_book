@@ -46,7 +46,7 @@ del tinydict # 删除字典
 
 ```
 #!/usr/bin/python3
-dict = {'Name': 'W3CSchool', 'Age': 7, 'Name': '小菜鸟'}
+dict = {'Name': 'xxx', 'Age': 7, 'Name': '小菜鸟'}
 print ("dict['Name']: ", dict['Name'])
 ```
 
