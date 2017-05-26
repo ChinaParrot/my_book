@@ -55,8 +55,6 @@ while 实现死循环
 ```
 #!/usr/bin/env python3
 # -*- coding: UTF-8 -*-
-
-
 var = 1
 i = 0
 while var == 1:
@@ -67,6 +65,9 @@ while var == 1:
 print ("bye!!!")
 
 
+
+#!/usr/bin/env python3
+# -*- coding: UTF-8 -*-
 import time
 while 1:
     print ('死循环')
