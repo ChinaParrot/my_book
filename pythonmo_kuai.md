@@ -39,7 +39,7 @@ Hello : Zara
 一个模块只会被导入一次，不管你执行了多少次import。这样可以防止导入模块被一遍又一遍地执行。
 ```
 
-**From…import 语句        
+**From…import 语句          
 **
 
 Python的from语句让你从模块中导入一个指定的部分到当前命名空间中。语法如下：
@@ -94,8 +94,6 @@ set PYTHONPATH=/usr/local/lib/python
 
 **命名空间和作用域**
 
-
-
 变量是拥有匹配对象的名字（标识符）。命名空间是一个包含了变量名称们（键）和它们各自相应的对象们（值）的字典。
 
 一个Python表达式可以访问局部命名空间和全局命名空间里的变量。如果一个局部变量和一个全局变量重名，则局部变量会覆盖全局变量。
@@ -143,6 +141,82 @@ print (content)
 'log10', 'modf', 'pi', 'pow', 'radians', 'sin', 'sinh',
 'sqrt', 'tan', 'tanh']
 ```
+
+在这里，特殊字符串变量\_\_name\_\_指向模块的名字，\_\_file\_\_指向该模块的导入文件名。
+
+**globals\(\)和locals\(\)函数**
+
+根据调用地方的不同，globals\(\)和locals\(\)函数可被用来返回全局和局部命名空间里的名字。
+
+如果在函数内部调用locals\(\)，返回的是所有能在该函数里访问的命名。
+
+如果在函数内部调用globals\(\)，返回的是所有在该函数里能访问的全局名字。
+
+两个函数的返回类型都是字典。所以名字们能用keys\(\)函数摘取。
+
+**reload\(\)函数**
+
+当一个模块被导入到一个脚本，模块顶层部分的代码只会被执行一次。
+
+因此，如果你想重新执行模块里顶层部分的代码，可以用reload\(\)函数。该函数会重新导入之前导入过的模块。语法如下：
+
+```
+reload(module_name)
+```
+
+在这里，module\_name要直接放模块的名字，而不是一个字符串形式。比如想重载hello模块，如下：
+
+`reload(hello)`
+
+**Python中的包**
+
+包是一个分层次的文件目录结构，它定义了一个由模块及子包，和子包下的子包等组成的Python的应用环境。
+
+考虑一个在Phone目录下的pots.py文件。这个文件有如下源代码：
+
+```
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+def Pots():
+print "I'm Pots Phone"
+```
+
+同样地，我们有另外两个保存了不同函数的文件：
+
+* Phone/Isdn.py 含有函数Isdn\(\)
+*  Phone/G3.py 含有函数G3\(\)
+
+现在，在Phone目录下创建file \_\_init\_\_.py：
+
+Phone/\_\_init\_\_.py
+
+当你导入Phone时，为了能够使用所有函数，你需要在\_\_init\_\_.py里使用显式的导入语句，如下：
+
+```
+from Pots import Pots
+from Isdn import Isdn
+from G3 import G3
+```
+
+当你把这些代码添加到\_\_init\_\_.py之后，导入Phone包的时候这些类就全都是可用的了。
+
+```
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+# 导入 Phone 包
+import Phone
+Phone.Pots()
+Phone.Isdn()
+Phone.G3()
+以上实例输出结果：
+I'm Pots Phone
+I'm 3G Phone
+I'm ISDN Phone
+```
+
+如上，为了举例，我们只在每个文件里放置了一个函数，但其实你可以放置许多函数。你也可以在这些文件里定义Python的类，然后为这些类建一个包。
+
+
 
 
 
