@@ -61,7 +61,6 @@ datetime.now\(\)返回当前日期和时间，其类型是datetime。
 Thu, May 12 15:33
 >>> print(now.strftime('%Y-%m-%d %H:%M:%S'))
 2016-05-12 15:33:40
-
 ```
 
 ```
@@ -77,7 +76,8 @@ a = "Sat Mar 28 22:24:24 2016"
 print time.mktime(time.strptime(a,"%a %b %d %H:%M:%S %Y"))
 ```
 
-**datetime加减**
+**datetime加减  
+**
 
 对日期和时间进行加减实际上就是把datetime往后或往前计算，得到新的datetime。加减可以直接用+和-运算符，不过需要导入timedelta这个类：
 
