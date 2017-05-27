@@ -32,7 +32,7 @@ list[start:end:step]
 ord('a')
 ```
 
-实例：
+**实例：**
 
 ```
 #!/usr/bin/env python3
@@ -91,7 +91,7 @@ print ("After deleting value at index 2 : ")
 print (list1);
 ```
 
-追加元素:
+**追加元素:**
 
 ```
 list.append(x)方法
@@ -103,7 +103,6 @@ len(x)
 除了 将元素追加到list中，还能够将两个list合并，或者说将一个list追加到另外一个list中。
 
 ist.extend(L)
-
 ```
 
 ```
@@ -116,8 +115,9 @@ ist.extend(L)
 [1, 2, 3, 'qiwsir', 'python']
 >>> lb
 ['qiwsir', 'python']
-
 ```
+
+**list中某元素的个数:**
 
 
 
