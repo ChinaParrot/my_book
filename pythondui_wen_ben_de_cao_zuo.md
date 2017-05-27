@@ -1,8 +1,6 @@
 # python对文件操作
 
-
-
-文件的读取
+**文件的读取**
 
 ```
 >>> f=file('contact_list.txt','a')
@@ -30,6 +28,8 @@ sys.exit()
 else:
 print "\033[1;32m not in world key word! \033[0m"
 ```
+
+**文件修改和替换**
 
 
 
