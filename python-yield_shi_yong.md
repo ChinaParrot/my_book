@@ -12,14 +12,14 @@ for item in xrange(10):
 
 ```
 def foo():
-yield 1
-yield 2
-yield 3
-yield 4
-re = foo()
-#print re
-for item in re:
-print item
+    yield 1
+    yield 2
+    yield 3
+    yield 4
+    re = foo()
+    #print re
+    for item in re:
+        print item
 ```
 
 ```
