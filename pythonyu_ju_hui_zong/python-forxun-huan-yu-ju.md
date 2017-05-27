@@ -1,5 +1,17 @@
 # for 循环语句
 
+| 循环类型 |
+| :--- |
+
+
+| 循环类型 | 描述 |
+| :--- | :--- |
+| [while 循环](http://www.runoob.com/python/python-while-loop.html) | 在给定的判断条件为 true 时执行循环体，否则退出循环体。 |
+| [for 循环](http://www.runoob.com/python/python-for-loop.html) | 重复执行语句 |
+| [嵌套循环](http://www.runoob.com/python/python-nested-loops.html) | 你可以在while循环体中嵌套for循环 |
+
+
+
 Python for循环可以遍历任何序列的项目，如一个列表或者一个字符串。  
 语法：  
 for循环的语法格式如下：
@@ -49,7 +61,6 @@ for num in range(1,20):
             break
     else:
         print (num,'是一个质数')
-
 ```
 
 ## 循环控制语句
