@@ -100,9 +100,8 @@ os.getenv('PATH')
 * fp.tell\(\)\#返回文件操作标记的当前位置，以文件的开头为原点。
 * fp.truncate\(\[size\]\) 截取文件大小
 
-**文件处理的分割**
-
-
+**文件处理的分割  
+**
 
 ```
 f = file('test.txt','r')
@@ -113,17 +112,12 @@ f.readline().strip('\n').split()
 
 当文件被读取的时候，这时也被写入，可以通过read\(\)读取刚刚写入的内容。
 
-
-
 例如：
 
+```
+f=open('file.txt',rw)
+f.read\(\)
+```
 
 
-&lt;pre&gt;
-
-f=open\('file.txt',rw\)
-
-f.read\\(\\)
-
-&lt;pre&gt;
 
