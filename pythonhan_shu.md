@@ -22,5 +22,26 @@ def functionname( parameters ):
 return [expression]
 ```
 
+**函数调用**
+
+定义一个函数只给了函数一个名称，指定了函数里包含的参数，和代码块结构。
+
+这个函数的基本结构完成以后，你可以通过另一个函数调用执行，也可以直接从Python提示符执行。
+
+如下实例调用了printme（）函数：
+
+```
+#!/usr/bin/env python3
+# -*- coding: UTF-8 -*-
+# 定义函数
+def printme( str ):
+"打印任何传入的字符串"
+print (str)
+return
+# 调用函数
+printme("我要调用用户自定义函数!");
+printme("再次调用同一函数");
+```
+
 
 
