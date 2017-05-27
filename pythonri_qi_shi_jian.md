@@ -88,6 +88,16 @@ def getYesterday():
     return yesterday
 yesterday = getYesterday()
 print "昨天的时间：", yesterday
+
+#字符串转换为时间和日期
+
+# 字符串转换为时间
+def strTodatetime(datestr, format):
+    return datetime.datetime.strptime(datestr, format)
+print time.strftime("%Y-%m-%d", time.localtime())
+print strTodatetime("2014-3-1","%Y-%m-%d")
+print time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+print strTodatetime("2005-2-16","%Y-%m-%d")-strTodatetime("2004-12-31","%Y-%m-%d")
 ```
 
 注意到datetime是模块，datetime模块还包含一个datetime类，通过from datetime import datetime导入的才是datetime这个类。
@@ -126,7 +136,7 @@ a = "Sat Mar 28 22:24:24 2016"
 print time.mktime(time.strptime(a,"%a %b %d %H:%M:%S %Y"))
 ```
 
-**datetime加减                      
+**datetime加减                        
 **
 
 对日期和时间进行加减实际上就是把datetime往后或往前计算，得到新的datetime。加减可以直接用+和-运算符，不过需要导入timedelta这个类：
