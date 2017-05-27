@@ -118,7 +118,6 @@ def sum( arg1, arg2 ):
 # 调用sum函数
 total = sum( 10, 20 );
 print ("函数外 : ", total)
-
 ```
 
 **变量作用域**
@@ -137,7 +136,22 @@ print ("函数外 : ", total)
 
 局部变量只能在其被声明的函数内部访问，而全局变量可以在整个程序范围内访问。调用函数时，所有在函数内声明的变量名称都将被加入到作用域中。如下实例：
 
+```
+#!/usr/bin/env python3
+# -*- coding: UTF-8 -*-
 
+total = 0; # 这是一个全局变量
+# 可写函数说明
+def sum( arg1, arg2 ):
+    #返回2个参数的和."
+    total = arg1 + arg2; # total在这里是局部变量.
+    print ("函数内是局部变量 : ", total)
+    return total;
+#调用sum函数
+sum( 10, 20 );
+print ("函数外是全局变量 : ", total)
+
+```
 
 
 
