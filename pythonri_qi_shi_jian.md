@@ -18,11 +18,16 @@ localtime2 =time.asctime(time.localtime())
 
 print (localtime)
 print (localtime2)
+
+#结果
+
+1495859168.1940289
+time.struct_time(tm_year=2017, tm_mon=5, tm_mday=27, tm_hour=12, tm_min=26, tm_sec=8, tm_wday=5, tm_yday=147, tm_isdst=0)
+Sat May 27 12:26:08 2017
+[Finished in 0.3s]
 ```
 
 **datetime**
-
-
 
 ```
 >>>print (datetime.now())
@@ -77,7 +82,7 @@ a = "Sat Mar 28 22:24:24 2016"
 print time.mktime(time.strptime(a,"%a %b %d %H:%M:%S %Y"))
 ```
 
-**datetime加减        
+**datetime加减          
 **
 
 对日期和时间进行加减实际上就是把datetime往后或往前计算，得到新的datetime。加减可以直接用+和-运算符，不过需要导入timedelta这个类：
