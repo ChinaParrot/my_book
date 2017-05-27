@@ -28,7 +28,6 @@
     * [Python模块](pythonmo_kuai.md)
     * [Python函数](pythonhan_shu.md)
     * [Python-yield 使用](python-yield_shi_yong.md)
-    * [Python 入门](python-ru-men.md)
     * [python面向对象](pythonmian_xiang_dui_xiang.md)
     * [Python CGI编程](python_cgibian_cheng.md)
     * [Python反射机制](pythonfan_she_ji_zhi.md)
