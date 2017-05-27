@@ -18,7 +18,7 @@
 ```
 def functionname( parameters ):
 "函数_文档字符串"
-function_suite
+    function_suite
 return [expression]
 ```
 
