@@ -39,7 +39,8 @@ Hello : Zara
 一个模块只会被导入一次，不管你执行了多少次import。这样可以防止导入模块被一遍又一遍地执行。
 ```
 
-**From…import 语句**
+**From…import 语句  
+**
 
 Python的from语句让你从模块中导入一个指定的部分到当前命名空间中。语法如下：
 
@@ -65,7 +66,13 @@ from modname import *
 
 这提供了一个简单的方法来导入一个模块中的所有项目。然而这种声明不该被过多地使用。
 
+**定位模块**
 
+当你导入一个模块，Python解析器对模块位置的搜索顺序是：
 
+*  当前目录
+*  如果不在当前目录，Python 则搜索在 shell 变量 PYTHONPATH 下的每个目录。
+*  如果都找不到，Python会察看默认路径。UNIX下，默认路径一般为/usr/local/lib/python/。
 
+模块搜索路径存储在system模块的sys.path变量中。变量里包含当前目录，PYTHONPATH和由安装过程决定的默认目录。
 
