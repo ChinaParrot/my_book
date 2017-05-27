@@ -20,21 +20,6 @@ print (localtime2)
 
 ```
 
-#datetime
->>>print (datetime.now())
-2016-05-12 14:55:16.708495
->>> import datetime
->>> n = datetime.datetime.now()
->>> n
-datetime.datetime(2016, 5, 12, 15, 23, 2, 433582)
->>> n.timetuple()
-time.struct_time(tm_year=2016, tm_mon=5, tm_mday=12, tm_hour=15, tm_min=23, tm_sec=2, tm_wday=3, tm_yday=133, tm_isdst=-1)
-
->>> t=time.time()
->>> from datetime import datetime
->>> print(datetime.fromtimestamp(t))
-2016-05-12 14:50:07.138568
->>>
 ```
 
 注意到datetime是模块，datetime模块还包含一个datetime类，通过from datetime import datetime导入的才是datetime这个类。
@@ -73,7 +58,7 @@ a = "Sat Mar 28 22:24:24 2016"
 print time.mktime(time.strptime(a,"%a %b %d %H:%M:%S %Y"))
 ```
 
-**datetime加减    
+**datetime加减      
 **
 
 对日期和时间进行加减实际上就是把datetime往后或往前计算，得到新的datetime。加减可以直接用+和-运算符，不过需要导入timedelta这个类：
