@@ -15,7 +15,7 @@ contact_list='contact_list.txt'
 f=file(contact_list)
 c=f.readlines()
 while True:
-    user_input = raw_input('\033[0;31;1m please input sth to search: \033[0m')
+    user_input = input('\033[0;31;1m please input sth to search: \033[0m')
     if len(user_input) == 0:
         continue
     for line in c:
