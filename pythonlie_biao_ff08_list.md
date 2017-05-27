@@ -2,9 +2,28 @@
 
 序列是Python中最基本的数据结构。序列中的每个元素都分配一个数字 – 它的位置，或索引，第一个索引是0，第二个索引是1，依此类推。
 
+```
+list的方法：
+L.append(var) #追加元素
+L.insert(index,var) #插入指定的位置
+L.pop(var) #返回最后一个元素，并从list中删除之
+L.remove(var) #删除第一次出现的该元素
+L.count(var) #该元素在列表中出现的个数
+L.index(var) #该元素的位置，无责抛出异常
+L.extend(list) #追加list,即合并list到L上
+L.sort() #排序
+L.reverse() #倒叙
 
+a[1:] #片段操作符，用于子list的提取
+[1,2]+[3,4] #为[1,2,3,4]。同extend()
+[2]*4 #为[2,2,2,2]
 
+del L[1] #删除指定下标的元素
+del L[1:3] #指定范围
 
+#查看ASCII的值
+ord('a')
+```
 
 
 
