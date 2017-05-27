@@ -55,5 +55,18 @@ for y in range(name.count(2)):
         print (pos)
 ```
 
+```
+#01
+#!/usr/bin/python
+list1 = ['physics', 'chemistry', 1997, 2000];
+list2 = [1, 2, 3, 4, 5, 6, 7 ];
+print "list1[0]: ", list1[0]
+print "list2[1:5]: ", list2[1:5]
+
+#结果
+list1[0]: physics
+list2[1:5]: [2, 3, 4, 5]
+```
+
 
 
