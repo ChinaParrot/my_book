@@ -5,24 +5,21 @@ datetime是Python处理日期和时间的标准库。
 Python程序能用很多方式处理日期和时间。转换日期格式是一个常见的例行琐事。Python有一个 time 和 calendar 模组可以帮忙。
 
 ```
-#time 获取当前时间
-#!/usr/bin/python
-import time;
+#!/usr/bin/env python3
+import time
+#如函数time.time()用于获取当前时间戳
+print (time.time())
+#时间结构
+localtime = time.localtime()
+#但是最简单的获取可读的时间模式的函数是asctime()
+localtime2 =time.asctime(time.localtime())
 
-localtime = time.localtime(time.time())
-print "Local current time :", localtime
-
-#结果
-time.struct_time(tm_year=2016, tm_mon=2, tm_mday=25, tm_hour=22, tm_min=48, tm_sec=27, tm_wday=3, tm_yday=56, tm_isdst=0)
-
-localtime = time.asctime( time.localtime(time.time()) )
-print "Local current time :", localtime
-
-#结果
-Local current time : Thu Feb 25 22:50:47 2016
+print (localtime)
+print (localtime2)
 ```
 
 ```
+
 #datetime
 >>>print (datetime.now())
 2016-05-12 14:55:16.708495
@@ -76,7 +73,7 @@ a = "Sat Mar 28 22:24:24 2016"
 print time.mktime(time.strptime(a,"%a %b %d %H:%M:%S %Y"))
 ```
 
-**datetime加减  
+**datetime加减    
 **
 
 对日期和时间进行加减实际上就是把datetime往后或往前计算，得到新的datetime。加减可以直接用+和-运算符，不过需要导入timedelta这个类：
