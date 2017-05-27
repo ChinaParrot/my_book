@@ -31,11 +31,10 @@ return [expression]
 如下实例调用了printme（）函数：
 
 ```
-#!/usr/bin/env python3
-# -*- coding: UTF-8 -*-
-# 定义函数
 def printme( str ):
-"打印任何传入的字符串"
+    """
+    打印传入的字符串
+    """
     print (str)
     return
 # 调用函数
