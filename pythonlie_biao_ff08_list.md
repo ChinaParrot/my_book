@@ -91,5 +91,33 @@ print ("After deleting value at index 2 : ")
 print (list1);
 ```
 
+追加元素:
+
+```
+list.append(x)方法
+
+获取列表长度：
+
+len(x)
+
+除了 将元素追加到list中，还能够将两个list合并，或者说将一个list追加到另外一个list中。
+
+ist.extend(L)
+
+```
+
+```
+>>> la
+[1, 2, 3]
+>>> lb
+['qiwsir', 'python']
+>>> la.extend(lb)
+>>> la
+[1, 2, 3, 'qiwsir', 'python']
+>>> lb
+['qiwsir', 'python']
+
+```
+
 
 
