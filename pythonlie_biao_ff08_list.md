@@ -18,8 +18,15 @@ a[1:] #片段操作符，用于子list的提取
 [1,2]+[3,4] #为[1,2,3,4]。同extend()
 [2]*4 #为[2,2,2,2]
 
+#
+list[start:end:step]
+
+
 del L[1] #删除指定下标的元素
 del L[1:3] #指定范围
+
+list[start:end:step]
+
 
 #查看ASCII的值
 ord('a')
