@@ -125,19 +125,26 @@ list.count\(x\)
 
 可以将list中的元素，从左向右依次从0开始编号，建立索引:
 
-list.index\(x\)，x是list中的一个元素，这样就能够检索到该元素在list中的位置了。这才是真正的索引，注意那个英文单词index。
+list.index\(x\)，x是list中的一个元素，这样就能够检索到该元素在list中的位置了。这才是真正的索引，注意那个英文单词index。
 
 与list.append\(x\)类似，list.insert\(i,x\)也是对list元素的增加。只不过是可以在任何位置增加一个元素。
 
-list.insert\(i, x\) i是位置，x是增加内容。
+list.insert\(i, x\) i是位置，x是增加内容。
 
 list中的元素，不仅能增加，还能被删除，list.pop\(\[i\]\)与list.remove\(x\)，注意看上面的描述。这是一个能够删除list元素的方法，同时上面说明告诉我们，如果x没有在list中，会报错。
 
-list.pop\(x\)\#如果不写x，就如同这个操作，默认删除最后一个，并且将该结果返回
+list.pop\(x\)\#如果不写x，就如同这个操作，默认删除最后一个，并且将该结果返回
 
 range生成list操作：
 
-range\(start, stop\[, step\]\)是一个内置函数。
+range\(start, stop\[, step\]\)是一个内置函数。
+
+1.  这个函数可以创建一个数字元素组成的列表。
+2.  这个函数最常用于for循环
+3.  函数的参数必须是整数，默认从0开始。返回值是类似\[start, start + step, start + 2\*step, ...\]的列表。
+4.  step默认值是1。如果不写，就是按照此值。
+5.  如果step是正数，返回list的最最后的值不包含stop值，即start+i step这个值小于stop；如果step是负数，start+i step的值大于stop。
+6.  step不能等于零，如果等于零，就报错。
 
 
 
