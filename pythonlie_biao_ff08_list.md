@@ -165,3 +165,7 @@ range\(start, stop\[, step\]\)是一个内置函数。
 
 start=0,step=2,stop=9.list中的第一个值是start=0,第二个值是start+1 step=2（注意，这里是1，不是2，不要忘记，前面已经讲过，不论是list还是str，对元素进行编号的时候，都是从0开始的），第n个值就是start+\(n-1\) step。直到小于stop前的那个值。
 
+
+
+
+
