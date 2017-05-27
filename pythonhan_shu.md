@@ -49,5 +49,20 @@ printme("再次调用同一函数");
 
 所有参数（自变量）在Python里都是按引用传递。如果你在函数里修改了参数，那么在调用这个函数的函数里，原始的参数也被改变了。例如：
 
+```
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+# 可写函数说明
+def changeme( mylist ):
+"修改传入的列表"
+mylist.append([1,2,3,4]);
+print "函数内取值: ", mylist
+return
+# 调用changeme函数
+mylist = [10,20,30];
+changeme( mylist );
+print "函数外取值: ", mylist
+```
+
 
 
