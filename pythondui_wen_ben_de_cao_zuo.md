@@ -33,8 +33,8 @@ while True:
 #/usr/bin/python
 import fileinput
 for line in fileinput.input('user.txt',inplace=1):
-line =line.replace('1',"001")
-print line,
+    line =line.replace('1',"001")
+    print line,
 ```
 
 
