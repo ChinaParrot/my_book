@@ -24,18 +24,18 @@ def foo():
 
 ```
 def Readline():
-seek = 0
-while True:
-with open("test.txt",'r') as f:
-f.seek(seek)
-data = f.readline()
-if data:
-seek = f.tell()
-yield data
-else
-return
-for item in Readline():
-print item
+    seek = 0
+    while True:
+        with open("test.txt",'r') as f:
+        f.seek(seek)
+    data = f.readline()
+    if data:
+        seek = f.tell()
+        yield data
+    else
+        return
+    for item in Readline():
+        print (item)
 ```
 
 
