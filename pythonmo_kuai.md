@@ -10,5 +10,9 @@
 
 
 
+例子：
+
+一个叫做aname的模块里的Python代码一般都能在一个叫aname.py的文件中找到。下例是个简单的模块support.py。
+
 
 
