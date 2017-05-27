@@ -15,5 +15,101 @@ set(['y', 'python', 'b', 'o'])
 
 集合update方法：是把要传入的元素拆分，做为个体传入到集合中，例如：
 
+```
+>>> a = set('boy')
+>>> a.update('python')
+>>> a
+set(['b', 'h', 'o', 'n', 'p', 't', 'y'])
+```
+
+集合删除操作方法：remove
+
+```
+set(['y', 'python', 'b', 'o'])
+>>> a.remove('python')
+>>> a
+set(['y', 'b', 'o'])
+
+```
+
+python set\(\) 集合操作符号、数学符号:
+
+基本操作
+
+```
+>>> x = set("jihite")
+>>> y = set(['d', 'i', 'm', 'i', 't', 'e'])
+>>> x #把字符串转化为set，去重了
+set(['i', 'h', 'j', 'e', 't'])
+>>> y
+set(['i', 'e', 'm', 'd', 't'])
+>>> x & y #交
+set(['i', 'e', 't'])
+>>> x | y #并
+set(['e', 'd', 'i', 'h', 'j', 'm', 't'])
+>>> x - y #差
+set(['h', 'j'])
+>>> y - x
+set(['m', 'd'])
+>>> x ^ y #对称差：x和y的交集减去并集
+set(['d', 'h', 'j', 'm'])
+```
+
+函数操作
+
+```
+>>> x
+set(['i', 'h', 'j', 'e', 't'])
+>>> s = set("hi")
+>>> s
+set(['i', 'h'])
+>>> len(x) #长度
+>>> 'i' in x
+True
+>>> s.issubset(x) #s是否为x的子集
+True
+>>> y
+set(['i', 'e', 'm', 'd', 't'])
+>>> x.union(y) #交
+set(['e', 'd', 'i', 'h', 'j', 'm', 't'])
+>>> x.intersection(y) #并
+set(['i', 'e', 't'])
+>>> x.difference(y) #差
+set(['h', 'j'])
+>>> x.symmetric_difference(y) #对称差
+set(['d', 'h', 'j', 'm'])
+>>> s.update(x) #更新s，加上x中的元素
+>>> s
+set(['e', 't', 'i', 'h', 'j'])
+>>> s.add(1) #增加元素
+>>> s
+set([1, 'e', 't', 'i', 'h', 'j'])
+>>> s.remove(1) #删除已有元素，如果没有会返回异常
+>>> s
+set(['e', 't', 'i', 'h', 'j'])
+>>> s.remove(2)
+
+Traceback (most recent call last):
+File "<pyshell#29>", line 1, in <module>
+s.remove(2)
+KeyError: 2
+>>> s.discard(2) #如果存在元素，就删除；没有不报异常
+>>> s
+set(['e', 't', 'i', 'h', 'j'])
+>>> s.clear() #清除set
+>>> s
+set([])
+>>> x
+set(['i', 'h', 'j', 'e', 't'])
+>>> x.pop() #随机删除一元素
+'i'
+>>> x
+set(['h', 'j', 'e', 't'])
+>>> x.pop()
+'h'
+```
+
+**扩展**
+
 
 
