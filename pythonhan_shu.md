@@ -19,7 +19,7 @@
 def functionname( parameters ):
     "函数_文档字符串"
     function_suite
-return [expression]
+    return [expression]
 ```
 
 **函数调用**
