@@ -6,8 +6,6 @@ Python程序能用很多方式处理日期和时间。转换日期格式是一�
 
 **format time结构化表示**
 
-
-
 | 格式 | **含义** |
 | :--- | :--- |
 | %a | 本地（locale）简化星期名称 |
@@ -76,6 +74,20 @@ time.struct_time(tm_year=2016, tm_mon=5, tm_mday=12, tm_hour=15, tm_min=23, tm_s
 >>> print(datetime.fromtimestamp(t))
 2016-05-12 14:50:07.138568
 >>>
+#获取当天的日期
+>>> print (datetime.datetime.now())
+>>>print (datetime.date.today())
+
+# 获取昨天的日期
+def getYesterday():
+    today = datetime.date.today()
+    oneday = datetime.timedelta(days=1)
+    yesterday = today - oneday
+    print type(today)     # 查看获取到时间的类型
+    print type(yesterday)
+    return yesterday
+yesterday = getYesterday()
+print "昨天的时间：", yesterday
 ```
 
 注意到datetime是模块，datetime模块还包含一个datetime类，通过from datetime import datetime导入的才是datetime这个类。
@@ -114,7 +126,7 @@ a = "Sat Mar 28 22:24:24 2016"
 print time.mktime(time.strptime(a,"%a %b %d %H:%M:%S %Y"))
 ```
 
-**datetime加减                    
+**datetime加减                      
 **
 
 对日期和时间进行加减实际上就是把datetime往后或往前计算，得到新的datetime。加减可以直接用+和-运算符，不过需要导入timedelta这个类：
