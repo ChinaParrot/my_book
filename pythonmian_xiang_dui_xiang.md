@@ -20,8 +20,8 @@
 
 ```
 class ClassName:
-'类的帮助信息' #类文档字符串
-class_suite #类体 
+    '类的帮助信息' #类文档字符串
+    class_suite #类体
 ```
 
 
