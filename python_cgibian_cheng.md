@@ -1,13 +1,13 @@
 # Python CGI编程
 
-**什么是CGI                                                      
+**什么是CGI                                                        
 **
 
 CGI 目前由NCSA维护，NCSA定义CGI如下：
 
 CGI\(Common Gateway Interface\),通用网关接口,它是一段程序,运行在服务器上如：HTTP服务器，提供同客户端HTML页面的接口。
 
-**网页浏览                                                      
+**网页浏览                                                        
 **
 
 为了更好的了解CGI是如何工作的，我们可以从在网页上点击一个链接或URL的流程：
@@ -139,7 +139,7 @@ for param in os.environ.keys():
     print ("<b>%20s</b>: %s<\br>" % (param, os.environ[param]))
 ```
 
-**GET和POST方法                            
+**GET和POST方法                              
 **浏览器客户端通过两种方法向服务器传递信息，这两种方法就是 GET 方法和 POST 方法。
 
 **使用GET方法传输数据**
@@ -236,6 +236,65 @@ print ("<h2>Hello %s %s</h2>" % (first_name, last_name))
 print ("</body>")
 print ("</html>")
 ```
+
+以下为表单通过POST方法向服务器脚本hello\_get.py提交数据:
+
+```
+<form action="/cgi-bin/hello_get.py" method="post">
+First Name: <input type="text" name="first_name"><br />
+Last Name: <input type="text" name="last_name" />
+
+<input type="submit" value="Submit" />
+</form>
+```
+
+通过CGI程序传递checkbox数据
+
+checkbox用于提交一个或者多个选项数据，HTML代码如下：
+
+```
+<form action="/cgi-bin/checkbox.cgi" method="POST" target="_blank">
+<input type="checkbox" name="maths" value="on" /> Maths
+<input type="checkbox" name="physics" value="on" /> Physics
+<input type="submit" value="Select Subject" />
+</form>
+```
+
+以下为 checkbox.cgi 文件的代码：
+
+```
+#!/usr/bin/env python3
+# -*- coding: UTF-8 -*-
+
+# 引入 CGI 处理模块
+import cgi, cgitb
+
+# 创建 FieldStorage的实例
+form = cgi.FieldStorage()
+
+# 接收字段数据
+if form.getvalue('maths'):
+    math_flag = "ON"
+else:
+    math_flag = "OFF"
+if form.getvalue('physics'):
+    physics_flag = "ON"
+else:
+    physics_flag = "OFF"
+
+print ("Content-type:text/html\r\n\r\n")
+print ("<html>")
+print ("<head>")
+print ("<title>Checkbox - Third CGI Program</title>")
+print ("</head>")
+print ("<body>")
+print ("<h2> CheckBox Maths is : %s</h2>" % math_flag)
+print ("<h2> CheckBox Physics is : %s</h2>" % physics_flag)
+print ("</body>")
+print ("</html>")
+```
+
+
 
 
 
