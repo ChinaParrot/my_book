@@ -55,7 +55,7 @@ print (Student.test01)
 
 和普通的函数相比，在类中定义的函数只有一点不同，就是第一个参数永远是实例变量self，并且，调用时，不用传递该参数。除此之外，类的方法和普通函数没有什么区别，所以，你仍然可以用默认参数、可变参数和关键字参数。
 
-**私有变量                            
+**私有变量                              
 **
 
 如果要让内部属性不被外部访问，可以把属性的名称前加上两个下划线\_\_，在Python中，实例的变量名如果以\_\_开头，就变成了一个私有变量（private），只有内部可以访问，外部不能访问。
@@ -226,6 +226,100 @@ c.childMethod() # 调用子类的方法
 c.parentMethod() # 调用父类方法
 c.setAttr(200) # 再次调用父类的方法
 c.getAttr() # 再次调用父类的方法
+
+
+#结果
+调用子类构造方法
+调用子类方法 child method
+调用父类方法
+父类属性 : 200
+```
+
+**方法重写**
+
+如果你的父类方法的功能不能满足你的需求，你可以在子类重写你父类的方法：
+
+```
+#!/usr/bin/env python3
+# -*- coding: UTF-8 -*-
+
+class Parent: # 定义父类
+    def myMethod(self):
+        print ('调用父类方法')
+
+class Child(Parent): # 定义子类
+    def myMethod(self):
+        print ('调用子类方法')
+
+c = Child() # 子类实例
+c.myMethod() # 子类调用重写方法
+
+#执行以上代码输出结果如下：
+调用子类方法
+
+```
+
+**静态变量与私有**
+
+```
+#!/usr/bin/env python3
+#-*- coding:utf-8 -*-
+
+class MsqlHelper:
+    def add(self,sql):
+        pass
+    def delete(self,sql):
+        pass
+    def update(self,sql):
+        pass
+    def select(self,sql):
+        pass
+
+sql = 'test'
+#如果多个业务需要创建多个对象，开辟多个内存空间，解决使用静态。
+ms = MsqlHelper()
+ms.update(sql)
+
+class MsqlHelper02:
+    @staticmethod
+    def add(sql):
+        pass
+    @staticmethod
+    def delete(sql):
+        pass
+    @staticmethod
+    def update(sql):
+        pass
+    @staticmethod
+    def select(sql):
+        pass
+MsqlHelper02.update(sql)
+
+```
+
+析构函数和特殊的\_\_call\_\_方法
+
+```
+import time
+class Foo:
+    def __init__(self):
+        pass
+    def __del__(self):
+        print ('解释器要销毁我了，我要做租后一次的呐喊！')
+    def Go(self):
+        print ('GO')
+    def __call__(self):
+        print ('call')
+#f1 = Foo() #实例化类
+#f1.Go()
+
+#time.sleep(100)
+
+#f1() #执行类的 __call__ 方法；实例化对象
+
+Foo()
+f1 = Foo()
+f1()
 
 ```
 
