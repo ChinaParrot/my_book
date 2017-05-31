@@ -1,13 +1,13 @@
 # Python CGI编程
 
-**什么是CGI                
+**什么是CGI                  
 **
 
 CGI 目前由NCSA维护，NCSA定义CGI如下：
 
 CGI\(Common Gateway Interface\),通用网关接口,它是一段程序,运行在服务器上如：HTTP服务器，提供同客户端HTML页面的接口。
 
-**网页浏览                
+**网页浏览                  
 **
 
 为了更好的了解CGI是如何工作的，我们可以从在网页上点击一个链接或URL的流程：
@@ -83,7 +83,17 @@ Hello Word! This is my first CGI program
 
 这个的hello.py脚本是一个简单的Python脚本，脚本第一行的输出内容"Content-type:text/html\r\n\r\n"发送到浏览器并告知浏览器显示的内容类型为"text/html"。
 
+**HTTP头部**
 
+hello.py文件内容中的" Content-type:text/html\r\n\r\n"即为HTTP头部的一部分，它会发送给浏览器告诉浏览器文件的内容类型。
+
+HTTP头部的格式如下：
+
+HTTP 字段名: 字段内容
+
+例如
+
+`Content-type: text/html\r\n\r\n`
 
 
 
