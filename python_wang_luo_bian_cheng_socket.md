@@ -70,8 +70,6 @@ Python 中，我们用 socket（）函数来创建套接字，语法格式如下
 
 **服务端**
 
-
-
 我们使用 socket 模块的 socket 函数来创建一个 socket 对象。socket 对象可以通过调用其他函数来设置一个 socket 服务。&lt;br&gt;
 
 现在我们可以通过调用 bind\(hostname, port\) 函数来指定服务的 port\(端口\)。&lt;br&gt;
@@ -104,7 +102,7 @@ c.close() # 关闭连接
 
 接下来我们写一个简单的客户端实例连接到以上创建的服务。端口号为 12345。
 
-socket.connect\(hosname, port \) 方法打开一个 TCP 连接到主机为 hostname 端口为 port 的服务商。连接后我们就可以从服务端后期数据，记住，操作完成后需要关闭连接。
+socket.connect\(hosname, port \) 方法打开一个 TCP 连接到主机为 hostname 端口为 port 的服务商。连接后我们就可以从服务端后期数据，记住，操作完成后需要关闭连接。
 
 完整代码如下：
 
@@ -128,17 +126,55 @@ s.close()
 
 ```
 $ python server.py
-
 ```
 
 第二个终端执行 client.py 文件：
 
 ```
-
 $ python client.py
 
 hello world！
 ```
+
+这是我们再打开第一个终端，就会看到有以下信息输出：
+
+连接地址： \('192.168.1.118', 62461\)
+
+**Python Internet 模块**
+
+获取本机IP地址，有外网ip首先获取否则获取内网ip地址：
+
+```
+def get_ip_addr():
+try:
+    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    s.connect(("8.8.8.8", 80))
+    return s.getsockname()[0]
+except Exception:
+    if_data = ''.join(os.popen("LANG=C ifconfig").readlines())
+    ips = re.findall(r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}', if_data, flags=re.MULTILINE)
+    ip = filter(valid_ip, ips)
+    if ip:
+    return ip[0]
+    return ''
+```
+
+以下列出了 Python 网络编程的一些重要模块：
+
+
+|协议|    功能用处|   端口号|    Python 模块|
+|--|--|--|
+|HTTP|  网页访问|   80| httplib, urllib, xmlrpclib|
+|NNTP   |阅读和张贴新闻文章，俗称为"帖子"| 119|    nntplib|
+|FTP|   文件传输|   20  |ftplib, urllib|
+|SMTP|  发送邮件|   25  |smtplib|
+|POP3|  接收邮件|   110 |poplib|
+|IMAP4| 获取邮件|   143 |imaplib|
+|Telnet|    命令行|    23  |telnetlib|
+|Gopher|    信息查找|   70| gopherlib, urllib|
+
+更多内容可以参阅官网的 [Python Socket Library and Modules](https://docs.python.org/2/library/socket.html)。
+
 
 
 
