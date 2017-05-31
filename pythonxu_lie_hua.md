@@ -6,8 +6,6 @@
 d = dict(name='test', age=20, score=90)
 ```
 
-
-
 可以随时修改变量，比如把name改成'Bill'，但是一旦程序结束，变量所占用的内存就被操作系统全部回收。如果没有把修改后的'Bill'存储到磁盘上，下次重新运行程序，变量又被初始化为'test'。
 
 我们把变量从内存中变成可存储或传输的过程称之为序列化，在Python中叫pickling，在其他语言中也被称之为serialization，marshalling，flattening等等，都是一个意思。
@@ -122,15 +120,13 @@ Traceback (most recent call last):
 TypeError: <__main__.Student object at 0x10aabef50> is not JSON serializable]
 ```
 
-
-
 错误的原因是Student对象不是一个可序列化为JSON的对象。
 
 如果连class的实例对象都无法序列化为JSON，这肯定不合理！
 
 别急，我们仔细看看dumps\(\)方法的参数列表，可以发现，除了第一个必须的obj参数外，dumps\(\)方法还提供了一大堆的可选参数：
 
-https://docs.python.org/2/library/json.html\#json.dumps
+[https://docs.python.org/2/library/json.html\#json.dumps](https://docs.python.org/2/library/json.html#json.dumps)
 
 这些可选参数就是让我们来定制JSON序列化。前面的代码之所以无法把Student类实例序列化为JSON，是因为默认情况下，dumps\(\)方法不知道如何将Student实例变为一个JSON的{}对象。
 
@@ -145,7 +141,6 @@ return {
 }
 
 print(json.dumps(s, default=student2dict))
-
 ```
 
 这样，Student实例首先被student2dict\(\)函数转换成dict，然后再被顺利序列化为JSON。
@@ -178,8 +173,6 @@ print(json.loads(json_str, object_hook=dict2student))
 
 **JSON othor**
 
-
-
 环境配置
 
 在使用 Python 编码或解码 JSON 数据前，我们需要先安装 JSON 模块。本教程我们会下载 Demjson 并安装：
@@ -192,12 +185,42 @@ $ python setup.py install
 
 **JSON 函数**
 
-|函数|    描述|
-|--|--|
-|encode|    将 Python 对象编码成 JSON 字符串|
-|decode |将已编码的 JSON 字符串解码为 Python 对象|
+| 函数 | 描述 |
+| --- | --- |
+| encode | 将 Python 对象编码成 JSON 字符串 |
+| decode | 将已编码的 JSON 字符串解码为 Python 对象 |
 
+**encode**
 
+以下实例将数组编码为 JSON 格式数据：
+
+```
+#!/usr/bin/env python3
+import demjson
+data = [ { 'a' : 1, 'b' : 2, 'c' : 3, 'd' : 4, 'e' : 5 } ]
+json = demjson.encode(data)
+print json
+以上代码执行结果为：
+[{"a":1,"b":2,"c":3,"d":4,"e":5}]
+```
+
+**decode**
+
+Python 可以使用 demjson.decode\(\) 函数解码 JSON 数据。该函数返回 Python 字段的数据类型。
+
+以下实例展示了Python 如何解码 JSON 对象：
+
+```
+#!/usr/bin/python
+import demjson
+
+json = '{"a":1,"b":2,"c":3,"d":4,"e":5}';
+
+text = demjson.decode(json)
+print text
+以上代码执行结果为：
+{u'a': 1, u'c': 3, u'b': 2, u'e': 5, u'd': 4}
+```
 
 
 
