@@ -1,13 +1,13 @@
 # Python CGI编程
 
-**什么是CGI                                                        
+**什么是CGI                                                          
 **
 
 CGI 目前由NCSA维护，NCSA定义CGI如下：
 
 CGI\(Common Gateway Interface\),通用网关接口,它是一段程序,运行在服务器上如：HTTP服务器，提供同客户端HTML页面的接口。
 
-**网页浏览                                                        
+**网页浏览                                                          
 **
 
 为了更好的了解CGI是如何工作的，我们可以从在网页上点击一个链接或URL的流程：
@@ -139,7 +139,7 @@ for param in os.environ.keys():
     print ("<b>%20s</b>: %s<\br>" % (param, os.environ[param]))
 ```
 
-**GET和POST方法                              
+**GET和POST方法                                
 **浏览器客户端通过两种方法向服务器传递信息，这两种方法就是 GET 方法和 POST 方法。
 
 **使用GET方法传输数据**
@@ -248,7 +248,7 @@ Last Name: <input type="text" name="last_name" />
 </form>
 ```
 
-通过CGI程序传递checkbox数据
+**通过CGI程序传递checkbox数据**
 
 checkbox用于提交一个或者多个选项数据，HTML代码如下：
 
@@ -294,7 +294,46 @@ print ("</body>")
 print ("</html>")
 ```
 
+**通过CGI程序传递Radio数据**
 
+Radio只向服务器传递一个数据，HTML代码如下：
+
+```
+<form action="/cgi-bin/radiobutton.py" method="post" target="_blank">
+<input type="radio" name="subject" value="maths" /> Maths
+<input type="radio" name="subject" value="physics" /> Physics
+<input type="submit" value="Select Subject" />
+</form>
+```
+
+radiobutton.py 脚本代码如下：
+
+```
+#!/usr/bin/env python3
+# -*- coding: UTF-8 -*-
+
+# Import modules for CGI handling
+import cgi, cgitb
+
+# Create instance of FieldStorage
+form = cgi.FieldStorage()
+
+# Get data from fields
+if form.getvalue('subject'):
+    subject = form.getvalue('subject')
+else:
+    subject = "Not set"
+
+print ("Content-type:text/html\r\n\r\n"）
+print ("<html>")
+print ("<head>")
+print ("<title>Radio - Fourth CGI Program</title>")
+print ("</head>")
+print ("<body>")
+print ("<h2> Selected Subject is %s</h2>" % subject)
+print ("</body>")
+print ("</html>")
+```
 
 
 
