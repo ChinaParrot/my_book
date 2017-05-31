@@ -1,13 +1,13 @@
 # Python CGI编程
 
-**什么是CGI                  
+**什么是CGI                    
 **
 
 CGI 目前由NCSA维护，NCSA定义CGI如下：
 
 CGI\(Common Gateway Interface\),通用网关接口,它是一段程序,运行在服务器上如：HTTP服务器，提供同客户端HTML页面的接口。
 
-**网页浏览                  
+**网页浏览                    
 **
 
 为了更好的了解CGI是如何工作的，我们可以从在网页上点击一个链接或URL的流程：
@@ -94,6 +94,21 @@ HTTP 字段名: 字段内容
 例如
 
 `Content-type: text/html\r\n\r\n`
+
+以下表格介绍了CGI程序中HTTP头部经常使用的信息：
+
+| 头 | 描述 |
+| -- | -- |
+|Content-type:| 请求的与实体对应的MIME信息。例如: Content-type:text/html|
+|Expires: Date  |响应过期的日期和时间|
+|Location: URL| 用来重定向接收方到非请求URL的位置来完成请求或标识新的资源|
+|Last-modified: Date|   请求资源的最后修改时间|
+|Content-length: N| 请求的内容长度|
+|Set-Cookie: String |设置Http Cookie|
+
+**CGI环境变量**
+
+所有的CGI程序都接收以下的环境变量，这些变量在CGI程序中发挥了重要的作用：
 
 
 
