@@ -25,9 +25,9 @@ Subject: test mail
 test mail body"""
 ```
 
-*  SMTP.starttls\(\[keyfile\[, certfile\]\]\)方法，启用TLS（安全传输）模式，所有SMTP指令都将加密传输，例如使用gmail的smtp服务时需要启动此项才能正常发送邮件，如SMTP.starttls\(\)。
+* SMTP.starttls\(\[keyfile\[, certfile\]\]\)方法，启用TLS（安全传输）模式，所有SMTP指令都将加密传输，例如使用gmail的smtp服务时需要启动此项才能正常发送邮件，如SMTP.starttls\(\)。
 
-*  SMTP.quit\(\)方法，断开smtp服务器的连接。
+* SMTP.quit\(\)方法，断开smtp服务器的连接。
 
 ## 1. 如果我们本机没有 sendmail等，也可以使用其他邮件服务商的 SMTP（QQ、网易、Google等）。
 
@@ -181,7 +181,6 @@ smtp.login(from_addr, password)#登录邮件服务器
 except:
 print "failed to login to smtp server"#登录失败
 server.quit()
-
 ```
 
 # 4. 在 HTML 文本中添加图片
