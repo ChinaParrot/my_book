@@ -1,13 +1,13 @@
 # Python CGI编程
 
-**什么是CGI                                  
+**什么是CGI                                    
 **
 
 CGI 目前由NCSA维护，NCSA定义CGI如下：
 
 CGI\(Common Gateway Interface\),通用网关接口,它是一段程序,运行在服务器上如：HTTP服务器，提供同客户端HTML页面的接口。
 
-**网页浏览                                  
+**网页浏览                                    
 **
 
 为了更好的了解CGI是如何工作的，我们可以从在网页上点击一个链接或URL的流程：
@@ -139,8 +139,26 @@ for param in os.environ.keys():
     print ("<b>%20s</b>: %s<\br>" % (param, os.environ[param]))
 ```
 
-**GET和POST方法        
+**GET和POST方法          
 **浏览器客户端通过两种方法向服务器传递信息，这两种方法就是 GET 方法和 POST 方法。
 
+**使用GET方法传输数据**
 
+GET方法发送编码后的用户信息到服务端，数据信息包含在请求页面的URL上，以"?"号分割, 如下所示：
+
+http://www.test.com/cgi-bin/hello.py?key1=value1&key2=value2 有关 GET 请求的其他一些注释：
+
+
+
+1. GET 请求可被缓存
+
+2. GET 请求保留在浏览器历史记录中
+
+3. GET 请求可被收藏为书签
+
+4. GET 请求不应在处理敏感数据时使用
+
+5. GET 请求有长度限制
+
+6. GET 请求只应当用于取回数据
 
