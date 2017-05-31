@@ -1,13 +1,13 @@
 # Python CGI编程
 
-**什么是CGI                      
+**什么是CGI                        
 **
 
 CGI 目前由NCSA维护，NCSA定义CGI如下：
 
 CGI\(Common Gateway Interface\),通用网关接口,它是一段程序,运行在服务器上如：HTTP服务器，提供同客户端HTML页面的接口。
 
-**网页浏览                      
+**网页浏览                        
 **
 
 为了更好的了解CGI是如何工作的，我们可以从在网页上点击一个链接或URL的流程：
@@ -125,6 +125,19 @@ HTTP 字段名: 字段内容
 | SCRIPT\_NAME | CGI脚本的的名称 |
 | SERVER\_NAME | 这是你的 WEB 服务器的主机名、别名或IP地址。 |
 | SERVER\_SOFTWARE | 这个环境变量的值包含了调用CGI程序的HTTP服务器的名称和版本号。例如，上面的值为Apache/2.2.14\(Unix\) |
+
+以下是一个简单的CGI脚本输出CGI的环境变量：
+
+```
+#!/usr/bin/env python3
+# -*- coding: UTF-8 -*-
+import os
+print ("Content-type: text/html\r\n\r\n")
+print ("<font size=+1>Environment</font><\br>")
+
+for param in os.environ.keys():
+    print ("<b>%20s</b>: %s<\br>" % (param, os.environ[param]))
+```
 
 
 
