@@ -55,7 +55,7 @@ print (Student.test01)
 
 和普通的函数相比，在类中定义的函数只有一点不同，就是第一个参数永远是实例变量self，并且，调用时，不用传递该参数。除此之外，类的方法和普通函数没有什么区别，所以，你仍然可以用默认参数、可变参数和关键字参数。
 
-**私有变量                          
+**私有变量                            
 **
 
 如果要让内部属性不被外部访问，可以把属性的名称前加上两个下划线\_\_，在Python中，实例的变量名如果以\_\_开头，就变成了一个私有变量（private），只有内部可以访问，外部不能访问。
@@ -195,7 +195,39 @@ print ("Student.__dict__:",Student.__dict__)
 
 3. Python总是首先查找对应类型的方法，如果它不能在派生类中找到对应的方法，它才开始到基类中逐个查找。（先在本类中查找调用的方法，找不到才去基类中找）。
 
-
-
 如果在继承元组中列了一个以上的类，那么它就被称作"多重继承" 。
+
+```
+#!/usr/bin/env python3
+# -*- coding: UTF-8 -*-
+
+class Parent:        # 定义父类
+   parentAttr = 100
+   def __init__(self):
+      print ("调用父类构造函数")
+
+   def parentMethod(self):
+      print ('调用父类方法')
+
+   def setAttr(self, attr):
+      Parent.parentAttr = attr
+
+   def getAttr(self):
+      print ("父类属性 :", Parent.parentAttr)
+
+class Child(Parent): # 定义子类
+   def __init__(self):
+      print ("调用子类构造方法")
+
+   def childMethod(self):
+      print ('调用子类方法 child method')
+c = Child() # 实例化子类
+c.childMethod() # 调用子类的方法
+c.parentMethod() # 调用父类方法
+c.setAttr(200) # 再次调用父类的方法
+c.getAttr() # 再次调用父类的方法
+
+```
+
+
 
