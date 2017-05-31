@@ -55,7 +55,7 @@ print (Student.test01)
 
 和普通的函数相比，在类中定义的函数只有一点不同，就是第一个参数永远是实例变量self，并且，调用时，不用传递该参数。除此之外，类的方法和普通函数没有什么区别，所以，你仍然可以用默认参数、可变参数和关键字参数。
 
-**私有变量      
+**私有变量        
 **
 
 如果要让内部属性不被外部访问，可以把属性的名称前加上两个下划线\_\_，在Python中，实例的变量名如果以\_\_开头，就变成了一个私有变量（private），只有内部可以访问，外部不能访问。
@@ -107,6 +107,35 @@ print (zhangsan.get_score())
 ```
 
 如果又要允许外部代码修改score怎么办？可以给Student类增加set\_score方法：
+
+```
+class Student(object):
+...
+
+    def set_score(self, score):
+        self.__score = score
+```
+
+
+
+```
+#!/usr/bin/env python3
+# -*- coding: UTF-8 -*-
+
+class JustCounter:
+    __secretCount = 0 # 私有变量
+    publicCount = 0 # 公开变量
+
+    def count(self):
+        self.__secretCount += 1
+        self.publicCount += 1
+        print (self.__secretCount)
+counter = JustCounter()
+counter.count()
+counter.count()
+print (counter.publicCount)
+print (counter.__secretCount) # 报错，实例不能访问私有变量
+```
 
 
 
