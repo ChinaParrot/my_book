@@ -109,6 +109,7 @@ HTTP 字段名: 字段内容
 **CGI环境变量**
 
 所有的CGI程序都接收以下的环境变量，这些变量在CGI程序中发挥了重要的作用：
+
 |变量名|   描述|
 |--|--|
 |CONTENT_TYPE|  这个环境变量的值指示所传递来的信息的MIME类型。目前，环境变量CONTENT_TYPE一般都是：application/x-www-form-urlencoded,他表示数据来自于HTML表单。|
