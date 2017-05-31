@@ -1,13 +1,13 @@
 # Python CGI编程
 
-**什么是CGI                                                          
+**什么是CGI                                                            
 **
 
 CGI 目前由NCSA维护，NCSA定义CGI如下：
 
 CGI\(Common Gateway Interface\),通用网关接口,它是一段程序,运行在服务器上如：HTTP服务器，提供同客户端HTML页面的接口。
 
-**网页浏览                                                          
+**网页浏览                                                            
 **
 
 为了更好的了解CGI是如何工作的，我们可以从在网页上点击一个链接或URL的流程：
@@ -139,7 +139,7 @@ for param in os.environ.keys():
     print ("<b>%20s</b>: %s<\br>" % (param, os.environ[param]))
 ```
 
-**GET和POST方法                                
+**GET和POST方法                                  
 **浏览器客户端通过两种方法向服务器传递信息，这两种方法就是 GET 方法和 POST 方法。
 
 **使用GET方法传输数据**
@@ -328,6 +328,90 @@ print ("Content-type:text/html\r\n\r\n"）
 print ("<html>")
 print ("<head>")
 print ("<title>Radio - Fourth CGI Program</title>")
+print ("</head>")
+print ("<body>")
+print ("<h2> Selected Subject is %s</h2>" % subject)
+print ("</body>")
+print ("</html>")
+```
+
+**通过CGI程序传递 Textarea 数据**
+
+Textarea向服务器传递多行数据，HTML代码如下：
+
+```
+<form action="/cgi-bin/textarea.py" method="post" target="_blank">
+<textarea name="textcontent" cols="40" rows="4">
+Type your text here...
+</textarea>
+<input type="submit" value="Submit" />
+</form>
+```
+
+textarea.cgi脚本代码如下：
+
+```
+#!/usr/bin/env python3
+# -*- coding: UTF-8 -*-
+
+# Import modules for CGI handling
+import cgi, cgitb
+
+# Create instance of FieldStorage
+form = cgi.FieldStorage()
+
+# Get data from fields
+if form.getvalue('textcontent'):
+    text_content = form.getvalue('textcontent')
+else:
+    text_content = "Not entered"
+
+print ("Content-type:text/html\r\n\r\n")
+print ("<html>")
+print ("<head>";)
+print ("<title>Text Area - Fifth CGI Program</title>")
+print ("</head>"
+print ("<body>")
+print ("<h2> Entered Text Content is %s</h2>" % text_content
+print ("</body>")
+```
+
+通过CGI程序传递下拉数据:
+
+HTML下拉框代码如下：
+
+```
+<form action="/cgi-bin/dropdown.py" method="post" target="_blank">
+<select name="dropdown">
+<option value="Maths" selected>Maths</option>
+<option value="Physics">Physics</option>
+</select>
+<input type="submit" value="Submit"/>
+</form>
+```
+
+dropdown.py 脚本代码如下所示：
+
+```
+#!/usr/bin/env python3
+# -*- coding: UTF-8 -*-
+
+# Import modules for CGI handling
+import cgi, cgitb
+
+# Create instance of FieldStorage
+form = cgi.FieldStorage()
+
+# Get data from fields
+if form.getvalue('dropdown'):
+    subject = form.getvalue('dropdown')
+else:
+    subject = "Not entered"
+
+print ("Content-type:text/html\r\n\r\n")
+print ("<html>")
+print ("<head>")
+print ("<title>Dropdown Box - Sixth CGI Program</title>")
 print ("</head>")
 print ("<body>")
 print ("<h2> Selected Subject is %s</h2>" % subject)
