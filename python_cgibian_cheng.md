@@ -1,13 +1,13 @@
 # Python CGI编程
 
-**什么是CGI                                                                  
+**什么是CGI                                                                    
 **
 
 CGI 目前由NCSA维护，NCSA定义CGI如下：
 
 CGI\(Common Gateway Interface\),通用网关接口,它是一段程序,运行在服务器上如：HTTP服务器，提供同客户端HTML页面的接口。
 
-**网页浏览                                                                  
+**网页浏览                                                                    
 **
 
 为了更好的了解CGI是如何工作的，我们可以从在网页上点击一个链接或URL的流程：
@@ -139,7 +139,7 @@ for param in os.environ.keys():
     print ("<b>%20s</b>: %s<\br>" % (param, os.environ[param]))
 ```
 
-**GET和POST方法                                        
+**GET和POST方法                                          
 **浏览器客户端通过两种方法向服务器传递信息，这两种方法就是 GET 方法和 POST 方法。
 
 **使用GET方法传输数据**
@@ -436,36 +436,140 @@ Set-cookie:name=name;expires=date;path=path;domain=domain;secure
 ```
 
 1. name=name: 需要设置cookie的值\(name不能使用"；"和"，"号\),有多个name值时用"；"分隔例如：
+2. name1=name1;name2=name2;name3=name3。
 
+3. expires=date: cookie的有效期限,格式： expires="Wdy,DD-Mon-YYYY HH:MM:SS"
+4. path=path: 设置cookie支持的路径,如果path是一个路径，则cookie对这个目录下的所有文件及子目录生效，例如：
+5. path="/cgi-bin/"，如果path是一个文件，则cookie指对这个文件生效，例如：path="/cgi-bin/cookie.cgi"。
 
+6. domain=domain: 对cookie生效的域名，例如：domain="www.chinalb.com"
+7. secure: 如果给出此标志，表示cookie只能通过SSL协议的https服务器来传递。
+8. cookie的接收是通过设置环境变量HTTP\_COOKIE来实现的，CGI程序可以通过检索该变量获取cookie信息。
 
-name1=name1;name2=name2;name3=name3。
+**Cookie设置**
 
+Cookie的设置非常简单，cookie会在http头部单独发送。以下实例在cookie中设置了UserID 和 Password：
 
+```
+#!/usr/bin/env python3
+# -*- coding: UTF-8 -*-
+print ("Set-Cookie:UserID=XYZ;\r\n")
+print ("Set-Cookie:Password=XYZ123;\r\n")
+print ("Set-Cookie:Expires=Tuesday, 31-Dec-2007 23:12:40 GMT";\r\n")
+print ("Set-Cookie:Domain=www.w3cschool.cc;\r\n")
+print ("Set-Cookie:Path=/perl;\n")
+print ("Content-type:text/html\r\n\r\n")
+...........Rest of the HTML Content....
+```
 
-2. expires=date: cookie的有效期限,格式： expires="Wdy,DD-Mon-YYYY HH:MM:SS"
+以上实例使用了 Set-Cookie 头信息来设置Cookie信息，可选项中设置了Cookie的其他属性，如过期时间Expires，域名Domain，路径Path。这些信息设置在 "Content-type:text/html\r\n\r\n"之前。
 
+检索Cookie信息
 
+Cookie信息检索页非常简单，Cookie信息存储在CGI的环境变量HTTP\_COOKIE中，存储格式如下：&lt;br&gt;
 
-3. path=path: 设置cookie支持的路径,如果path是一个路径，则cookie对这个目录下的所有文件及子目录生效，例如：
+key1=value1;key2=value2;key3=value3....
 
+以下是一个简单的CGI检索cookie信息的程序：
 
+```
+#!/usr/bin/env python3
+# -*- coding: UTF-8 -*-
 
-path="/cgi-bin/"，如果path是一个文件，则cookie指对这个文件生效，例如：path="/cgi-bin/cookie.cgi"。
+# Import modules for CGI handling
+from os import environ
+import cgi, cgitb
 
+if environ.has_key('HTTP_COOKIE'):
+    for cookie in map(strip, split(environ['HTTP_COOKIE'], ';')):
+        (key, value ) = split(cookie, '=');
+    if key == "UserID":
+        user_id = value
 
+    if key == "Password":
+        password = value
 
-4. domain=domain: 对cookie生效的域名，例如：domain="www.chinalb.com"
+    print "User ID = %s" % user_id
+    print "Password = %s" % password
 
+#以上脚本输出结果如下：
+User ID = XYZ
+Password = XYZ123
+```
 
+**文件上传实例**
 
-5. secure: 如果给出此标志，表示cookie只能通过SSL协议的https服务器来传递。
+HTML设置上传文件的表单需要设置 enctype 属性为 multipart/form-data，代码如下所示：
 
+```
+<html>
+<body>
+<form enctype="multipart/form-data"
+action="save_file.py" method="post">
+<p>File: <input type="file" name="filename" /></p>
+<p><input type="submit" value="Upload" /></p>
+</form>
+</body>
+</html>
+```
 
+save\_file.py脚本文件代码如下：
 
-6. cookie的接收是通过设置环境变量HTTP\_COOKIE来实现的，CGI程序可以通过检索该变量获取cookie信息。
+```
+#!/usr/bin/env python3
+# -*- coding: UTF-8 -*-
 
+import cgi, os
+import cgitb; cgitb.enable()
 
+form = cgi.FieldStorage()
+
+# 获取文件名
+fileitem = form['filename']
+
+# 检测文件是否上传
+if fileitem.filename:
+# 设置文件路径
+    fn = os.path.basename(fileitem.filename)
+    open('/tmp/' + fn, 'wb').write(fileitem.file.read())
+    message = 'The file "' + fn + '" was uploaded successfully'
+else:
+    message = 'No file was uploaded'
+    print ("""\
+    Content-Type: text/html\n
+    <html>
+    <body>
+    <p>%s</p>
+    </body>
+    </html>
+    """ % (message,))
+```
+
+如果你使用的系统是Unix/Linux，你必须替换文件分隔符，在window下只需要使用open\(\)语句即可：
+
+`fn = os.path.basename(fileitem.filename.replace("\\", "/" ))`
+
+**文件下载对话框**
+
+我们先在当前目录下创建 foo.txt 文件，用于程序的下载。
+
+文件下载通过设置HTTP头信息来实现，功能代码如下：
+
+```
+#!/usr/bin/env python3
+#-*- coding: UTF-8 -*-
+#HTTP 头部
+print ("Content-Disposition: attachment; filename=\"foo.txt\"\r\n\n";)
+
+# 打开文件
+fo = open("foo.txt", "rb")
+
+str = fo.read();
+print (str)
+
+# 关闭文件
+fo.close()
+```
 
 
 
