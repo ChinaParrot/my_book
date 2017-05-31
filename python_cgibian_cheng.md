@@ -1,13 +1,13 @@
 # Python CGI编程
 
-**什么是CGI                                                              
+**什么是CGI                                                                
 **
 
 CGI 目前由NCSA维护，NCSA定义CGI如下：
 
 CGI\(Common Gateway Interface\),通用网关接口,它是一段程序,运行在服务器上如：HTTP服务器，提供同客户端HTML页面的接口。
 
-**网页浏览                                                              
+**网页浏览                                                                
 **
 
 为了更好的了解CGI是如何工作的，我们可以从在网页上点击一个链接或URL的流程：
@@ -139,7 +139,7 @@ for param in os.environ.keys():
     print ("<b>%20s</b>: %s<\br>" % (param, os.environ[param]))
 ```
 
-**GET和POST方法                                    
+**GET和POST方法                                      
 **浏览器客户端通过两种方法向服务器传递信息，这两种方法就是 GET 方法和 POST 方法。
 
 **使用GET方法传输数据**
@@ -432,38 +432,12 @@ cookie的语法
 http cookie的发送是通过http头部来实现的，他早于文件的传递，头部set-cookie的语法如下：
 
 ```
-Set-cookie:name=name;expires=date;path=path;domain=domain;secure 
+Set-cookie:name=name;expires=date;path=path;domain=domain;secure
+
+
 ```
 
 
 
-1. name=name: 需要设置cookie的值\(name不能使用"；"和"，"号\),有多个name值时用"；"分隔例如：
 
-
-
-name1=name1;name2=name2;name3=name3。
-
-
-
-2. expires=date: cookie的有效期限,格式： expires="Wdy,DD-Mon-YYYY HH:MM:SS"
-
-
-
-3. path=path: 设置cookie支持的路径,如果path是一个路径，则cookie对这个目录下的所有文件及子目录生效，例如：
-
-
-
-path="/cgi-bin/"，如果path是一个文件，则cookie指对这个文件生效，例如：path="/cgi-bin/cookie.cgi"。
-
-
-
-4. domain=domain: 对cookie生效的域名，例如：domain="www.chinalb.com"
-
-
-
-5. secure: 如果给出此标志，表示cookie只能通过SSL协议的https服务器来传递。
-
-
-
-6. cookie的接收是通过设置环境变量HTTP\_COOKIE来实现的，CGI程序可以通过检索该变量获取cookie信息。
 
