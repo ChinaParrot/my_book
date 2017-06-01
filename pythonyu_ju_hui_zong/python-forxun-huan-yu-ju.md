@@ -42,7 +42,6 @@ print ("Good bye!")
 #!/usr/bin/env python3
 name = ''
 while not name or name.isspace():
-# while not name or name.strip():
     name = input("输入：")
 print ("ok %s" %name)
 ```
