@@ -16,7 +16,29 @@ str.endswith(suffix[, start[, end]])
 * start -- 字符串中的开始位置。
 * end -- 字符中结束位置。
 
+## 返回值
 
+如果字符串含有指定的后缀返回True，否则返回False。
+
+## 实例
+
+以下实例展示了endswith\(\)方法的实例：
+
+```
+#!/usr/bin/env python3
+
+Str='run example....wow!!!'
+suffix='!!'
+print (Str.endswith(suffix))
+print (Str.endswith(suffix,15))
+suffix='run'
+print (Str.endswith(suffix))
+print (Str.endswith(suffix, 0, 3))
+
+name = input("what is your name?")
+if name.endswith('jq'):
+    print ("jq")
+```
 
 
 
