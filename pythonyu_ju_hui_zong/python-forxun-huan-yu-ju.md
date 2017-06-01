@@ -16,10 +16,6 @@
 | continue 语句 | 在语句块执行过程中终止当前循环，跳出该次循环，执行下一次循环。 |
 | pass 语句 | pass是空语句，是为了保持程序结构的完整性。 |
 
-
-
-
-
 Python for循环可以遍历任何序列的项目，如一个列表或者一个字符串。  
 语法：  
 for循环的语法格式如下：
@@ -40,6 +36,14 @@ fruits = ['banana', 'apple', 'mango']
 for fruit in fruits:
     print ('当前水果 :', fruit)
 print ("Good bye!")
+```
+
+```
+#!/usr/bin/env python3
+name = ''
+while not name or name.isspace():
+    name = input("输入：")
+print ("ok %s" %name)
 ```
 
 另外一种执行循环的遍历方式是通过索引，如下实例：
