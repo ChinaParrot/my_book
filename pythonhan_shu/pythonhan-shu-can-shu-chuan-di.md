@@ -58,7 +58,3 @@ print (enroll('dd','nan'))
 
 
 
-
-
-
-
