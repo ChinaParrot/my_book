@@ -187,5 +187,40 @@ print (fact(5))
 
 递归函数的优点是定义简单，逻辑清晰。理论上，所有的递归函数都可以写成循环的方式，但循环的逻辑不如递归清晰。
 
+使用递归函数需要注意防止栈溢出。在计算机中，函数调用是通过栈（stack）这种数据结构实现的，每当进入一个函数调用，栈就会加一层栈帧，每当函数返回，栈就会减一层栈帧。由于栈的大小不是无限的，所以，递归调用的次数过多，会导致栈溢出。可以试试
+
+`fact(1000)`：
+
+```
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\test.py", line 346, in <module>
+    print (fact(1000))
+  File "C:\Users\Administrator\Desktop\test.py", line 345, in fact
+    return n * fact(n - 1)
+  File "C:\Users\Administrator\Desktop\test.py", line 345, in fact
+    return n * fact(n - 1)
+  File "C:\Users\Administrator\Desktop\test.py", line 345, in fact
+    return n * fact(n - 1)
+  [Previous line repeated 994 more times]
+  File "C:\Users\Administrator\Desktop\test.py", line 343, in fact
+    if n==1:
+RecursionError: maximum recursion depth exceeded in comparison
+```
+
+解决：
+
+fact\(5\)对应的fact\_iter\(5, 1\)的调用如下：
+
+```
+===> fact_iter(5, 1)
+===> fact_iter(4, 5)
+===> fact_iter(3, 20)
+===> fact_iter(2, 60)
+===> fact_iter(1, 120)
+===> 120
+```
+
+
+
 
 
