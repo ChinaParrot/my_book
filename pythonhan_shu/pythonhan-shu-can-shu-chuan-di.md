@@ -21,5 +21,18 @@ fun('Jack', 20, 'man') # call
 
 你也许想到了，可以把`power(x)`修改为`power(x, n)`，用来计算xn：
 
+```
+def power(x, n):
+    s = 1
+    while n > 0:
+        n = n - 1
+        s = s * x
+    return s
+print (power(3,3))
+
+```
+
+
+
 
 
