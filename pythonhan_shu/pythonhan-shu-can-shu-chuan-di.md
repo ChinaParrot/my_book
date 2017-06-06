@@ -60,6 +60,13 @@ def add_end(L=[]):
     return L
 print (add_end([1,2,3]))
 print (add_end())
+print (add_end())
+
+#结果出乎意料
+[1, 2, 3, 'END']
+['END']
+['END', 'END']
+
 ```
 
 
