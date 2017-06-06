@@ -8,15 +8,13 @@ Python的函数定义非常简单，但灵活度却非常大。除了正常定�
 
 Python中在调用函数时，需要给定和形参相同个数的实参并按顺序一一对应。
 
-
-
 ```
 def fun(name, age, gender):
   print ('Name:',name,'，Age:',age,'，Gender:',gender)
   print ()
 
 fun('Jack', 20, 'man') # call
-#当我们调用fun函数时，必须传入有且仅有的3个参数
+#当我们调用fun函数时，必须传入有且仅有的3个参数,参数要按照顺序对应。
 ```
 
 
