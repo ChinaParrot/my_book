@@ -207,20 +207,30 @@ Traceback (most recent call last):
 RecursionError: maximum recursion depth exceeded in comparison
 ```
 
-解决：
+
+
+```
+def fact(n):
+    return fact_iter(n, 1)
+
+def fact_iter(num, product):
+    if num == 1:
+        return product
+    return fact_iter(num - 1, num * product)
+print (fact(500))
+
+```
 
 fact\(5\)对应的fact\_iter\(5, 1\)的调用如下：
 
 ```
-===> fact_iter(5, 1)
+===> fact_iter(5, 1)
 ===> fact_iter(4, 5)
 ===> fact_iter(3, 20)
 ===> fact_iter(2, 60)
 ===> fact_iter(1, 120)
 ===> 120
 ```
-
-
 
 
 
