@@ -152,29 +152,5 @@ sum( 10, 20 );
 print ("函数外是全局变量 : ", total)
 ```
 
-注意：函数的可变参数,字典。
-
-```
-def show(**kargs):
-    for item in kargs.items():
-    print (item)
-    user_dict = { 'name': 'zs','name2':'ls' }
-show(name='test',name2='test2')
-show(**user_dict)
-```
-
-函数默认参数：
-
-```
-def foo(name,action="test"，age):
-    print (name,'名字：',action)
-    #不能写为
-def foo(action='test',name)
-    #注意有多个参数的时候，传参一定要对应。
-
-foo(test,action='ni')\
-foo(age=10,action='nimen')
-```
-
 
 
