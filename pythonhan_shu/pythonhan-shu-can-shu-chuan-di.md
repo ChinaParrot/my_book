@@ -82,8 +82,12 @@ def add_end(L=None):
     return L
 print (add_end())
 print (add_end())
-
 ```
+
+## 可变参数
+
+  
+
 
 
 
