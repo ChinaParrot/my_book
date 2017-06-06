@@ -16,6 +16,7 @@ def fun(name, age, gender):
   print ()
 
 fun('Jack', 20, 'man') # call
+#当我们调用fun函数时，必须传入有且仅有的3个参数
 ```
 
 
