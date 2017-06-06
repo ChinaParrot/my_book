@@ -46,11 +46,14 @@ def enroll(name, gender, age=6, city='Beijing'):
      print ('age:', age)
      print ('city:', city)
 print (enroll('dd','nan'))
-
 ```
 
-定义默认参数要牢记一点：默认参数必须指向不变对象！
+定义默认参数要牢记一点：默认参数必须指向不变对象！使用默认参数有什么好处？最大的好处是能降低调用函数的难度。
 
   
+
+
+
+
 
 
