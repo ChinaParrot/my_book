@@ -54,7 +54,13 @@ print (enroll('dd','nan'))
 
 先定义一个函数，传入一个list，添加一个`END`再返回：
 
-
+```
+def add_end(L=[]):
+    L.append('END')
+    return L
+print (add_end([1,2,3]))
+print (add_end())
+```
 
 
 
