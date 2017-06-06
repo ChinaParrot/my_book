@@ -28,7 +28,7 @@
     * [Python对文本的操作](pythondui_wen_ben_de_cao_zuo.md)
     * [Python模块](pythonmo_kuai.md)
     * [Python函数](pythonhan_shu.md)
-      * python 参数传递
+      * [python函数参数传递](pythonhan_shu/pythonhan-shu-can-shu-chuan-di.md)
     * [Python-yield 使用](python-yield_shi_yong.md)
     * [python面向对象](pythonmian_xiang_dui_xiang.md)
     * [Python CGI编程](python_cgibian_cheng.md)
