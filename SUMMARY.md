@@ -55,6 +55,7 @@
     * [mysql优化](mysqlyou_hua.md)
       * [MySQL centos系统层优化](mysql_centosxi_tong_can_shu_you_hua.md)
   * [Ansible](ansible.md)
+    * [ansible ssh 安全](ansible/ansible-ssh-an-quan.md)
   * [前端web教程](qian_duan_web_jiao_cheng.md)
     * [HTML](html.md)
       * [HTML常用基本标签](htmlchang_yong_ji_ben_biao_qian.md)
