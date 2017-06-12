@@ -8,7 +8,7 @@
   
   
  ``` 
-django-admin.py  start project 
+django-admin.py  startproject 
 jqlinux_test
  ```
  
