@@ -20,7 +20,7 @@ http://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.13-winx64.zip
 
 ###配置文件，创建 一个my.ini
 
-<pre>
+```
 [mysql]
 default-character-set=utf8 
 
@@ -56,12 +56,13 @@ default_storage_engine = InnoDB
 
 sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES 
 
-</pre>
+```
 
 ###安装
 使用管理员用户登录cmd服务：
 
-<pre>
+```
+
 #操作如下：
 cd c:\
 cd mysql-5.7.13-winx64\bin
@@ -84,7 +85,7 @@ net start mysql
 #查看服务
 netstat -ano | findstr "3306"
 
-</pre>
+```
 
 
 window常用：
@@ -112,7 +113,7 @@ window常用：
  
  注意：建议安装mysql 5.6 ，mysql5.7需要更大的内存编译，否则不通过，至少2g内存。
  
-<pre>
+```
 
 #add mysql
 id -u mysql >/dev/null 2>&1
@@ -235,9 +236,12 @@ chown mysql.mysql -R /data/mysql
 /opt/mysql/bin/mysql -uroot -p123456 -e "drop database test;"
 /opt/mysql/bin/mysql -uroot -p123456 -e "reset master;"
  
- </pre>
+```
  
  或者脚本安装：
 
-```wget https://www.jqlinux.com/xjq/shell/mysql.sh
-sh mysql.sh```
+```
+wget https://www.jqlinux.com/xjq/shell/mysql.sh
+sh mysql.sh
+
+```
