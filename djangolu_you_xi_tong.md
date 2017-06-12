@@ -5,7 +5,8 @@
  ![](django_router_01.jpg)
  
 ##一、最基础的url映射
-<pre>
+
+```
 from django.conf.urls import patterns, include, url
 
 from django.contrib import admin
@@ -17,7 +18,7 @@ urlpatterns = patterns('',
     url(r'^index/$', views.index),
 )
 
-</pre>
+```
 
 1. 先从创建的app下的views.py面定义处理数据的函数
 
@@ -29,20 +30,23 @@ urlpatterns = patterns('',
 
 5. 当写成”^$“时，不输入任何url时不会在返回黄页，而是返回后面函数里对应的页面。一般这一条会写在url的最后。如：
 
-<pre>
+
+```
 url(r'^```, views.index),
-</pre>
+
+```
 
 ##二、按照顺序放置的动态路由
 
-<pre>
+```
  urlpatterns = [
      url(r'^user/(\d+)$', views.user),
      url(r'^user_list/(\d+)/(\d+)$', views.user_list),
  
  ]
- </pre>
  
+ ```
+   
 * ^user/(\d+)$ 
 
 相对应的url是： ”http://127.0.0.1/uer/8“ (\d+)是匹配任意的数字，在分页时灵活运用。
