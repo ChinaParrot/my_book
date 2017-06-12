@@ -109,10 +109,12 @@ python manage.py runserver 0.0.0.0:8000
 ```
   
   ##5. 清空数据库
-  <pre>
+
+```
   python manage.py flush
   #此命令会询问是 yes 还是 no, 选择 yes 会把数据全部清空掉，只留下空表。
-  </pre>
+
+```
   
   ##6. 创建超级管理员
   <pre>
