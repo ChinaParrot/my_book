@@ -32,7 +32,9 @@ python manage.py startapp app-name
 ```
 
 例如：
-<pre>
+
+```
+
 python manage.py startapp learn # learn 是一个app的名称
 
 #查看文件列表：
@@ -46,7 +48,9 @@ learn/
 ├── tests.py
 └── views.py
 
-</pre>
+```
+
+
 
 把我们新定义的app加到settings.py中的INSTALL_APPS中
 
