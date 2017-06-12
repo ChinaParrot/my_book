@@ -5,24 +5,25 @@
 ```ps -ef | grep mysqld```
 
 ####2. 使用命令启动mysql
-<pre>
+
+```
 #进入mysql安装目录
 ./bin/mysqld_safe &
 
-</pre>
+```
 
 ####3.如果你想关闭目前运行的 MySQL 服务器
 
-<pre>
+```
 #进入mysql安装目录
 ./bin/mysqladmin -u root -p shutdown
 Enter password: ******
 
-</pre>
+```
 
 ####4.mysql备份
 
-<pre>
+```
 #备份所有数据库
 mysqldump -h{ip} -u {user} -p{password} --all-databases(或者 -A ) >all_databases.sql
 
@@ -61,15 +62,16 @@ mysqldump [option] -B数据库名 --table 表名
 
 #导出数据库中忽略sql错误
 --force
-</pre>
+```
 
-####5.mysql 对数据库授权
+###5.mysql 对数据库授权
 * 授权语句如下
-<pre>
+
+```
 GRANT 权限 ON  数据库权限.表的权限范围  TO '用户名'@'权限ip' identified by '设置密码';
 #刷新权限,不然不生效
 flush privileges;
-</pre>
+```
 
 * 权限列表
 
@@ -106,7 +108,7 @@ flush privileges;
 
 * 查看权限
 
-<pre>
+```
 #查看当前用户的权限：
 show grants;
 
@@ -140,4 +142,4 @@ mysqld_safe --skip-grant-tables &
 mysql -u root
 use mysql
 update user set password = PASSWORD('123456') where user = 'root';
-</pre>
+```
