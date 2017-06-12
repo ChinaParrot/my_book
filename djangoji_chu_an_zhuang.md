@@ -45,11 +45,23 @@ https://pip.pypa.io/en/latest/installing/
 然后运行在终端运行 python get-pip.py 就可以安装 pip。
 
 检查安装：
-<pre>
+
+
+
+```
+
 >>> import django
 >>> print(django.VERSION)
 (1, 9, 6, 'final', 0)
-</pre>
+
+
+
+
+```
+
+
+
+
 
  如果想升级 pip 可以用：
  
