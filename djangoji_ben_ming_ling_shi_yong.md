@@ -105,7 +105,8 @@ python manage.py runserver 9999
 python manage.py runserver 0.0.0.0:8000
 # 如果是外网或者局域网电脑上可以用其它电脑查看开发服务器
 # 访问对应的 ip加端口，比如 http://172.16.20.2:8000
- </pre>
+
+```
   
   ##5. 清空数据库
   <pre>
