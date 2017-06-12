@@ -117,7 +117,9 @@ python manage.py runserver 0.0.0.0:8000
 ```
   
   ##6. 创建超级管理员
-  <pre>
+
+
+```
   python manage.py createsuperuser
  
 # 按照提示输入用户名和对应的密码就好了邮箱可以留空，用户名和密码必填
