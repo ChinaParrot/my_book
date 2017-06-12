@@ -10,6 +10,7 @@
  ``` 
 django-admin.py  startproject 
 jqlinux_test
+ 
  ```
  
   
