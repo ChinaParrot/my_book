@@ -64,7 +64,5 @@ cd django
 python setup.py install
 </pre>
 
-
-
 #项目https://www.djangosites.org/
 
