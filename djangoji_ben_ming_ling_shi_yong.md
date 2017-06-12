@@ -76,7 +76,10 @@ INSTALLED_APPS = (
 
 ##3. 同步数据库
   
-<pre>python manage.py syncdb
+
+```
+ 
+python manage.py syncdb
 #注意：Django 1.7.1及以上的版本需要用以下命令
 python manage.py makemigrations
 python manage.py migrate
