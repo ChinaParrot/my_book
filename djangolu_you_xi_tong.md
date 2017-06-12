@@ -82,10 +82,11 @@ def user_list(request,nid,nid2):
 正则表达式的分组，相当于一个字典， key=v1, value=\d+。 {"v1":"\d+"}
 然后将此参数传递到views里对应的函数，可以不按照顺序
 
-<pre>
+```
+
  def user_list(request,v2,v1): 
      return HttpResponse(v1+v2)
-</pre>
+```
 
 
 ```
