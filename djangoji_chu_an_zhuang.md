@@ -68,11 +68,21 @@ https://pip.pypa.io/en/latest/installing/
  
  ### 2. 通过源码安装
  
-<pre>
+```
+
+
 git clone https://github.com/django/django.git
 cd django
 python setup.py install
-</pre>
+
+
+```
+
+
+
+
+
+
 
 #项目https://www.djangosites.org/
 
