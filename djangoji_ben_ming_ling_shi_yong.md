@@ -25,7 +25,6 @@ jqlinux_test
 
 
 
-
 python manage.py startapp app-name
 或 django-admin.py startapp app-name
 
