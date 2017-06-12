@@ -131,10 +131,11 @@ python manage.py changepassword username
   
   ##7. 导出数据 导入数据
   
-  <pre>
+```
 python manage.py dumpdata appname > appname.json
 python manage.py loaddata appname.json
-  </pre>
+
+```
   
   ##8. Django 项目环境终端
   
