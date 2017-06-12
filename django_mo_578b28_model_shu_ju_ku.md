@@ -16,12 +16,12 @@ null=True
 1、**CharField：**字符串字段，单行输入，用于较短的字符串，如要保存大量文本, 使用 TextField，
 控制字符串大小max_length： models.CharField(max_length=大小)
 
-<pre>
+```
 from django.db import models
 class Person(models.Model):
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
-</pre>
+```
 
 2、**AutoField：** 一个自动递增的整型字段，添加记录时它会自动增长。你通常不需要直接使用这个字段；如果你不指定主键的话，系统会自动添加一个主键字段到你的model。
 
@@ -43,10 +43,10 @@ auto_now_add：当对象首次被创建时,自动将该字段的值设置为当�
 
 8、**EmailField：**一个带有检查 Email 合法性的 CharField，不接受 maxlength 参数。
 
-<pre>
+```
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
-</pre>
+```
 
 9、**FloatField**：浮点型字段。 必须提供两个 参数， 参数描述：
 
@@ -60,7 +60,7 @@ decimal_places：小数位数。如：要保存最大值为 999 (小数点后保
  
  AUTH_USER_MODEL = "myapp.User" 
 
-<pre>
+```
  
  from django.contrib.auth.models import AbstractUser
  from django.db import models
@@ -82,4 +82,5 @@ class User(AbstractUser):
 
     def __unicode__(self):
         return self.username
-     </pre>   
+     
+     ```
