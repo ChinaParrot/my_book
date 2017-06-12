@@ -55,23 +55,28 @@ url(r'^```, views.index),
 
 相对应的url是： ”http://127.0.0.1/uer/8/9“，匹配到的数字会以参数的形式按照顺序传递给views里面相对应的函数
 
-<pre>def user_list(request,nid,nid2):
+```
+def user_list(request,nid,nid2):
  
      return HttpResponse(nid+nid2)
-</pre>
+```
 
 ##三、传参形式的动态路由
 
 利用正则表达式的分组方法，将url以参数的形式传递到函数，可以不按顺序排列。
  
  ```
- urlpatterns = [
+
+  urlpatterns = [
  url(r'^user_list/(?P<v1>\d+)/(?P<v2>\d+)$',views.user_list),
  ]
- ```
+
+  ```
  
  ```
+
 (?P<v1>\d+)
+
 ```
 
 正则表达式的分组，相当于一个字典， key=v1, value=\d+。 {"v1":"\d+"}
