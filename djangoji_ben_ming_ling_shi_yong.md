@@ -30,11 +30,10 @@ python manage.py startapp app-name
 ```
 
 
-
-
 #一般一个项目有多个app, 当然通用的app也可以在多个项目中使用。
 
-</pre>
+
+```
 
 例如：
 <pre>
