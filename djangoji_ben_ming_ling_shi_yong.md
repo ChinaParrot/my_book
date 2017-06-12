@@ -7,7 +7,8 @@
   jqlinux_test是project名字，可以根据自己需求：
   
   
- ``` django-admin.py  start project 
+ ``` 
+django-admin.py  start project 
 jqlinux_test
  ```
  
