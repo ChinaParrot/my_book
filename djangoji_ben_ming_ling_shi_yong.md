@@ -139,27 +139,30 @@ python manage.py loaddata appname.json
   
   ##8. Django 项目环境终端
   
-  <pre>
+```
   python manage.py shell
   
 #如果你安装了 bpython 或 ipython 会自动用它们的界面，推荐安装 bpython。
 #这个命令和 直接运行 python 或 bpython 进入 shell 的区别是：你可以在这个 shell 里面调用当前项目的 models.py 中的 API，对于操作数据，还有一些小测试非常方便。
-  </pre>
+
+```
   
   
   ##9. 数据库命令行
-  <pre>
+
+```
   python manage.py dbshell
   #Django 会自动进入在settings.py中设置的数据库，如果是 MySQL 或 postgreSQL,会要求输入数据库用户密码。
 
 #在这个终端可以执行数据库的SQL语句。如果您对SQL比较熟悉，可能喜欢这种方式。
-  </pre>
+
+```
   
   
 
 ###例子：hello world
 
-<pre>
+```
 #1.创建一个mysite的项目
 django-admin startproject mysite
 
@@ -210,6 +213,6 @@ Django version 1.11, using settings 'mysite.settings'
 Starting development server at http://0.0.0.0:8080/
 Quit the server with CONTROL-C.
 
-</pre>
+```
 
 最后浏览器访问：http://ip:8080/
