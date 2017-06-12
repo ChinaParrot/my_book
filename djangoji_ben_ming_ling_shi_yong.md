@@ -23,10 +23,14 @@ jqlinux_test
 
 ```
 
-
-
 python manage.py startapp app-name
 或 django-admin.py startapp app-name
+
+
+```
+
+
+
 
 #一般一个项目有多个app, 当然通用的app也可以在多个项目中使用。
 
