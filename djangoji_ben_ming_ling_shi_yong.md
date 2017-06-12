@@ -126,7 +126,8 @@ python manage.py runserver 0.0.0.0:8000
  
 # 修改 用户密码可以用：
 python manage.py changepassword username
-  </pre>
+
+```
   
   ##7. 导出数据 导入数据
   
