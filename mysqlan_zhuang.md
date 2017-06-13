@@ -233,7 +233,13 @@ yum \| apt -y install mysql-server
 
 或者直接利用yum安装：
 
-https://dev.mysql.com/downloads/repo/yum/
+[https://dev.mysql.com/downloads/repo/yum/](https://dev.mysql.com/downloads/repo/yum/)
 
-yum -y install mysql-server 
+yum -y install mysql-server
+
+开始修改密码：（注意密码安全强度要高，不然修改不了）
+
+mysqladmin -uroot -p\`cat /var/log/mysqld.log \|grep generated \|awk '{print $NF}'\` password '81Y@Y^1LXHrxBiws'
+
+
 
