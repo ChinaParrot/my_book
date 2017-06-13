@@ -231,7 +231,9 @@ yum \| apt -y install mysql-server
     /opt/mysql/bin/mysql -uroot -p123456 -e "drop database test;"
     /opt/mysql/bin/mysql -uroot -p123456 -e "reset master;"
 
+或者直接利用yum安装：
 
+https://dev.mysql.com/downloads/repo/yum/
 
-
+yum -y install mysql-server 
 
