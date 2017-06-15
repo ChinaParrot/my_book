@@ -49,6 +49,7 @@
       * [python之系统性能信息模块psutil](pythonchang-yong-di-san-fang-3001-nei-zhi-mo-kuai/p-ythonzhi-xi-tong-xing-neng-xin-xi-mo-kuai-psutil.md)
       * [python之IP地址处理模块IPy](pythonchang-yong-di-san-fang-3001-nei-zhi-mo-kuai/p-ythonzhi-ip-di-zhi-chu-li-mo-kuai-ipy.md)
       * [Python之DNS处理模块dnspython](pythonchang-yong-di-san-fang-3001-nei-zhi-mo-kuai/pythonzhi-dns-chu-li-mo-kuai-dnspython.md)
+      * [Python之difflib模块对比文件内容差异](pythonchang-yong-di-san-fang-3001-nei-zhi-mo-kuai/pythonzhidifflib-mo-kuai-dui-bi-wen-jian-nei-rong-cha-yi.md)
   * [Django教程](djangojiao_cheng.md)
     * [Django基础安装](djangoji_chu_an_zhuang.md)
     * [Django基本命令使用](djangoji_ben_ming_ling_shi_yong.md)
