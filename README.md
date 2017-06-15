@@ -53,9 +53,9 @@ gitbook serve
 
 参考：
 
-https://github.com/jqlinux/sublime-python/blob/master/sublime-window-64/readme.txt
+[https://github.com/jqlinux/sublime-python/blob/master/sublime-window-64/readme.txt](https://github.com/jqlinux/sublime-python/blob/master/sublime-window-64/readme.txt)
+
+\#支持中文输入：https://github.com/lyfeyaj/sublime-text-imfix
 
 建议使用Ubuntu 16.04 ，原因方便安装python环境，apt 包含python3.5环境。
-
-
 
