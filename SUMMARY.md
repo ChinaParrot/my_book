@@ -46,6 +46,7 @@
       * [python os.path详解](pythonchang-yong-di-san-fang-3001-nei-zhi-mo-kuai/python-ospathxiang-jie.md)
       * [Python运行bash](pythonchang-yong-di-san-fang-3001-nei-zhi-mo-kuai/pythonyun-xing-bash.md)
       * [python Paramiko\(模仿ssh登录执行命令\)](pythonchang-yong-di-san-fang-3001-nei-zhi-mo-kuai/python-paramikomo-fang-ssh-deng-lu-zhi-xing-ming-4ee429.md)
+      * [p ython之系统性能信息模块psutil](pythonchang-yong-di-san-fang-3001-nei-zhi-mo-kuai/p-ythonzhi-xi-tong-xing-neng-xin-xi-mo-kuai-psutil.md)
   * [Django教程](djangojiao_cheng.md)
     * [Django基础安装](djangoji_chu_an_zhuang.md)
     * [Django基本命令使用](djangoji_ben_ming_ling_shi_yong.md)
