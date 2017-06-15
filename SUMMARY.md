@@ -41,6 +41,7 @@
     * [Python 网络编程socket](python_wang_luo_bian_cheng_socket.md)
     * [python-json详解](python-jsonxiang_jie.md)
     * [Python之XlsxWriter（Excel操作模块）](pythonzhi_xlsxwriter__excel_cao_zuo_mo_kuai_ff09.md)
+    * [Python常用第三方、内置模块](pythonchang-yong-di-san-fang-3001-nei-zhi-mo-kuai.md)
   * [Django教程](djangojiao_cheng.md)
     * [Django基础安装](djangoji_chu_an_zhuang.md)
     * [Django基本命令使用](djangoji_ben_ming_ling_shi_yong.md)
