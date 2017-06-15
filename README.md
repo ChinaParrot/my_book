@@ -35,8 +35,6 @@ npm config set registry https://registry.npm.taobao.org
 cnpm install -g gitbook-cli
 #启动服务
 gitbook serve
-
-
 ```
 
 ## 2、gitbook使用
@@ -50,6 +48,10 @@ gitbook init
 #启动服务
 gitbook serve
 ```
+
+## 3、python环境
+
+
 
 
 

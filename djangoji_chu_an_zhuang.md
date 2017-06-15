@@ -34,7 +34,7 @@ Django 的设置，配置文件，比如 DEBUG 的开关，静态文件的位置
 
 ubuntu类：
 
-`apt-get install  python-pip     
+`apt-get install  python-pip       
 pip install Django==1.9.6`
 
 Fedora类：
