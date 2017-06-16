@@ -9,6 +9,8 @@ jms_dir = os.path.dirname(os.path.abspath(os.path.dirname(__file__)))
 #对于模块和自己写的程序不在同一个目录下，可以把模块的路径通过sys.path.append(路径)添加到程序中。
 sys.path.append(jms_dir)
 
+获取主执行文件路径的最佳方法是用sys.argv[0]，它可能是一个相对路径，所以再取一下abspath是保险的做法，像这样：
+
 dirname, filename = os.path.split(os.path.abspath(sys.argv[0]))
 print (dirname)
 print (filename)
