@@ -18,7 +18,7 @@ print (dirname)
 print (filename)
 ```
 
-# 
+
 
 # os.path详解：
 
