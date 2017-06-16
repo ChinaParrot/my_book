@@ -8,6 +8,10 @@ jms_dir = os.path.dirname(os.path.abspath(os.path.dirname(__file__)))
 
 #对于模块和自己写的程序不在同一个目录下，可以把模块的路径通过sys.path.append(路径)添加到程序中。
 sys.path.append(jms_dir)
+
+dirname, filename = os.path.split(os.path.abspath(sys.argv[0]))
+print (dirname)
+print (filename)
 ```
 
 # 
