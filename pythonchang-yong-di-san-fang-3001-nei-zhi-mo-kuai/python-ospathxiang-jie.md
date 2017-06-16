@@ -3,7 +3,7 @@
 ```
 import os
 import sys
-#
+#__file__ 是用来获得模块所在的路径的，这可能得到的是一个相对路径，
 jms_dir = os.path.dirname(os.path.abspath(os.path.dirname(__file__)))
 
 #对于模块和自己写的程序不在同一个目录下，可以把模块的路径通过sys.path.append(路径)添加到程序中。
