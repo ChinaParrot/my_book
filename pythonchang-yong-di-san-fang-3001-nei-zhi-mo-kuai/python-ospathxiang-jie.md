@@ -16,7 +16,7 @@ sys.path.append(jms_dir)
 
 |  | 方法 | 详解 |
 | :--- | :--- | :--- |
-| os.path.abspath\(path\) | \#返回绝对路径 |  |
+|  | os.path.abspath\(path\) | \#返回绝对路径 |
 |  | os.path.basename\(path\) | \#返回文件名 |
 |  | os.path.commonprefix\(list\) | \#返回list\(多个路径\)中，所有path共有的最长的路径。 |
 |  | os.path.dirname\(path\) | \#返回文件路径 |
