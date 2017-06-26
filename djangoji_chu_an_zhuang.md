@@ -34,7 +34,7 @@ Django 的设置，配置文件，比如 DEBUG 的开关，静态文件的位置
 
 ubuntu类：
 
-`apt-get install  python-pip           
+`apt-get install  python-pip             
 pip install Django==1.9.6`
 
 Fedora类：
@@ -78,17 +78,15 @@ Linux/Mac OSX 下：
 
 修改~/.bash\_profile或其它环境变量相关文件\(如 .bashrc 或用 ZSH 之后的 .zshrc\)，添加以下语句
 
-`export WORKON_HOME=$HOME/.virtualenvs`
+`export WORKON_HOME=$HOME/.virtualenvs`
 
-`export PROJECT_HOME=$HOME/workspace`
+`export PROJECT_HOME=$HOME/workspace`
 
-`source /usr/local/bin/virtualenvwrapper.sh`
+`source /usr/local/bin/virtualenvwrapper.sh`
 
 修改后使之立即生效\(也可以重启终端使之生效\)：
 
 source ~/.bash\_profile
-
-
 
 使用方法：
 
@@ -100,7 +98,7 @@ deactivate: 退出终端环境
 
 其它的：
 
-rmvirtualenv ENV：删除运行环境ENV
+rmvirtualenv ENV：删除运行环境ENV
 
 mkproject mic：创建mic项目和运行环境mic
 
@@ -111,6 +109,25 @@ lsvirtualenv: 列出可用的运行环境
 lssitepackages: 列出当前环境安装了的包
 
 创建的环境是独立的，互不干扰，无需sudo权限即可使用 pip 来进行包的管理。
+
+
+
+pip 国内源
+
+```
+  阿里云 http://mirrors.aliyun.com/pypi/simple/ 
+  中国科技大学 https://pypi.mirrors.ustc.edu.cn/simple/ 
+  豆瓣(douban) http://pypi.douban.com/simple/ 
+  清华大学 https://pypi.tuna.tsinghua.edu.cn/simple/ 
+  中国科学技术大学 http://pypi.mirrors.ustc.edu.cn/simple/
+```
+
+使用
+
+```
+ pip3 install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+```
 
 
 
