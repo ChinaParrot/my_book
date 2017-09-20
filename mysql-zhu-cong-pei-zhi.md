@@ -16,6 +16,8 @@ expire-logs-days = 14
 sync-binlog = 1
 slave-net-timeout = 60#从不设置
 #binlog-ignore-db = mysql
+#从relay_log = relay-bin #开启中继日志 (日志存储位置尽量不要同数据存储同一磁盘同一目录，这里测试方便不重新指向)
+
 ```
 
 3、主库锁表备份
