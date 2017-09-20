@@ -3,7 +3,6 @@
 ```
 例如：
 grant replication slave on *.* to replication@’%’identified by ‘123456’;
-
 ```
 
 2、修改配置文件my.cnf
@@ -28,12 +27,10 @@ slave-net-timeout = 60#从不设置
  show master status;
  #全部备份
  mysqldump -uroot -p -h127.0.0.1 -P3306 --all-databases --triggers --routines --events >>/mnt/windows/all.sql
-   
+
  #解除锁表
  unlock tables;
 ```
-
-
 
 4、从导入数据并配置主从
 
@@ -41,7 +38,7 @@ slave-net-timeout = 60#从不设置
 #导入数据
  mysql -uroot -p -h127.0.0.1 -P3306 < /mnt/windows/all.sql
 #配置主从
- 
+
  change master to master_host=’192.168.19.158′, master_port=3306 ,master_user=’replication’ , master_password=’123456′ ,master_log_file=’mysql-bin.000004′ ,master_log_pos=404;
  start slave;
  #查看同步情况
