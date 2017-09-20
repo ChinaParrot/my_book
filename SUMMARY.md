@@ -94,4 +94,5 @@
       * [sort 命令](linuxjiao-cheng/linuxming-ling/sort-ming-ling.md)
       * [uniq 命令](linuxjiao-cheng/linuxming-ling/uniq-ming-ling.md)
       * [cut 命令](linuxjiao-cheng/linuxming-ling/cutming-ling.md)
+      * [ulimit命令](linuxjiao-cheng/linuxming-ling/ulimit.md)
 
