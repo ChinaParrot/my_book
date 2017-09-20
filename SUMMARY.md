@@ -95,4 +95,5 @@
       * [uniq 命令](linuxjiao-cheng/linuxming-ling/uniq-ming-ling.md)
       * [cut 命令](linuxjiao-cheng/linuxming-ling/cutming-ling.md)
       * [ulimit命令](linuxjiao-cheng/linuxming-ling/ulimit.md)
+      * [netstat命令](linuxjiao-cheng/linuxming-ling/netstatming-ling.md)
 
