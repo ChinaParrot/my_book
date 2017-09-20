@@ -8,8 +8,6 @@
 
 4\).Slave的Sql进程检测到relay-log中新增加了内容后，会马上解析relay-log的内容成为在Master端真实执行时候的那些可执行的内容，并在自身执行。
 
-
-
 1、首先授权：
 
 ```
@@ -24,11 +22,12 @@ grant replication slave on *.* to replication@’%’identified by ‘123456’;
 # BINARY LOGGING #
 server-id = 1 #从2，一般以IP结尾配置
 log-bin = /data/mysql/mysql-bin 
+relay_log = relay-bin #开启中继日志 (日志存储位置尽量不要同数据存储同一磁盘同一目录，这里测试方便不重新指向)
 expire-logs-days = 14
 sync-binlog = 1
 slave-net-timeout = 60#从不设置
 #binlog-ignore-db = mysql
-#从relay_log = relay-bin #开启中继日志 (日志存储位置尽量不要同数据存储同一磁盘同一目录，这里测试方便不重新指向)
+
 ```
 
 3、主库锁表备份
