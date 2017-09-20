@@ -70,6 +70,7 @@
     * [阿里云基础文档](a-li-yun-ji-chu-wen-dang.md)
     * [mysql优化](mysqlyou_hua.md)
       * [MySQL centos系统层优化](mysql_centosxi_tong_can_shu_you_hua.md)
+    * [mysql 主从配置](mysql-zhu-cong-pei-zhi.md)
   * [Ansible](ansible.md)
     * [ansible ssh 安全](ansible/ansible-ssh-an-quan.md)
   * [前端web教程](qian_duan_web_jiao_cheng.md)
