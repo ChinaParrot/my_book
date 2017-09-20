@@ -1,7 +1,6 @@
 ulimit用于shell启动进程所占用的资源，可以用来设置系统的限制
 
-*  在`/etc/security/limits.conf`文件中定义限制。
-
+* 在`/etc/security/limits.conf`文件中定义限制。
 
 | 命令参数 | 描述 | 例子 |
 | :--- | :--- | :--- |
@@ -19,6 +18,17 @@ ulimit用于shell启动进程所占用的资源，可以用来设置系统的限
 | -t | 最大的 CPU 占用时间，以秒为单位 | ulimit – t unlimited；对最大的 CPU 占用时间不进行限制 |
 | -u | 用户最大可用的进程数 | ulimit – u 64；限制用户最多可以使用 64 个进程 |
 | -v | 进程最大可用的虚拟内存，以 Kbytes 为单位 | ulimit – v 200000；限制最大可用的虚拟内存为 200000 Kbytes |
+
+在/etc/security/limits.conf修改限制的格式如下
+
+`domino type item value`
+
+| 参数 | 描述 |
+| :--- | :--- |
+| domino | 是以符号@开头的用户名或组名，\*表示所有用户 |
+| type | 设置为hard or soft |
+| item | 指定想限制的资源。如cpu,core nproc or maxlogins |
+| value | 是相应的 |
 
 
 
