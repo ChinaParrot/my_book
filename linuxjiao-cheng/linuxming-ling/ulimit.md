@@ -1,9 +1,6 @@
 ulimit用于shell启动进程所占用的资源，可以用来设置系统的限制
 
-在`/etc/security/limits.conf`文件中定义限制。
-
-|  |
-| :--- |
+*  在`/etc/security/limits.conf`文件中定义限制。
 
 
 | 命令参数 | 描述 | 例子 |
