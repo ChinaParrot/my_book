@@ -7,6 +7,7 @@ uniq命令用于报告或忽略文件中的重复行，一般与sort命令结合
 -s<字符位置>或--skip-chars=<字符位置>：忽略比较指定的字符； 
 -u或——unique：仅显示出一次的行列； 
 -w<字符位置>或--check-chars=<字符位置>：指定要比较的字符。
+
 ```
 
 ```
@@ -40,7 +41,6 @@ sync:x:5:0:sync:/sbin:/bin/sync
 gopher:x:13:30:gopher:/var/gopher:/sbin/nologin
 sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
 [root@bogon /]# uniq -d /etc/passwd
-
 ```
 
 
