@@ -71,6 +71,8 @@
     * [mysql优化](mysqlyou_hua.md)
       * [MySQL centos系统层优化](mysql_centosxi_tong_can_shu_you_hua.md)
     * [mysql 主从配置](mysql-zhu-cong-pei-zhi.md)
+    * [sql语句](sqlyu-ju.md)
+      * [select](sqlyu-ju/select.md)
   * [Ansible](ansible.md)
     * [ansible ssh 安全](ansible/ansible-ssh-an-quan.md)
   * [前端web教程](qian_duan_web_jiao_cheng.md)
