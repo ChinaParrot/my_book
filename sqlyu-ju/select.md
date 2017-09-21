@@ -19,6 +19,11 @@ SELECT name,age,phone FROM employee WHERE name='Mary';
 
 ```
 SELECT name,age FROM employee WHERE age<25 OR age>30;
+
+#格式
+SELECT name,age FROM employee WHERE age>25 and age>30;
+
+SELECT name,age FROM employee WHERE age BETWEEN 25 AND 30
 ```
 
 
