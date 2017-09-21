@@ -108,10 +108,20 @@ WHERE a.in_dpt = b.dpt_name ORDER BY id;
 
 格式：表名 LEFT JOIN 表名 ON 条件；
 
-返回包括左表中的所有记录和右表中连接字段相等的记录，通俗点讲，就是除了显示相关联的行，还会将左表中的所有记录行度显示出来。
+返回包括左表中的所有记录和右表中连接字段相等的记录，通俗点讲，就是除了显示相关联的行，还会将左表中的所有记录行度显示出来，右边没有的部分null显示。
 
 ```
 SELECT id,name,people_num FROM employee AS e LEFT JOIN department AS d ON e.in_dpt = d.dpt_name;
+```
+
+**右外连接：**
+
+格式： 表名 RIGHT JOIN 表名 ON 条件
+
+ 返回包括右表中的所有记录和右表中连接字段相等的记录。其实跟左外连接差不多，就是将右边的表给全部显示出来
+
+```
+SELECT id,name,people_num FROM employee AS e RIGHT JOIN department AS d ON e.in_dpt = d.dpt_name;
 ```
 
 
