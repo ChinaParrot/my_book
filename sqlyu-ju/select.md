@@ -91,7 +91,6 @@ WHERE employee.in_dpt = department.dpt_name ORDER BY id;
 SELECT a.id,a.name,a.people_num,b.id,b.name,b.people_num
 FROM employee AS a,department AS b
 WHERE a.in_dpt = b.dpt_name ORDER BY id;
-
 ```
 
 * 内连接
@@ -101,7 +100,6 @@ WHERE a.in_dpt = b.dpt_name ORDER BY id;
 * ```
   SELECT id,name,people_num FROM employee JOIN department ON employee.in_dpt = department.dpt_name ORDER BY id;
   ```
-
 * 外连接
 
 外连接除了返回相关联的行之外，将没有关联的行也会显示出来。
@@ -114,9 +112,6 @@ WHERE a.in_dpt = b.dpt_name ORDER BY id;
 
 ```
 SELECT id,name,people_num FROM employee as e LEFT JOIN department ON employee.in_dpt = department.dpt_name ORDER BY id;
-
-
-
 ```
 
 
