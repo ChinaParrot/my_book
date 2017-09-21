@@ -87,6 +87,10 @@ WHERE
 SELECT id,name,people_num
 FROM employee,department
 WHERE employee.in_dpt = department.dpt_name ORDER BY id;
+
+SELECT id,name,people_num
+FROM employee JOIN department
+ON employee.in_dpt = department.dpt_name ORDER BY id;
 ```
 
 
