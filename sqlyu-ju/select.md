@@ -54,6 +54,9 @@ SELECT name,age,salary,phone FROM employee ORDER BY salary DESC;
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 作用 | 计数 | 求和 | 求平均值 | 最大值 | 最小值 |
 
-  
+```
+SELECT MAX(salary) AS max_salary,MIN(salary) FROM employee;
+```
+
 
 
