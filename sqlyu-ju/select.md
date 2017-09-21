@@ -111,7 +111,7 @@ WHERE a.in_dpt = b.dpt_name ORDER BY id;
 返回包括左表中的所有记录和右表中连接字段相等的记录，通俗点讲，就是除了显示相关联的行，还会将左表中的所有记录行度显示出来。
 
 ```
-SELECT id,name,people_num FROM employee as e LEFT JOIN department ON employee.in_dpt = department.dpt_name ORDER BY id;
+SELECT id,name,people_num FROM employee AS e LEFT JOIN department AS d ON e.in_dpt = d.dpt_name;
 ```
 
 
