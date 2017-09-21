@@ -88,6 +88,11 @@ SELECT id,name,people_num
 FROM employee,department
 WHERE employee.in_dpt = department.dpt_name ORDER BY id;
 
+SELECT a.id,a.name,a.people_num,b.id,b.name,b.people_num
+FROM employee AS a,department AS b
+WHERE a.in_dpt = b.dpt_name ORDER BY id;
+
+
 SELECT id,name,people_num
 FROM employee JOIN department
 ON employee.in_dpt = department.dpt_name ORDER BY id;
