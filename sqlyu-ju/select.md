@@ -92,10 +92,31 @@ SELECT a.id,a.name,a.people_num,b.id,b.name,b.people_num
 FROM employee AS a,department AS b
 WHERE a.in_dpt = b.dpt_name ORDER BY id;
 
+```
 
-SELECT id,name,people_num
-FROM employee JOIN department
-ON employee.in_dpt = department.dpt_name ORDER BY id;
+* 内连接
+
+内连接是将符合查询条件\(符合连接条件\)的行返回，也就是相关联的行就返回。
+
+* ```
+  SELECT id,name,people_num FROM employee JOIN department ON employee.in_dpt = department.dpt_name ORDER BY id;
+  ```
+
+* 外连接
+
+外连接除了返回相关联的行之外，将没有关联的行也会显示出来。
+
+**左外连接：**
+
+格式：表名 LEFT JOIN 表名 ON 条件；
+
+返回包括左表中的所有记录和右表中连接字段相等的记录，通俗点讲，就是除了显示相关联的行，还会将左表中的所有记录行度显示出来。
+
+```
+SELECT id,name,people_num FROM employee as e LEFT JOIN department ON employee.in_dpt = department.dpt_name ORDER BY id;
+
+
+
 ```
 
 
