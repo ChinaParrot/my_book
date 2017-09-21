@@ -46,7 +46,20 @@ SELECT name,age,phone FROM employee WHERE phone LIKE '1101%';
 
 ![](/assets/正则.png)
 
-5、结果排序
+```
+select * from book where b_name REGEXP '^j';
+```
+
+5、使用LIMIT限制查询结果的数量
+
+```
+1）select * from book limit 4;　　//没有写位置偏移量，默认就是0，也就是从第一条开始，往后取4条数据，也就是取了第一条数据到第4条的数据。
+2）select * from book limit 3,3; //从第4条数据开始，往后取3条数据，也就是从第4条到第7条
+```
+
+
+
+6、结果排序
 
 为了使查询结果看起来更顺眼，我们可能需要对结果按某一列来排序，这就要用到 ORDER BY 排序关键词。默认情况下，ORDER BY的结果是升序排列，而使用关键词ASC和DESC可指定升序或降序排序。 比如，我们按salary降序排列，SQL语句为：
 
@@ -54,7 +67,7 @@ SELECT name,age,phone FROM employee WHERE phone LIKE '1101%';
 SELECT name,age,salary,phone FROM employee ORDER BY salary DESC;
 ```
 
-6、mysql内置函数
+7、mysql内置函数
 
 | 函数名 | COUNT | SUM | AVG | MAX | MIN |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -64,7 +77,7 @@ SELECT name,age,salary,phone FROM employee ORDER BY salary DESC;
 SELECT MAX(salary) AS max_salary,MIN(salary) FROM employee;
 ```
 
-7、子查询
+8、子查询
 
 一般SELECT 语句都仅涉及一个表中的数据，然而有时必须处理多个表才能获得所需的信息，子查询还可以扩展到3层、4层或更多层。
 
@@ -85,7 +98,7 @@ WHERE
     );
 ```
 
-8、连接查询
+9、连接查询
 
 在处理多个表时，子查询只有在结果来自一个表时才有用。但如果需要显示两个表或多个表中的数据，这时就必须使用连接 \(join\) 操作。 连接的基本思想是把两个或多个表当作一个新的表来操作，如下：
 
@@ -132,5 +145,14 @@ SELECT id,name,people_num FROM employee AS e LEFT JOIN department AS d ON e.in_d
 SELECT id,name,people_num FROM employee AS e RIGHT JOIN department AS d ON e.in_dpt = d.dpt_name;
 ```
 
+10 、UNION的作用很简单用来合并两条sql的结果集
+
+使用条件:
+
+1&gt; 只要两个结果集的列数相同就可以使用，即使字段类型不相同，也可以使用
+
+2&gt;如果两个表中有相同的记录是用UNION会覆盖重复，可以使用UNION ALL
+
+  
 
 
