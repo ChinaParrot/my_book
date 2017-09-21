@@ -38,6 +38,14 @@ SELECT name,age,phone,in_dpt FROM employee WHERE in_dpt NOT IN ('dpt3','dpt4');
 ```
 SELECT name,age,phone FROM employee WHERE phone LIKE '1101__';
 SELECT name,age,phone FROM employee WHERE phone LIKE '1101%';
+```
+
+5、结果排序
+
+为了使查询结果看起来更顺眼，我们可能需要对结果按某一列来排序，这就要用到 ORDER BY 排序关键词。默认情况下，ORDER BY的结果是升序排列，而使用关键词ASC和DESC可指定升序或降序排序。 比如，我们按salary降序排列，SQL语句为：
+
+```
+SELECT name,age,salary,phone FROM employee ORDER BY salary DESC;
 
 ```
 
