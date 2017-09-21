@@ -157,6 +157,7 @@ USERGROUPS_ENAB yes
 ENCRYPT_METHOD SHA512 
 
 ```
+
 * **/etc/default/useradd 配置文件**
 
 
