@@ -73,7 +73,7 @@
     * [mysql 主从配置](mysql-zhu-cong-pei-zhi.md)
     * [sql语句](sqlyu-ju.md)
       * [SELECT](sqlyu-ju/select.md)
-      * UPDATE
+      * [UPDATE](sqlyu-ju/update.md)
   * [Ansible](ansible.md)
     * [ansible ssh 安全](ansible/ansible-ssh-an-quan.md)
   * [前端web教程](qian_duan_web_jiao_cheng.md)
