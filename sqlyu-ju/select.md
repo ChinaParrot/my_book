@@ -64,19 +64,30 @@ SELECT MAX(salary) AS max_salary,MIN(salary) FROM employee;
 
 ```
 SELECT
-	of_dpt,
-	COUNT(proj_name) AS count_project
+    of_dpt,
+    COUNT(proj_name) AS count_project
 FROM
-	project
+    project
 WHERE
-	of_dpt IN (
-		SELECT
-			in_dpt
-		FROM
-			employee
-		WHERE
-			NAME = 'Tom'
-	);
+    of_dpt IN (
+        SELECT
+            in_dpt
+        FROM
+            employee
+        WHERE
+            NAME = 'Tom'
+    );
+```
+
+8、连接查询
+
+在处理多个表时，子查询只有在结果来自一个表时才有用。但如果需要显示两个表或多个表中的数据，这时就必须使用连接 \(join\) 操作。 连接的基本思想是把两个或多个表当作一个新的表来操作，如下：
+
+```
+SELECT id,name,people_num
+FROM employee,department
+WHERE employee.in_dpt = department.dpt_name
+ORDER BY id;
 ```
 
 
