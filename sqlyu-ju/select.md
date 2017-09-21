@@ -40,6 +40,12 @@ SELECT name,age,phone FROM employee WHERE phone LIKE '1101__';
 SELECT name,age,phone FROM employee WHERE phone LIKE '1101%';
 ```
 
+也可以是正则：
+
+使用REGEXP关键字来指定正则表达式
+
+![](/assets/正则.png)
+
 5、结果排序
 
 为了使查询结果看起来更顺眼，我们可能需要对结果按某一列来排序，这就要用到 ORDER BY 排序关键词。默认情况下，ORDER BY的结果是升序排列，而使用关键词ASC和DESC可指定升序或降序排序。 比如，我们按salary降序排列，SQL语句为：
@@ -101,7 +107,6 @@ WHERE a.in_dpt = b.dpt_name ORDER BY id;
   SELECT id,name,people_num FROM employee JOIN department ON employee.in_dpt = department.dpt_name ORDER BY id;
 
   SELECT id,name,people_num FROM employee INNER JOIN department ON employee.in_dpt = department.dpt_name ORDER BY id;
-
   ```
 * 外连接
 
