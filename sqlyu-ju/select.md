@@ -26,5 +26,13 @@ SELECT name,age FROM employee WHERE age>25 and age>30;
 SELECT name,age FROM employee WHERE age BETWEEN 25 AND 30
 ```
 
+3、在某个范围使用IN 和 NOT IN
+
+```
+SELECT name,age,phone,in_dpt FROM employee WHERE in_dpt IN ('dpt3','dpt4');
+SELECT name,age,phone,in_dpt FROM employee WHERE in_dpt NOT IN ('dpt3','dpt4');
+
+```
+
 
 
