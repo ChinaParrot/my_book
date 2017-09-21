@@ -58,7 +58,13 @@ SELECT name,age,salary,phone FROM employee ORDER BY salary DESC;
 SELECT MAX(salary) AS max_salary,MIN(salary) FROM employee;
 ```
 
-其他：
+7、子查询
+
+SELECT 语句都仅涉及一个表中的数据，然而有时必须处理多个表才能获得所需的信息。
+
+```
+SELECT of_dpt,COUNT(proj_name) AS count_project FROM project WHERE of_dpt IN (SELECT in_dpt FROM employee WHERE name='Tom');
+```
 
 
 
