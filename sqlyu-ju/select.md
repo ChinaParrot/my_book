@@ -31,6 +31,13 @@ SELECT name,age FROM employee WHERE age BETWEEN 25 AND 30
 ```
 SELECT name,age,phone,in_dpt FROM employee WHERE in_dpt IN ('dpt3','dpt4');
 SELECT name,age,phone,in_dpt FROM employee WHERE in_dpt NOT IN ('dpt3','dpt4');
+```
+
+4、关键字 LIKE 在SQL语句中和通配符一起使用，通配符代表未知字符。SQL中的通配符是 \_ 和 % 。其中 \_ 代表一个未指定字符，% 代表不定个未指定字符。
+
+```
+SELECT name,age,phone FROM employee WHERE phone LIKE '1101__';
+SELECT name,age,phone FROM employee WHERE phone LIKE '1101%';
 
 ```
 
