@@ -81,13 +81,12 @@ WHERE
 
 8、连接查询
 
-在处理多个表时，子查询只有在结果来自一个表时才有用。但如果需要显示两个表或多个表中的数据，这时就必须使用连接 \(join\) 操作。 连接的基本思想是把两个或多个表当作一个新的表来操作，如下：
+在处理多个表时，子查询只有在结果来自一个表时才有用。但如果需要显示两个表或多个表中的数据，这时就必须使用连接 \(join\) 操作。 连接的基本思想是把两个或多个表当作一个新的表来操作，如下：
 
 ```
 SELECT id,name,people_num
 FROM employee,department
-WHERE employee.in_dpt = department.dpt_name
-ORDER BY id;
+WHERE employee.in_dpt = department.dpt_name ORDER BY id;
 ```
 
 
