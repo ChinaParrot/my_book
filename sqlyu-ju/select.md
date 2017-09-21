@@ -58,5 +58,7 @@ SELECT name,age,salary,phone FROM employee ORDER BY salary DESC;
 SELECT MAX(salary) AS max_salary,MIN(salary) FROM employee;
 ```
 
+其他：
+
 
 
