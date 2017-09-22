@@ -94,6 +94,7 @@ print "昨天的时间：", yesterday
 # 字符串转换为时间
 def strTodatetime(datestr, format):
     return datetime.datetime.strptime(datestr, format)
+    
 print time.strftime("%Y-%m-%d", time.localtime())
 print strTodatetime("2017-3-1","%Y-%m-%d")
 print time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
@@ -136,7 +137,19 @@ a = "Sat Mar 28 22:24:24 2016"
 print time.mktime(time.strptime(a,"%a %b %d %H:%M:%S %Y"))
 ```
 
-**datetime加减                                  
+```
+#将字符串转换为日期 string => datetime
+
+import datetime
+
+t_str = '2015-03-05 16:26:23'
+
+d=datetime.datetime.strptime(t_str,'%Y-%m-%d %H:%M:%S')
+
+print d
+```
+
+**datetime加减                                    
 **
 
 对日期和时间进行加减实际上就是把datetime往后或往前计算，得到新的datetime。加减可以直接用+和-运算符，不过需要导入timedelta这个类：
@@ -153,6 +166,20 @@ datetime.datetime(2016, 5, 11, 15, 35, 52, 311921)
 >>> now + timedelta(days=2, hours=12)
 datetime.datetime(2016, 5, 15, 3, 35, 52, 311921)
 >>>
+
+#计算两个日期的间隔
+
+import datetime
+
+d1 = datetime.datetime.strptime('2018-03-05 17:41:20', '%Y-%m-%d %H:%M:%S')
+
+d2 = datetime.datetime.strptime('2017-03-02 17:41:20', '%Y-%m-%d %H:%M:%S')
+
+delta = d1 - d2
+
+print delta.days print delta
+
+
 ```
 
 ```
@@ -162,10 +189,8 @@ import datetime
 now = datetime.datetime.now()
 delta = datetime.timedelta(days=3)
 n_days = now + delta
-print n_days.strftime('%Y-%m-%d %H:%M:%S')  
+print n_days.strftime('%Y-%m-%d %H:%M:%S')
 ```
-
-
 
 **本地时间转换为UTC时间**
 
