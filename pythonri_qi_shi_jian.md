@@ -136,7 +136,7 @@ a = "Sat Mar 28 22:24:24 2016"
 print time.mktime(time.strptime(a,"%a %b %d %H:%M:%S %Y"))
 ```
 
-**datetime加减                                
+**datetime加减                                  
 **
 
 对日期和时间进行加减实际上就是把datetime往后或往前计算，得到新的datetime。加减可以直接用+和-运算符，不过需要导入timedelta这个类：
@@ -154,6 +154,18 @@ datetime.datetime(2016, 5, 11, 15, 35, 52, 311921)
 datetime.datetime(2016, 5, 15, 3, 35, 52, 311921)
 >>>
 ```
+
+```
+#今天的n天后的日期。
+
+import datetime
+now = datetime.datetime.now()
+delta = datetime.timedelta(days=3)
+n_days = now + delta
+print n_days.strftime('%Y-%m-%d %H:%M:%S')  
+```
+
+
 
 **本地时间转换为UTC时间**
 
