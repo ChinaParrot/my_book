@@ -81,6 +81,8 @@
       * [HTML常用基本标签](htmlchang_yong_ji_ben_biao_qian.md)
       * [表格标签与布局](biao_ge_biao_qian_yu_bu_ju.md)
       * [表单详解](biao_dan_xiang_jie.md)
+    * [JS](js.md)
+      * [js中数组的操作](js/jszhong-shu-zu-de-cao-zuo.md)
   * [linux教程](linuxjiao-cheng.md)
     * [shell 基础](linuxjiao-cheng/shell-ji-chu.md)
     * [用户和用户组管理](linuxjiao-cheng/yong-hu-he-yong-hu-zu-guan-li.md)

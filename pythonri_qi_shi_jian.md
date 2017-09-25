@@ -94,7 +94,7 @@ print "昨天的时间：", yesterday
 # 字符串转换为时间
 def strTodatetime(datestr, format):
     return datetime.datetime.strptime(datestr, format)
-    
+
 print time.strftime("%Y-%m-%d", time.localtime())
 print strTodatetime("2017-3-1","%Y-%m-%d")
 print time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
@@ -149,7 +149,7 @@ d=datetime.datetime.strptime(t_str,'%Y-%m-%d %H:%M:%S')
 print d
 ```
 
-**datetime加减                                    
+**datetime加减                                      
 **
 
 对日期和时间进行加减实际上就是把datetime往后或往前计算，得到新的datetime。加减可以直接用+和-运算符，不过需要导入timedelta这个类：
@@ -178,8 +178,6 @@ d2 = datetime.datetime.strptime('2017-03-02 17:41:20', '%Y-%m-%d %H:%M:%S')
 delta = d1 - d2
 
 print delta.days print delta
-
-
 ```
 
 ```
