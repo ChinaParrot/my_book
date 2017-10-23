@@ -27,7 +27,6 @@ expire-logs-days = 14
 sync-binlog = 1
 slave-net-timeout = 60#从不设置
 #binlog-ignore-db = mysql
-
 ```
 
 3、主库锁表备份
@@ -57,6 +56,14 @@ slave-net-timeout = 60#从不设置
  show slave status \G
  Slave_IO_Running: Yes
  Slave_SQL_Running: Yes
+```
+
+5、常见主从不同步
+
+```
+stop slave;
+set global sql_slave_skip_counter=1;
+start slave;
 ```
 
 
