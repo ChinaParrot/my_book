@@ -53,3 +53,17 @@ writerow\(\)方法是一行一行写入，writerows方法是一次写入多行�
 
 注意：如果文件't.csv'事先存在，调用writer函数会先清空原文件中的文本，再执行writerow/writerows方法。
 
+```
+        if f.is_valid():
+            file = f.cleaned_data['file']
+            data = file.read().decode('utf-8').strip(codecs.BOM_UTF8.decode('utf-8'))
+            csv_file = StringIO(data)
+            reader = csv.reader(csv_file)
+            csv_data = [row for row in reader]
+            header_ = csv_data[0]
+```
+
+
+
+
+
