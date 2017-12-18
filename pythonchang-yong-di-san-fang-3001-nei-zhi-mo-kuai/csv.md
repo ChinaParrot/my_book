@@ -55,7 +55,7 @@ writerow\(\)方法是一行一行写入，writerows方法是一次写入多行�
 
 ```
        #读取首行
-       
+
          if f.is_valid():
             file = f.cleaned_data['file']
             data = file.read().decode('utf-8').strip(codecs.BOM_UTF8.decode('utf-8'))
