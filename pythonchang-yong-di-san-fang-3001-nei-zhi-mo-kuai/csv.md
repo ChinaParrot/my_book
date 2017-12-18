@@ -7,7 +7,7 @@
 格式时常常会碰到麻烦，幸好python内置了csv模块。下面简单介绍csv模块中最常用的一些函数。
 
 ```
-reader(csvfile, dialect='excel', **fmtparams)
+#reader(csvfile, dialect='excel', **fmtparams)
 参数说明：
 
 csvfile，必须是支持迭代(Iterator)的对象，可以是文件(file)对象或者列表(list)对象，如果是文件对
@@ -29,6 +29,20 @@ with open('test.csv','rb') as myFile:
 **补充：**
 
 reader对象还提供一些方法：line\_num、dialect、next\(\)
+
+```
+#writer(csvfile, dialect='excel', **fmtparams)
+
+```
+
+```
+with open('t.csv','wb') as myFile:      
+    myWriter=csv.writer(myFile)  
+    myWriter.writerow([7,'g'])  
+    myWriter.writerow([8,'h'])  
+    myList=[[1,2,3],[4,5,6]]  
+    myWriter.writerows(myList) 
+```
 
 
 
