@@ -56,6 +56,7 @@
       * [python之pexpect详解](pythonchang-yong-di-san-fang-3001-nei-zhi-mo-kuai/pythonzhi-pexpect-xiang-jie.md)
       * [Python 之ftplib模块](pythonchang-yong-di-san-fang-3001-nei-zhi-mo-kuai/python-zhi-ftplib-mo-kuai.md)
       * [python 之Fabric-SSH命令行工具](pythonchang-yong-di-san-fang-3001-nei-zhi-mo-kuai/python-zhi-fabric-ssh-ming-ling-xing-gong-ju.md)
+      * [StringIO和BytesIO](pythonchang-yong-di-san-fang-3001-nei-zhi-mo-kuai/stringiohe-bytesio.md)
   * [Django教程](djangojiao_cheng.md)
     * [Django基础安装](djangoji_chu_an_zhuang.md)
     * [Django基本命令使用](djangoji_ben_ming_ling_shi_yong.md)
