@@ -50,5 +50,8 @@ BytesIO实现了在内存中读写bytes，我们创建一个BytesIO，然后写�
 b'\xe4\xb8\xad\xe6\x96\x87'
 ```
 
+StringIO和BytesIO是在内存中操作str和bytes的方法，使得和读写文件具有一致的接口。
+
+  
 
 
