@@ -17,5 +17,24 @@ StringIO顾名思义就是在内存中读写str。
 hello world!
 ```
 
+`getvalue()`方法用于获得写入后的str。
+
+  
+要读取StringIO，可以用一个str初始化StringIO，然后，像读文件一样读取：
+
+```
+>>> from io import StringIO
+>>> f = StringIO('Hello!\nHi!\nGoodbye!')
+>>> while True:
+...     s = f.readline()
+...     if s == '':
+...         break
+...     print(s.strip())
+...
+Hello!
+Hi!
+Goodbye!
+```
+
 
 
