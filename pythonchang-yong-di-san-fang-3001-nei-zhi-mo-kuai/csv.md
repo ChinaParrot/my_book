@@ -7,6 +7,17 @@
 格式时常常会碰到麻烦，幸好python内置了csv模块。下面简单介绍csv模块中最常用的一些函数。
 
 ```
+reader(csvfile, dialect='excel', **fmtparams)
+参数说明：
+
+csvfile，必须是支持迭代(Iterator)的对象，可以是文件(file)对象或者列表(list)对象，如果是文件对
+象，打开时需要加"b"标志参数。
+
+dialect，编码风格，默认为excel的风格，也就是用逗号（,）分隔，dialect方式也支持自定义，通过调用register_dialect方法来注册，下文会提到。
+
+fmtparam，格式化参数，用来覆盖之前dialect对象指定的编码风格。
 
 ```
+
+
 
