@@ -16,7 +16,14 @@ csvfile，必须是支持迭代(Iterator)的对象，可以是文件(file)对象
 dialect，编码风格，默认为excel的风格，也就是用逗号（,）分隔，dialect方式也支持自定义，通过调用register_dialect方法来注册，下文会提到。
 
 fmtparam，格式化参数，用来覆盖之前dialect对象指定的编码风格。
+```
 
+```
+import csv  
+with open('test.csv','rb') as myFile:  
+    lines=csv.reader(myFile)  
+    for line in lines:  
+        print line  
 ```
 
 
