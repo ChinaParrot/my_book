@@ -41,5 +41,14 @@ StringIO操作的只能是str，如果要操作二进制数据，就需要使用
 
 BytesIO实现了在内存中读写bytes，我们创建一个BytesIO，然后写入一些bytes：
 
+```
+>>> from io import BytesIO
+>>> f = BytesIO()
+>>> f.write('中文'.encode('utf-8'))
+6
+>>> print(f.getvalue())
+b'\xe4\xb8\xad\xe6\x96\x87'
+```
+
 
 
