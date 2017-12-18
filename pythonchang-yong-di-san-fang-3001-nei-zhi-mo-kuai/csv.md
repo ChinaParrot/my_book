@@ -32,7 +32,6 @@ reader对象还提供一些方法：line\_num、dialect、next\(\)
 
 ```
 #writer(csvfile, dialect='excel', **fmtparams)
-
 ```
 
 ```
@@ -41,8 +40,16 @@ with open('t.csv','wb') as myFile:
     myWriter.writerow([7,'g'])  
     myWriter.writerow([8,'h'])  
     myList=[[1,2,3],[4,5,6]]  
-    myWriter.writerows(myList) 
+    myWriter.writerows(myList)
 ```
 
+'w'表示写模式。
 
+首先open\(\)函数打开当前路径下的名字为't.csv'的文件，如果不存在这个文件，则创建它，返回myFile文件对象。
+
+csv.writer\(myFile\)返回writer对象myWriter。
+
+writerow\(\)方法是一行一行写入，writerows方法是一次写入多行。
+
+注意：如果文件't.csv'事先存在，调用writer函数会先清空原文件中的文本，再执行writerow/writerows方法。
 
