@@ -30,3 +30,5 @@ with open('test.csv','rb') as myFile:
 
 reader对象还提供一些方法：line\_num、dialect、next\(\)
 
+
+
