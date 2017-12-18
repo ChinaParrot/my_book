@@ -19,7 +19,6 @@ hello world!
 
 `getvalue()`方法用于获得写入后的str。
 
-  
 要读取StringIO，可以用一个str初始化StringIO，然后，像读文件一样读取：
 
 ```
