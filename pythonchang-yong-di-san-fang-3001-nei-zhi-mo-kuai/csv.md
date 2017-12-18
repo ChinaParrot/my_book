@@ -23,8 +23,10 @@ import csv
 with open('test.csv','rb') as myFile:  
     lines=csv.reader(myFile)  
     for line in lines:  
-        print line  
+        print line
 ```
 
+**补充：**
 
+reader对象还提供一些方法：line\_num、dialect、next\(\)
 
