@@ -46,5 +46,9 @@ AttributeError: test instance has no attribute 'age'
 >>>
 ```
 
+setattr\(object, name, values\)
+
+给对象的属性赋值，若属性不存在，先创建再赋值。
+
 
 
