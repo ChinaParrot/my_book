@@ -50,5 +50,41 @@ setattr\(object, name, values\)
 
 给对象的属性赋值，若属性不存在，先创建再赋值。
 
+```
+>>> class test():
+...     name="xiaohua"
+...     def run(self):
+...             return "HelloWord"
+...
+>>> t=test()
+>>> hasattr(t, "age")   #判断属性是否存在
+False
+>>> setattr(t, "age", "18")   #为属相赋值，并没有返回值
+>>> hasattr(t, "age")    #属性存在了
+True
+>>>
+```
+
+一种综合的用法是：判断一个对象的属性是否存在，若不存在就添加该属性。
+
+```
+>>> class test():
+...     name="xiaohua"
+...     def run(self):
+...             return "HelloWord"
+...
+>>> t=test()
+>>> getattr(t, "age")    #age属性不存在
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: test instance has no attribute 'age'
+>>> getattr(t, "age", setattr(t, "age", "18")) #age属性不存在时，设置该属性
+'18'
+>>> getattr(t, "age")  #可检测设置成功
+'18'
+>>>
+
+```
+
 
 
