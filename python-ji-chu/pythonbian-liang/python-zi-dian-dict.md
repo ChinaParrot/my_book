@@ -106,5 +106,28 @@ Python字典包含了以下内置方法：
 | d.update\(dict2\) 把字典dict2的键/值对更新到dict里 |
 | d.values\(\) 以列表返回字典中的所有值 |
 
+```
+#!/usr/bin/python
+# coding=utf-8
+
+dict = {'Google': 'www.google.com', 'Runoob': 'www.runoob.com', 'taobao': 'www.taobao.com'}
+
+print "字典值 : %s" %  dict.items()
+
+# 遍历字典列表
+for key,values in  dict.items():
+    print key,values
+```
+
+以上实例输出结果为：
+
+```
+字典值 : [('Google', 'www.google.com'), ('taobao', 'www.taobao.com'), ('Runoob', 'www.runoob.com')]
+Google www.google.com
+taobao www.taobao.com
+Runoob www.runoob.com
+
+```
+
 
 
