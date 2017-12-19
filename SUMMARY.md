@@ -14,6 +14,7 @@
       * [python转义字符](python-ji-chu/pythonzhuan-yi-zi-fu.md)
       * [Python字符串](python-ji-chu/pythonzi-fu-chuan-ge-shi-hua.md)
         * [Python3 endswith\(\)方法](python-ji-chu/pythonzi-fu-chuan-ge-shi-hua/python3-endswithfang-fa.md)
+        * [Python的hasattr\(\) getattr\(\) setattr\(\) 函数使用方法详解](python-ji-chu/pythonzi-fu-chuan-ge-shi-hua/pythonde-hasattr-getattr-setattr-han-shu-shi-yong-fang-fa-xiang-jie.md)
       * [Python变量类型](python-ji-chu/pythonbian-liang.md)
         * [python 字典dict](python-ji-chu/pythonbian-liang/python-zi-dian-dict.md)
         * [python  元组tuple](python-ji-chu/pythonbian-liang/python-yuan-zu-tuple.md)
