@@ -2,14 +2,19 @@
 
 ## 迭代 {#_1}
 
-
+你可以创建一个列表，然后逐一遍历，这就是迭代
 
 ```
-print xrange(10) #只是生成器，只有遍历的时候创建
+>>> mylist = [1, 2, 3]
+>>> for i in mylist:
+...    print(i)
+1
+2
+3
 
-for item in xrange(10):
-    print (item)
 ```
+
+
 
 例如：以上xrange怎么实现？
 
