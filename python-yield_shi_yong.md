@@ -47,7 +47,21 @@ mylist是可迭代的对象，当你使用列表解析时，你创建一个列�
 
 yield是一个关键词，类似return, 不同之处在于，yield返回的是一个生成器
 
-
+```
+>>> def createGenerator():
+...    mylist = range(3)
+...    for i in mylist:
+...        yield i*i
+...
+>>> mygenerator = createGenerator() # create a generator
+>>> print(mygenerator) # mygenerator is an object!
+ 
+>>> for i in mygenerator:
+...     print(i)
+0
+1
+4
+```
 
 
 
